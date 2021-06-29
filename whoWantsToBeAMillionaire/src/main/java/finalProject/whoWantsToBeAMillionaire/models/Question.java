@@ -21,6 +21,7 @@ public class Question {
     @OneToMany(mappedBy = "question")
     private List<Answer> answers;
 
+    @Enumerated(EnumType.ORDINAL)
     @Column(name= "difficulty")
     private Difficulty difficulty;
 
