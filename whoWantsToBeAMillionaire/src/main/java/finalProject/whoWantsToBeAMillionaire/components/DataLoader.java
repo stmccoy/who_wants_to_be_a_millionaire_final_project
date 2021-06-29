@@ -621,6 +621,307 @@ public class DataLoader implements ApplicationRunner {
         Answer q40AnswerFour = new Answer("Switch", questionForty, false);
         answerRepository.save(q40AnswerFour);
 
+        Question questionFortyOne = new Question("What does the letter 'S' stand for in 'NASA'?", Difficulty.THREE);
+        questionRepository.save(questionFortyOne);
+
+        Answer q41AnswerOne = new Answer("Space", questionFortyOne, true);
+        answerRepository.save(q41AnswerOne);
+
+        Answer q41AnswerTwo = new Answer("Science", questionFortyOne, false);
+        answerRepository.save(q41AnswerTwo);
+
+        Answer q41AnswerThree = new Answer("Society", questionFortyOne, false);
+        answerRepository.save(q41AnswerThree);
+
+        Answer q41AnswerFour = new Answer("Star", questionFortyOne, false);
+        answerRepository.save(q41AnswerFour);
+
+        Question questionFortyTwo = new Question("The body of the Egyptian Sphinx was based on which animal?", Difficulty.THREE);
+        questionRepository.save(questionFortyTwo);
+
+        Answer q42AnswerOne = new Answer("Lion", questionFortyTwo, true);
+        answerRepository.save(q42AnswerOne);
+
+        Answer q42AnswerTwo = new Answer("Bull", questionFortyTwo, false);
+        answerRepository.save(q42AnswerTwo);
+
+        Answer q42AnswerThree = new Answer("Horse", questionFortyTwo, false);
+        answerRepository.save(q42AnswerThree);
+
+        Answer q42AnswerFour = new Answer("Dog", questionFortyTwo, false);
+        answerRepository.save(q42AnswerFour);
+
+        Question questionFortyThree = new Question("Ringo Starr of The Beatles mainly played what instrument?", Difficulty.THREE);
+        questionRepository.save(questionFortyThree);
+
+        Answer q43AnswerOne = new Answer("Drums", questionFortyThree, true);
+        answerRepository.save(q43AnswerOne);
+
+        Answer q43AnswerTwo = new Answer("Bass", questionFortyThree, false);
+        answerRepository.save(q43AnswerTwo);
+
+        Answer q43AnswerThree = new Answer("Guitar", questionFortyThree, false);
+        answerRepository.save(q43AnswerThree);
+
+        Answer q43AnswerFour = new Answer("Piano", questionFortyThree, false);
+        answerRepository.save(q43AnswerFour);
+
+        Question questionFortyFour = new Question("Which singer was featured in Jack-U (Skrillex & Diplo)'s 2015 song 'Where Are U Now'?", Difficulty.THREE);
+        questionRepository.save(questionFortyFour);
+
+        Answer q44AnswerOne = new Answer("Justin Bieber", questionFortyFour, true);
+        answerRepository.save(q44AnswerOne);
+
+        Answer q44AnswerTwo = new Answer("Selena Gomez", questionFortyFour, false);
+        answerRepository.save(q44AnswerTwo);
+
+        Answer q44AnswerThree = new Answer("Ellie Goulding", questionFortyFour, false);
+        answerRepository.save(q44AnswerThree);
+
+        Answer q44AnswerFour = new Answer("The Weeknd", questionFortyFour, false);
+        answerRepository.save(q44AnswerFour);
+
+        Question questionFortyFive = new Question("Which movie contains the quote, 'Say hello to my little friend!'?", Difficulty.THREE);
+        questionRepository.save(questionFortyFive);
+
+        Answer q45AnswerOne = new Answer("Scarface", questionFortyFive, true);
+        answerRepository.save(q45AnswerOne);
+
+        Answer q45AnswerTwo = new Answer("Reservoir Dogs", questionFortyFive, false);
+        answerRepository.save(q45AnswerTwo);
+
+        Answer q45AnswerThree = new Answer("Heat", questionFortyFive, false);
+        answerRepository.save(q45AnswerThree);
+
+        Answer q45AnswerFour = new Answer("Goodfellas", questionFortyFive, false);
+        answerRepository.save(q45AnswerFour);
+
+        Question questionFortySix = new Question("Which movie contains the quote, 'Houston, we have a problem'?", Difficulty.THREE);
+        questionRepository.save(questionFortySix);
+
+        Answer q46AnswerOne = new Answer("Apollo 13", questionFortySix, true);
+        answerRepository.save(q46AnswerOne);
+
+        Answer q46AnswerTwo = new Answer("The Right Stuff", questionFortySix, false);
+        answerRepository.save(q46AnswerTwo);
+
+        Answer q46AnswerThree = new Answer("Capricorn One", questionFortySix, false);
+        answerRepository.save(q46AnswerThree);
+
+        Answer q46AnswerFour = new Answer("Marooned", questionFortySix, false);
+        answerRepository.save(q46AnswerFour);
+
+        Question questionFortySeven = new Question("What is the official language of Costa Rica?", Difficulty.THREE);
+        questionRepository.save(questionFortySeven);
+
+        Answer q47AnswerOne = new Answer("Spanish", questionFortySeven, true);
+        answerRepository.save(q47AnswerOne);
+
+        Answer q47AnswerTwo = new Answer("English", questionFortySeven, false);
+        answerRepository.save(q47AnswerTwo);
+
+        Answer q47AnswerThree = new Answer("Portuguese", questionFortySeven, false);
+        answerRepository.save(q47AnswerThree);
+
+        Answer q47AnswerFour = new Answer("Creole", questionFortySeven, false);
+        answerRepository.save(q47AnswerFour);
+
+        Question questionFortyEight = new Question("'Hallelujah' is a song written by which Canadian recording artist?", Difficulty.THREE);
+        questionRepository.save(questionFortyEight);
+
+        Answer q48AnswerOne = new Answer("Leonard Cohen", questionFortyEight, true);
+        answerRepository.save(q48AnswerOne);
+
+        Answer q48AnswerTwo = new Answer("Kory Lefkowits", questionFortyEight, false);
+        answerRepository.save(q48AnswerTwo);
+
+        Answer q48AnswerThree = new Answer("Ryan Letourneau", questionFortyEight, false);
+        answerRepository.save(q48AnswerThree);
+
+        Answer q48AnswerFour = new Answer("Justin Bieber", questionFortyEight, false);
+        answerRepository.save(q48AnswerFour);
+
+        Question questionFortyNine = new Question("What is the shape of the toy invented by Hungarian professor Ernő Rubik?", Difficulty.THREE);
+        questionRepository.save(questionFortyNine);
+
+        Answer q49AnswerOne = new Answer("Cube", questionFortyNine, true);
+        answerRepository.save(q49AnswerOne);
+
+        Answer q49AnswerTwo = new Answer("Sphere", questionFortyNine, false);
+        answerRepository.save(q49AnswerTwo);
+
+        Answer q49AnswerThree = new Answer("Cylinder", questionFortyNine, false);
+        answerRepository.save(q49AnswerThree);
+
+        Answer q49AnswerFour = new Answer("Pyramid", questionFortyNine, false);
+        answerRepository.save(q49AnswerFour);
+
+        Question questionFifty = new Question("If you were to code software in this language you'd only be able to type 0's and 1's.", Difficulty.THREE);
+        questionRepository.save(questionFifty);
+
+        Answer q50AnswerOne = new Answer("Binary", questionFifty, true);
+        answerRepository.save(q50AnswerOne);
+
+        Answer q50AnswerTwo = new Answer("JavaScript", questionFifty, false);
+        answerRepository.save(q50AnswerTwo);
+
+        Answer q50AnswerThree = new Answer("C++", questionFifty, false);
+        answerRepository.save(q50AnswerThree);
+
+        Answer q50AnswerFour = new Answer("Python", questionFifty, false);
+        answerRepository.save(q50AnswerFour);
+
+        Question questionFiftyOne = new Question("Which artist released the 2012 single 'Harlem Shake', which was used in numerous YouTube videos in 2013?", Difficulty.THREE);
+        questionRepository.save(questionFiftyOne);
+
+        Answer q51AnswerOne = new Answer("Baauer", questionFiftyOne, true);
+        answerRepository.save(q51AnswerOne);
+
+        Answer q51AnswerTwo = new Answer("RL Grime", questionFiftyOne, false);
+        answerRepository.save(q51AnswerTwo);
+
+        Answer q51AnswerThree = new Answer("NGHTMRE", questionFiftyOne, false);
+        answerRepository.save(q51AnswerThree);
+
+        Answer q51AnswerFour = new Answer("Flosstradamus", questionFiftyOne, false);
+        answerRepository.save(q51AnswerFour);
+
+        Question questionFiftyTwo = new Question("In the Pixar film, 'Toy Story', what was the name of the child who owned the toys?", Difficulty.THREE);
+        questionRepository.save(questionFiftyTwo);
+
+        Answer q52AnswerOne = new Answer("Andy", questionFiftyTwo, true);
+        answerRepository.save(q52AnswerOne);
+
+        Answer q52AnswerTwo = new Answer("Edward", questionFiftyTwo, false);
+        answerRepository.save(q52AnswerTwo);
+
+        Answer q52AnswerThree = new Answer("Danny", questionFiftyTwo, false);
+        answerRepository.save(q52AnswerThree);
+
+        Answer q52AnswerFour = new Answer("Matt", questionFiftyTwo, false);
+        answerRepository.save(q52AnswerFour);
+
+        Question questionFiftyThree = new Question("Which Nirvana album had a naked baby on the cover?", Difficulty.THREE);
+        questionRepository.save(questionFiftyThree);
+
+        Answer q53AnswerOne = new Answer("Nevermind", questionFiftyThree, true);
+        answerRepository.save(q53AnswerOne);
+
+        Answer q53AnswerTwo = new Answer("Bleach", questionFiftyThree, false);
+        answerRepository.save(q53AnswerTwo);
+
+        Answer q53AnswerThree = new Answer("In Utero", questionFiftyThree, false);
+        answerRepository.save(q53AnswerThree);
+
+        Answer q53AnswerFour = new Answer("Incesticide", questionFiftyThree, false);
+        answerRepository.save(q53AnswerFour);
+
+        Question questionFiftyFour = new Question("According to Sherlock Holmes, 'If you eliminate the impossible, whatever remains, however improbable, must be the...'", Difficulty.THREE);
+        questionRepository.save(questionFiftyFour);
+
+        Answer q54AnswerOne = new Answer("Truth", questionFiftyFour, true);
+        answerRepository.save(q54AnswerOne);
+
+        Answer q54AnswerTwo = new Answer("Answer", questionFiftyFour, false);
+        answerRepository.save(q54AnswerTwo);
+
+        Answer q54AnswerThree = new Answer("Cause", questionFiftyFour, false);
+        answerRepository.save(q54AnswerThree);
+
+        Answer q54AnswerFour = new Answer("Source", questionFiftyFour, false);
+        answerRepository.save(q54AnswerFour);
+
+        Question questionFiftyFive = new Question("In the movie 'Blade Runner', what is the term used for human-like androids ?", Difficulty.THREE);
+        questionRepository.save(questionFiftyFive);
+
+        Answer q55AnswerOne = new Answer("Replicants", questionFiftyFive, true);
+        answerRepository.save(q55AnswerOne);
+
+        Answer q55AnswerTwo = new Answer("Cylons", questionFiftyFive, false);
+        answerRepository.save(q55AnswerTwo);
+
+        Answer q55AnswerThree = new Answer("Synthetics", questionFiftyFive, false);
+        answerRepository.save(q55AnswerThree);
+
+        Answer q55AnswerFour = new Answer("Skinjobs", questionFiftyFive, false);
+        answerRepository.save(q55AnswerFour);
+
+        Question questionFiftySix = new Question("What is the official name of the star located closest to the North Celestial Pole?", Difficulty.THREE);
+        questionRepository.save(questionFiftySix);
+
+        Answer q56AnswerOne = new Answer("Polaris", questionFiftySix, true);
+        answerRepository.save(q56AnswerOne);
+
+        Answer q56AnswerTwo = new Answer("Eridanus", questionFiftySix, false);
+        answerRepository.save(q56AnswerTwo);
+
+        Answer q56AnswerThree = new Answer("Gamma Cephei", questionFiftySix, false);
+        answerRepository.save(q56AnswerThree);
+
+        Answer q56AnswerFour = new Answer("Iota Cephei", questionFiftySix, false);
+        answerRepository.save(q56AnswerFour);
+
+        Question questionFiftySeven = new Question("Who created the digital distribution platform Steam?", Difficulty.THREE);
+        questionRepository.save(questionFiftySeven);
+
+        Answer q57AnswerOne = new Answer("Valve", questionFiftySeven, true);
+        answerRepository.save(q57AnswerOne);
+
+        Answer q57AnswerTwo = new Answer("Pixeltail Games", questionFiftySeven, false);
+        answerRepository.save(q57AnswerTwo);
+
+        Answer q57AnswerThree = new Answer("Ubisoft", questionFiftySeven, false);
+        answerRepository.save(q57AnswerThree);
+
+        Answer q57AnswerFour = new Answer("Electronic Arts", questionFiftySeven, false);
+        answerRepository.save(q57AnswerFour);
+
+        Question questionFiftyEight = new Question("Who directed the movies 'Pulp Fiction', 'Reservoir Dogs'; and 'Django Unchained'?", Difficulty.THREE);
+        questionRepository.save(questionFiftyEight);
+
+        Answer q58AnswerOne = new Answer("Quentin Tarantino", questionFiftyEight, true);
+        answerRepository.save(q58AnswerOne);
+
+        Answer q58AnswerTwo = new Answer("Martin Scorcese", questionFiftyEight, false);
+        answerRepository.save(q58AnswerTwo);
+
+        Answer q58AnswerThree = new Answer("Steven Spielberg", questionFiftyEight, false);
+        answerRepository.save(q58AnswerThree);
+
+        Answer q58AnswerFour = new Answer("James Cameron", questionFiftyEight, false);
+        answerRepository.save(q58AnswerFour);
+
+        Question questionFiftyNine = new Question("Who is the frontman of the band 30 Seconds to Mars?", Difficulty.THREE);
+        questionRepository.save(questionFiftyNine);
+
+        Answer q59AnswerOne = new Answer("Jared Leto", questionFiftyNine, true);
+        answerRepository.save(q59AnswerOne);
+
+        Answer q59AnswerTwo = new Answer("Gerard Way", questionFiftyNine, false);
+        answerRepository.save(q59AnswerTwo);
+
+        Answer q59AnswerThree = new Answer("Matthew Bellamy", questionFiftyNine, false);
+        answerRepository.save(q59AnswerThree);
+
+        Answer q59AnswerFour = new Answer("Mike Shinoda", questionFiftyNine, false);
+        answerRepository.save(q59AnswerFour);
+
+        Question questionSixty = new Question("How many members are there in the band Nirvana?", Difficulty.THREE);
+        questionRepository.save(questionSixty);
+
+        Answer q60AnswerOne = new Answer("Three", questionSixty, true);
+        answerRepository.save(q60AnswerOne);
+
+        Answer q60AnswerTwo = new Answer("Two", questionSixty, false);
+        answerRepository.save(q60AnswerTwo);
+
+        Answer q60AnswerThree = new Answer("Four", questionSixty, false);
+        answerRepository.save(q60AnswerThree);
+
+        Answer q60AnswerFour = new Answer("Five", questionSixty, false);
+        answerRepository.save(q60AnswerFour);
+
+
 
 
 
