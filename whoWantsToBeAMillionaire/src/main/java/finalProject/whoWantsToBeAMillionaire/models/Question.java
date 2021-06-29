@@ -1,5 +1,6 @@
 package finalProject.whoWantsToBeAMillionaire.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Question {
@@ -9,9 +10,9 @@ public class Question {
     private List<Answer> answers;
     private Difficulty difficulty;
 
-    public Question(String question, List<Answer> answers, Difficulty difficulty) {
+    public Question(String question, Difficulty difficulty) {
         this.question = question;
-        this.answers = answers;
+        this.answers = new ArrayList<>();
         this.difficulty = difficulty;
     }
 
