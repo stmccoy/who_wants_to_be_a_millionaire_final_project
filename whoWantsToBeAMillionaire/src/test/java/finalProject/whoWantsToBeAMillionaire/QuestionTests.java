@@ -43,10 +43,10 @@ public class QuestionTests {
     @Test
     public void canSetQuestionAnswersArray(){
         //arrange
-        answerOne = new Answer("London", true);
-        answerTwo = new Answer("Manchester", false);
-        answerThree = new Answer("Bristol", false);
-        answerFour = new Answer("Edinburgh", false);
+        answerOne = new Answer("London", question,true);
+        answerTwo = new Answer("Manchester", question, false);
+        answerThree = new Answer("Bristol", question, false);
+        answerFour = new Answer("Edinburgh",question, false);
         answers = new ArrayList<>();
         answers.add(answerOne);
         answers.add(answerTwo);

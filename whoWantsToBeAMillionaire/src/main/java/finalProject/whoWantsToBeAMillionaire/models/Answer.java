@@ -1,14 +1,40 @@
 package finalProject.whoWantsToBeAMillionaire.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name= "answers")
 public class Answer {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "answer")
     private String answer;
+
+    @Column(name= "correct")
     private boolean correct;
 
-    public Answer(String answer, boolean correct) {
+    @ManyToOne
+    @Column(name = "question_id")
+    @JsonIgnoreProperties({"answers"})
+    private Question question;
+
+    public Answer(String answer, Question question, boolean correct) {
         this.answer = answer;
         this.correct = correct;
+        this.question = question;
+    }
+
+    public Question getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(Question question) {
+        this.question = question;
     }
 
     public Answer() {
