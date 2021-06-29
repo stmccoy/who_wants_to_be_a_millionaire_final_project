@@ -1,13 +1,27 @@
 package finalProject.whoWantsToBeAMillionaire.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Table(name="questions")
 public class Question {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "question")
     private String question;
+
+    @JsonIgnoreProperties({"question"})
+    @OneToMany(mappedBy = "question")
     private List<Answer> answers;
+
+    @Column(name= "difficulty")
     private Difficulty difficulty;
 
     public Question(String question, Difficulty difficulty) {
