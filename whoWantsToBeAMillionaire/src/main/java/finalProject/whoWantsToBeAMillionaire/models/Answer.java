@@ -19,7 +19,7 @@ public class Answer {
     private boolean correct;
 
     @ManyToOne
-    @Column(name = "question_id")
+    @JoinColumn(name = "question_id")
     @JsonIgnoreProperties({"answers"})
     private Question question;
 
