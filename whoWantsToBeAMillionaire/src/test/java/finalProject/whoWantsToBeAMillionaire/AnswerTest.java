@@ -29,4 +29,16 @@ public class AnswerTest {
         assertEquals(true, correctAnswer.isCorrect());
         assertEquals(false, incorrectAnswer.isCorrect());
     }
+
+    @Test
+    public void canSetAnswer(){
+        correctAnswer.setAnswer("Stockport");
+        assertEquals("Stockport", correctAnswer.getAnswer());
+    }
+
+    @Test
+    public void canSetCorrectProperty(){
+        correctAnswer.setCorrect(false);
+        assertEquals(false, correctAnswer.isCorrect());
+    }
 }
