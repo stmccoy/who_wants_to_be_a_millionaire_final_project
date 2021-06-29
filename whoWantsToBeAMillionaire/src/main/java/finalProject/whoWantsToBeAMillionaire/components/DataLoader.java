@@ -66,19 +66,19 @@ public class DataLoader implements ApplicationRunner {
         Answer q3AnswerFour = new Answer("Beck", questionThree, false);
         answerRepository.save(q3AnswerFour);
 
-        Question questionFour = new Question("The film 28 Day's Later is mainly set in which European country", Difficulty.ONE);
+        Question questionFour = new Question("What is the capital of Scotland?", Difficulty.ONE);
         questionRepository.save(questionFour);
 
-        Answer q4AnswerOne = new Answer("United Kingdom", questionFour, true);
+        Answer q4AnswerOne = new Answer("Edinburgh", questionFour, true);
         answerRepository.save(q4AnswerOne);
 
-        Answer q4AnswerTwo = new Answer("France", questionFour, false);
+        Answer q4AnswerTwo = new Answer("Glasgow", questionFour, false);
         answerRepository.save(q4AnswerTwo);
 
-        Answer q4AnswerThree = new Answer("Italy", questionFour, false);
+        Answer q4AnswerThree = new Answer("Dundee", questionFour, false);
         answerRepository.save(q4AnswerThree);
 
-        Answer q4AnswerFour = new Answer("Germany", questionFour, false);
+        Answer q4AnswerFour = new Answer("London", questionFour, false);
         answerRepository.save(q4AnswerFour);
 
         Question questionFive = new Question("Which of these characters live in a pineapple under the sea", Difficulty.ONE);
@@ -231,19 +231,19 @@ public class DataLoader implements ApplicationRunner {
         Answer q14AnswerFour = new Answer("Blue", questionFourteen, false);
         answerRepository.save(q14AnswerFour);
 
-        Question questionFifteen = new Question("What is the name of Finnish DJ Darude's hit single released in October 1999?", Difficulty.ONE);
+        Question questionFifteen = new Question("Who is the star of the AMC series Breaking Bad?", Difficulty.ONE);
         questionRepository.save(questionFifteen);
 
-        Answer q15AnswerOne = new Answer("Sandstorm", questionFifteen, true);
+        Answer q15AnswerOne = new Answer("Walter White", questionFifteen, true);
         answerRepository.save(q15AnswerOne);
 
-        Answer q15AnswerTwo = new Answer("Dust Devil", questionFifteen, false);
+        Answer q15AnswerTwo = new Answer("Saul Goodman", questionFifteen, false);
         answerRepository.save(q15AnswerTwo);
 
-        Answer q15AnswerThree = new Answer("Sirocco", questionFifteen, false);
+        Answer q15AnswerThree = new Answer("Jesse Pinkman", questionFifteen, false);
         answerRepository.save(q15AnswerThree);
 
-        Answer q15AnswerFour = new Answer("Khamsin", questionFifteen, false);
+        Answer q15AnswerFour = new Answer("Skyler White", questionFifteen, false);
         answerRepository.save(q15AnswerFour);
 
         Question questionSixteen = new Question("Which song on Daft Punk's album 'Random Access Memories' features Pharrell Williams?", Difficulty.ONE);
@@ -320,6 +320,309 @@ public class DataLoader implements ApplicationRunner {
 
         Answer q20AnswerFour = new Answer("Kiwi Food Cut", questionTwenty, false);
         answerRepository.save(q20AnswerFour);
+
+        Question questionTwentyOne = new Question("Which of these is NOT a Disney cartoon character?", Difficulty.TWO);
+        questionRepository.save(questionTwentyOne);
+
+        Answer q21AnswerOne = new Answer("Daffy Duck", questionTwentyOne, true);
+        answerRepository.save(q21AnswerOne);
+
+        Answer q21AnswerTwo = new Answer("Donald Duck", questionTwentyOne, false);
+        answerRepository.save(q21AnswerTwo);
+
+        Answer q21AnswerThree = new Answer("Scrooge McDuck", questionTwentyOne, false);
+        answerRepository.save(q21AnswerThree);
+
+        Answer q21AnswerFour = new Answer("Dumbo", questionTwentyOne, false);
+        answerRepository.save(q21AnswerFour);
+
+        Question questionTwentyTwo = new Question("Which UK country features a dragon on their flag?", Difficulty.TWO);
+        questionRepository.save(questionTwentyTwo);
+
+        Answer q22AnswerOne = new Answer("Wales", questionTwentyTwo, true);
+        answerRepository.save(q22AnswerOne);
+
+        Answer q22AnswerTwo = new Answer("England", questionTwentyTwo, false);
+        answerRepository.save(q22AnswerTwo);
+
+        Answer q22AnswerThree = new Answer("North Ireland", questionTwentyTwo, false);
+        answerRepository.save(q22AnswerThree);
+
+        Answer q22AnswerFour = new Answer("Scotland", questionTwentyTwo, false);
+        answerRepository.save(q22AnswerFour);
+
+        Question questionTwentyThree = new Question("Which city is the capital of the United States of America?", Difficulty.TWO);
+        questionRepository.save(questionTwentyThree);
+
+        Answer q23AnswerOne = new Answer("Washington D.C", questionTwentyThree, true);
+        answerRepository.save(q23AnswerOne);
+
+        Answer q23AnswerTwo = new Answer("Seattle", questionTwentyThree, false);
+        answerRepository.save(q23AnswerTwo);
+
+        Answer q23AnswerThree = new Answer("Albany", questionTwentyThree, false);
+        answerRepository.save(q23AnswerThree);
+
+        Answer q23AnswerFour = new Answer("Los Angeles", questionTwentyThree, false);
+        answerRepository.save(q23AnswerFour);
+
+        Question questionTwentyFour = new Question("What is the capital of India?", Difficulty.TWO);
+        questionRepository.save(questionTwentyFour);
+
+        Answer q24AnswerOne = new Answer("New Delhi", questionTwentyFour, true);
+        answerRepository.save(q24AnswerOne);
+
+        Answer q24AnswerTwo = new Answer("Bejing", questionTwentyFour, false);
+        answerRepository.save(q24AnswerTwo);
+
+        Answer q24AnswerThree = new Answer("Montreal", questionTwentyFour, false);
+        answerRepository.save(q24AnswerThree);
+
+        Answer q24AnswerFour = new Answer("Tithi", questionTwentyFour, false);
+        answerRepository.save(q24AnswerFour);
+
+        Question questionTwentyFive = new Question("Which actor portrays 'Walter White' in the series 'Breaking Bad&quot'?", Difficulty.TWO);
+        questionRepository.save(questionTwentyFive);
+
+        Answer q25AnswerOne = new Answer("Bryan Cranston", questionTwentyFive, true);
+        answerRepository.save(q25AnswerOne);
+
+        Answer q25AnswerTwo = new Answer("Andrew Lincoln", questionTwentyFive, false);
+        answerRepository.save(q25AnswerTwo);
+
+        Answer q25AnswerThree = new Answer("Aaron Paul", questionTwentyFive, false);
+        answerRepository.save(q25AnswerThree);
+
+        Answer q25AnswerFour = new Answer("RJ Mitte", questionTwentyFive, false);
+        answerRepository.save(q25AnswerFour);
+
+        Question questionTwentySix = new Question("The Kiwi is a flightless bird native to which country?", Difficulty.TWO);
+        questionRepository.save(questionTwentySix);
+
+        Answer q26AnswerOne = new Answer("New Zealand", questionTwentySix, true);
+        answerRepository.save(q26AnswerOne);
+
+        Answer q26AnswerTwo = new Answer("South Africa", questionTwentySix, false);
+        answerRepository.save(q26AnswerTwo);
+
+        Answer q26AnswerThree = new Answer("Australia", questionTwentySix, false);
+        answerRepository.save(q26AnswerThree);
+
+        Answer q26AnswerFour = new Answer("Madagascar", questionTwentySix, false);
+        answerRepository.save(q26AnswerFour);
+
+        Question questionTwentySeven = new Question("What is the name of Finnish DJ Darude's hit single released in October 1999?", Difficulty.TWO);
+        questionRepository.save(questionTwentySeven);
+
+        Answer q27AnswerOne = new Answer("Sandstorm", questionTwentySeven, true);
+        answerRepository.save(q27AnswerOne);
+
+        Answer q27AnswerTwo = new Answer("Dust Devil", questionTwentySeven, false);
+        answerRepository.save(q27AnswerTwo);
+
+        Answer q27AnswerThree = new Answer("Sirocco", questionTwentySeven, false);
+        answerRepository.save(q27AnswerThree);
+
+        Answer q27AnswerFour = new Answer("Khamsin", questionTwentySeven, false);
+        answerRepository.save(q27AnswerFour);
+
+        Question questionTwentyEight = new Question("Who is the lead singer of Foo Fighters?", Difficulty.TWO);
+        questionRepository.save(questionTwentyEight);
+
+        Answer q28AnswerOne = new Answer("Dave Grohl", questionTwentyEight, true);
+        answerRepository.save(q28AnswerOne);
+
+        Answer q28AnswerTwo = new Answer("Dave Mustaine", questionTwentyEight, false);
+        answerRepository.save(q28AnswerTwo);
+
+        Answer q28AnswerThree = new Answer("James Hetfield", questionTwentyEight, false);
+        answerRepository.save(q28AnswerThree);
+
+        Answer q28AnswerFour = new Answer("Little Red Riding Hood", questionTwentyEight, false);
+        answerRepository.save(q28AnswerFour);
+
+        Question questionTwentyNine = new Question("George Orwell wrote this book, which is often considered a statement on government oversight.", Difficulty.TWO);
+        questionRepository.save(questionTwentyNine);
+
+        Answer q29AnswerOne = new Answer("1984", questionTwentyNine, true);
+        answerRepository.save(q29AnswerOne);
+
+        Answer q29AnswerTwo = new Answer("The Old Man and the Sea", questionTwentyNine, false);
+        answerRepository.save(q29AnswerTwo);
+
+        Answer q29AnswerThree = new Answer("Catcher and the Rye", questionTwentyNine, false);
+        answerRepository.save(q29AnswerThree);
+
+        Answer q29AnswerFour = new Answer("To Kill a Mockingbird", questionTwentyNine, false);
+        answerRepository.save(q29AnswerFour);
+
+        Question questionThirty = new Question("What is the capital of South Korea?", Difficulty.TWO);
+        questionRepository.save(questionThirty);
+
+        Answer q30AnswerOne = new Answer("Seoul", questionThirty, true);
+        answerRepository.save(q30AnswerOne);
+
+        Answer q30AnswerTwo = new Answer("Pyongyang", questionThirty, false);
+        answerRepository.save(q30AnswerTwo);
+
+        Answer q30AnswerThree = new Answer("Taegu", questionThirty, false);
+        answerRepository.save(q30AnswerThree);
+
+        Answer q30AnswerFour = new Answer("Kitakyushu", questionThirty, false);
+        answerRepository.save(q30AnswerFour);
+
+        Question questionThirtyOne = new Question("The film 28 Day's Later is mainly set in which European country?", Difficulty.TWO);
+        questionRepository.save(questionThirtyOne);
+
+        Answer q31AnswerOne = new Answer("United Kingdom", questionThirtyOne, true);
+        answerRepository.save(q31AnswerOne);
+
+        Answer q31AnswerTwo = new Answer("France", questionThirtyOne, false);
+        answerRepository.save(q31AnswerTwo);
+
+        Answer q31AnswerThree = new Answer("Italy", questionThirtyOne, false);
+        answerRepository.save(q31AnswerThree);
+
+        Answer q31AnswerFour = new Answer("Germany", questionThirtyOne, false);
+        answerRepository.save(q31AnswerFour);
+
+        Question questionThirtyTwo = new Question("What is not a wind instrument?", Difficulty.TWO);
+        questionRepository.save(questionThirtyTwo);
+
+        Answer q32AnswerOne = new Answer("Violin", questionThirtyTwo, true);
+        answerRepository.save(q32AnswerOne);
+
+        Answer q32AnswerTwo = new Answer("Oboe", questionThirtyTwo, false);
+        answerRepository.save(q32AnswerTwo);
+
+        Answer q32AnswerThree = new Answer("Trombone", questionThirtyTwo, false);
+        answerRepository.save(q32AnswerThree);
+
+        Answer q32AnswerFour = new Answer("Tuba", questionThirtyTwo, false);
+        answerRepository.save(q32AnswerFour);
+
+        Question questionThirtyThree = new Question("The first rule is: 'you don't talk about it' is a reference to which movie?", Difficulty.TWO);
+        questionRepository.save(questionThirtyThree);
+
+        Answer q33AnswerOne = new Answer("Fight Club", questionThirtyThree, true);
+        answerRepository.save(q33AnswerOne);
+
+        Answer q33AnswerTwo = new Answer("The Island", questionThirtyThree, false);
+        answerRepository.save(q33AnswerTwo);
+
+        Answer q33AnswerThree = new Answer("Unthinkable", questionThirtyThree, false);
+        answerRepository.save(q33AnswerThree);
+
+        Answer q33AnswerFour = new Answer("American Pie", questionThirtyThree, false);
+        answerRepository.save(q33AnswerFour);
+
+        Question questionThirtyFour = new Question("What is the chemical makeup of water?", Difficulty.TWO);
+        questionRepository.save(questionThirtyFour);
+
+        Answer q34AnswerOne = new Answer("H20", questionThirtyFour, true);
+        answerRepository.save(q34AnswerOne);
+
+        Answer q34AnswerTwo = new Answer("C12H6O2", questionThirtyFour, false);
+        answerRepository.save(q34AnswerTwo);
+
+        Answer q34AnswerThree = new Answer("CO2", questionThirtyFour, false);
+        answerRepository.save(q34AnswerThree);
+
+        Answer q34AnswerFour = new Answer("H", questionThirtyFour, false);
+        answerRepository.save(q34AnswerFour);
+
+        Question questionThirtyFive = new Question("What was the name of the sea witch in the 1989 Disney film 'The Little Mermaid'?", Difficulty.TWO);
+        questionRepository.save(questionThirtyFive);
+
+        Answer q35AnswerOne = new Answer("Ursula", questionThirtyFive, true);
+        answerRepository.save(q35AnswerOne);
+
+        Answer q35AnswerTwo = new Answer("Madam Mim", questionThirtyFive, false);
+        answerRepository.save(q35AnswerTwo);
+
+        Answer q35AnswerThree = new Answer("Maleficent", questionThirtyFive, false);
+        answerRepository.save(q35AnswerThree);
+
+        Answer q35AnswerFour = new Answer("Lady Tremaine", questionThirtyFive, false);
+        answerRepository.save(q35AnswerFour);
+
+        Question questionThirtySix = new Question("Who is the lead vocalist of the band 'The Police", Difficulty.TWO);
+        questionRepository.save(questionThirtySix);
+
+        Answer q36AnswerOne = new Answer("Sting", questionThirtySix, true);
+        answerRepository.save(q36AnswerOne);
+
+        Answer q36AnswerTwo = new Answer("Bono", questionThirtySix, false);
+        answerRepository.save(q36AnswerTwo);
+
+        Answer q36AnswerThree = new Answer("Robert Plant", questionThirtySix, false);
+        answerRepository.save(q36AnswerThree);
+
+        Answer q36AnswerFour = new Answer("Axl Rose", questionThirtySix, false);
+        answerRepository.save(q36AnswerFour);
+
+        Question questionThirtySeven = new Question("Who performed the song 'I Took A Pill In Ibiza'?", Difficulty.TWO);
+        questionRepository.save(questionThirtySeven);
+
+        Answer q37AnswerOne = new Answer("Mike Posner", questionThirtySeven, true);
+        answerRepository.save(q37AnswerOne);
+
+        Answer q37AnswerTwo = new Answer("Robbie Williams", questionThirtySeven, false);
+        answerRepository.save(q37AnswerTwo);
+
+        Answer q37AnswerThree = new Answer("Harry Styles", questionThirtySeven, false);
+        answerRepository.save(q37AnswerThree);
+
+        Answer q37AnswerFour = new Answer("Avicii", questionThirtySeven, false);
+        answerRepository.save(q37AnswerFour);
+
+        Question questionThirtyEight = new Question("Which programming language shares its name with an island in Indonesia?", Difficulty.TWO);
+        questionRepository.save(questionThirtyEight);
+
+        Answer q38AnswerOne = new Answer("Java", questionThirtyEight, true);
+        answerRepository.save(q38AnswerOne);
+
+        Answer q38AnswerTwo = new Answer("Python", questionThirtyEight, false);
+        answerRepository.save(q38AnswerTwo);
+
+        Answer q38AnswerThree = new Answer("C", questionThirtyEight, false);
+        answerRepository.save(q38AnswerThree);
+
+        Answer q38AnswerFour = new Answer("C#", questionThirtyEight, false);
+        answerRepository.save(q38AnswerFour);
+
+        Question questionThirtyNine = new Question("Earth is located in which galaxy?", Difficulty.TWO);
+        questionRepository.save(questionThirtyNine);
+
+        Answer q39AnswerOne = new Answer("The Milky Way Galaxy", questionThirtyNine, true);
+        answerRepository.save(q39AnswerOne);
+
+        Answer q39AnswerTwo = new Answer("The Mars Galaxy", questionThirtyNine, false);
+        answerRepository.save(q39AnswerTwo);
+
+        Answer q39AnswerThree = new Answer("The Galaxy Note", questionThirtyNine, false);
+        answerRepository.save(q39AnswerThree);
+
+        Answer q39AnswerFour = new Answer("The Black Hole", questionThirtyNine, false);
+        answerRepository.save(q39AnswerFour);
+
+        Question questionForty = new Question("Which of the following is NOT a Nintendo game console?", Difficulty.TWO);
+        questionRepository.save(questionForty);
+
+        Answer q40AnswerOne = new Answer("Dreamcast", questionForty, true);
+        answerRepository.save(q40AnswerOne);
+
+        Answer q40AnswerTwo = new Answer("SNES", questionForty, false);
+        answerRepository.save(q40AnswerTwo);
+
+        Answer q40AnswerThree = new Answer("Wii", questionForty, false);
+        answerRepository.save(q40AnswerThree);
+
+        Answer q40AnswerFour = new Answer("Switch", questionForty, false);
+        answerRepository.save(q40AnswerFour);
+
+
+
 
 
 
