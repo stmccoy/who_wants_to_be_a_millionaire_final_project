@@ -1221,6 +1221,308 @@ public class DataLoader implements ApplicationRunner {
         Answer q80AnswerFour = new Answer("Baker Avenue", questionEighty, false);
         answerRepository.save(q80AnswerFour);
 
+        Question questionEightyOne = new Question("What year did the television company BBC officially launch the channel BBC One?", Difficulty.FIVE);
+        questionRepository.save(questionEightyOne);
+
+        Answer q81AnswerOne = new Answer("1936", questionEightyOne, true);
+        answerRepository.save(q81AnswerOne);
+
+        Answer q81AnswerTwo = new Answer("1948", questionEightyOne, false);
+        answerRepository.save(q81AnswerTwo);
+
+        Answer q81AnswerThree = new Answer("1932", questionEightyOne, false);
+        answerRepository.save(q81AnswerThree);
+
+        Answer q81AnswerFour = new Answer("1955", questionEightyOne, false);
+        answerRepository.save(q81AnswerFour);
+
+        Question questionEightyTwo = new Question("The 'Tibia' is found in which part of the body?", Difficulty.FIVE);
+        questionRepository.save(questionEightyTwo);
+
+        Answer q82AnswerOne = new Answer("Leg", questionEightyTwo, true);
+        answerRepository.save(q82AnswerOne);
+
+        Answer q82AnswerTwo = new Answer("Arm", questionEightyTwo, false);
+        answerRepository.save(q82AnswerTwo);
+
+        Answer q82AnswerThree = new Answer("Hand", questionEightyTwo, false);
+        answerRepository.save(q82AnswerThree);
+
+        Answer q82AnswerFour = new Answer("Head", questionEightyTwo, false);
+        answerRepository.save(q82AnswerFour);
+
+        Question questionEightyThree = new Question("Which part of the body does glaucoma affect?", Difficulty.FIVE);
+        questionRepository.save(questionEightyThree);
+
+        Answer q83AnswerOne = new Answer("Eyes", questionEightyThree, true);
+        answerRepository.save(q83AnswerOne);
+
+        Answer q83AnswerTwo = new Answer("Throat", questionEightyThree, false);
+        answerRepository.save(q83AnswerTwo);
+
+        Answer q83AnswerThree = new Answer("Stomach", questionEightyThree, false);
+        answerRepository.save(q83AnswerThree);
+
+        Answer q83AnswerFour = new Answer("Blood", questionEightyThree, false);
+        answerRepository.save(q83AnswerFour);
+
+        Question questionEightyFour = new Question("What was the name of Ross's pet monkey on 'Friends'", Difficulty.FIVE);
+        questionRepository.save(questionEightyFour);
+
+        Answer q84AnswerOne = new Answer("Marcel", questionEightyFour, true);
+        answerRepository.save(q84AnswerOne);
+
+        Answer q84AnswerTwo = new Answer("Jojo", questionEightyFour, false);
+        answerRepository.save(q84AnswerTwo);
+
+        Answer q84AnswerThree = new Answer("George", questionEightyFour, false);
+        answerRepository.save(q84AnswerThree);
+
+        Answer q84AnswerFour = new Answer("Champ", questionEightyFour, false);
+        answerRepository.save(q84AnswerFour);
+
+        Question questionEightyFive = new Question("The novel 'Of Mice And Men' was written by what author?", Difficulty.FIVE);
+        questionRepository.save(questionEightyFive);
+
+        Answer q85AnswerOne = new Answer("John Steinbeck", questionEightyFive, true);
+        answerRepository.save(q85AnswerOne);
+
+        Answer q85AnswerTwo = new Answer("George Orwell", questionEightyFive, false);
+        answerRepository.save(q85AnswerTwo);
+
+        Answer q85AnswerThree = new Answer("Mark Twain", questionEightyFive, false);
+        answerRepository.save(q85AnswerThree);
+
+        Answer q85AnswerFour = new Answer("Harper Lee", questionEightyFive, false);
+        answerRepository.save(q85AnswerFour);
+
+        Question questionEightySix = new Question("Which of these is NOT a name of an album released by American rapper Pitbull?", Difficulty.FIVE);
+        questionRepository.save(questionEightySix);
+
+        Answer q86AnswerOne = new Answer("Welcome to Miami", questionEightySix, true);
+        answerRepository.save(q86AnswerOne);
+
+        Answer q86AnswerTwo = new Answer("Dale", questionEightySix, false);
+        answerRepository.save(q86AnswerTwo);
+
+        Answer q86AnswerThree = new Answer("Global Warming", questionEightySix, false);
+        answerRepository.save(q86AnswerThree);
+
+        Answer q86AnswerFour = new Answer("Armando", questionEightySix, false);
+        answerRepository.save(q86AnswerFour);
+
+        Question questionEightySeven = new Question("What is the designation given to the Marvel Cinematic Universe?", Difficulty.FIVE);
+        questionRepository.save(questionEightySeven);
+
+        Answer q87AnswerOne = new Answer("Earth-199999", questionEightySeven, true);
+        answerRepository.save(q87AnswerOne);
+
+        Answer q87AnswerTwo = new Answer("Earth-616", questionEightySeven, false);
+        answerRepository.save(q87AnswerTwo);
+
+        Answer q87AnswerThree = new Answer("Earth-10005", questionEightySeven, false);
+        answerRepository.save(q87AnswerThree);
+
+        Answer q87AnswerFour = new Answer("Earth-2008", questionEightySeven, false);
+        answerRepository.save(q87AnswerFour);
+
+        Question questionEightyEight = new Question("Where did the pineapple plant originate?", Difficulty.FIVE);
+        questionRepository.save(questionEightyEight);
+
+        Answer q88AnswerOne = new Answer("South America", questionEightyEight, true);
+        answerRepository.save(q88AnswerOne);
+
+        Answer q88AnswerTwo = new Answer("Hawaii", questionEightyEight, false);
+        answerRepository.save(q88AnswerTwo);
+
+        Answer q88AnswerThree = new Answer("Europe", questionEightyEight, false);
+        answerRepository.save(q88AnswerThree);
+
+        Answer q88AnswerFour = new Answer("Asia", questionEightyEight, false);
+        answerRepository.save(q88AnswerFour);
+
+        Question questionEightyNine = new Question("At which bridge does the annual Oxford and Cambridge boat race start?", Difficulty.FIVE);
+        questionRepository.save(questionEightyNine);
+
+        Answer q89AnswerOne = new Answer("Putney", questionEightyNine, true);
+        answerRepository.save(q89AnswerOne);
+
+        Answer q89AnswerTwo = new Answer("Hammersmith", questionEightyNine, false);
+        answerRepository.save(q89AnswerTwo);
+
+        Answer q89AnswerThree = new Answer("Vauxhall", questionEightyNine, false);
+        answerRepository.save(q89AnswerThree);
+
+        Answer q89AnswerFour = new Answer("Battersea", questionEightyNine, false);
+        answerRepository.save(q89AnswerFour);
+
+        Question questionNinety = new Question("One of the deadliest pandemics, the 'Spanish Flu', killed off what percentage of the human world population at the time?", Difficulty.FIVE);
+        questionRepository.save(questionNinety);
+
+        Answer q90AnswerOne = new Answer("3 to 6 percent", questionNinety, true);
+        answerRepository.save(q90AnswerOne);
+
+        Answer q90AnswerTwo = new Answer("6 to 10 percent", questionNinety, false);
+        answerRepository.save(q90AnswerTwo);
+
+        Answer q90AnswerThree = new Answer("1 to 3 percent", questionNinety, false);
+        answerRepository.save(q90AnswerThree);
+
+        Answer q90AnswerFour = new Answer("less than 1 percent", questionNinety, false);
+        answerRepository.save(q90AnswerFour);
+
+        Question questionNinetyOne = new Question("On average, Americans consume 100 pounds of what per second?", Difficulty.FIVE);
+        questionRepository.save(questionNinetyOne);
+
+        Answer q91AnswerOne = new Answer("Chocolate", questionNinetyOne, true);
+        answerRepository.save(q91AnswerOne);
+
+        Answer q91AnswerTwo = new Answer("Potatoes", questionNinetyOne, false);
+        answerRepository.save(q91AnswerTwo);
+
+        Answer q91AnswerThree = new Answer("Donuts", questionNinetyOne, false);
+        answerRepository.save(q91AnswerThree);
+
+        Answer q91AnswerFour = new Answer("Cocaine", questionNinetyOne, false);
+        answerRepository.save(q91AnswerFour);
+
+        Question questionNinetyTwo = new Question("The now extinct species 'Thylacine' was native to where?", Difficulty.FIVE);
+        questionRepository.save(questionNinetyTwo);
+
+        Answer q92AnswerOne = new Answer("Tasmania, Australia", questionNinetyTwo, true);
+        answerRepository.save(q92AnswerOne);
+
+        Answer q92AnswerTwo = new Answer("Baluchistan, Pakistan", questionNinetyTwo, false);
+        answerRepository.save(q92AnswerTwo);
+
+        Answer q92AnswerThree = new Answer("Wallachia, Romania", questionNinetyTwo, false);
+        answerRepository.save(q92AnswerThree);
+
+        Answer q92AnswerFour = new Answer("Oregon, United States", questionNinetyTwo, false);
+        answerRepository.save(q92AnswerFour);
+
+        Question questionNinetyThree = new Question("What was the first PlayStation game to require the use of the DualShock controller?", Difficulty.FIVE);
+        questionRepository.save(questionNinetyThree);
+
+        Answer q93AnswerOne = new Answer("Ape Escape", questionNinetyThree, true);
+        answerRepository.save(q93AnswerOne);
+
+        Answer q93AnswerTwo = new Answer("Metal Gear", questionNinetyThree, false);
+        answerRepository.save(q93AnswerTwo);
+
+        Answer q93AnswerThree = new Answer("Tekken", questionNinetyThree, false);
+        answerRepository.save(q93AnswerThree);
+
+        Answer q93AnswerFour = new Answer("Tomba 2!", questionNinetyThree, false);
+        answerRepository.save(q93AnswerFour);
+
+        Question questionNinetyFour = new Question("Myopia is the scientific term for which condition?", Difficulty.FIVE);
+        questionRepository.save(questionNinetyFour);
+
+        Answer q94AnswerOne = new Answer("Shortsightedness", questionNinetyFour, true);
+        answerRepository.save(q94AnswerOne);
+
+        Answer q94AnswerTwo = new Answer("Farsightedness", questionNinetyFour, false);
+        answerRepository.save(q94AnswerTwo);
+
+        Answer q94AnswerThree = new Answer("Double Vision", questionNinetyFour, false);
+        answerRepository.save(q94AnswerThree);
+
+        Answer q94AnswerFour = new Answer("Clouded Vision", questionNinetyFour, false);
+        answerRepository.save(q94AnswerFour);
+
+        Question questionNinetyFive = new Question("Which of the following was not developed by Bethesda?", Difficulty.FIVE);
+        questionRepository.save(questionNinetyFive);
+
+        Answer q95AnswerOne = new Answer("Fallout: New Vegas", questionNinetyFive, true);
+        answerRepository.save(q95AnswerOne);
+
+        Answer q95AnswerTwo = new Answer("Fallout 3", questionNinetyFive, false);
+        answerRepository.save(q95AnswerTwo);
+
+        Answer q95AnswerThree = new Answer("The Elder Scrolls V: Skyrim", questionNinetyFive, false);
+        answerRepository.save(q95AnswerThree);
+
+        Answer q95AnswerFour = new Answer("Fallout 4", questionNinetyFive, false);
+        answerRepository.save(q95AnswerFour);
+
+        Question questionNinetySix = new Question("Which new top 100 rapper, who featured in 'Computers' and 'Body Dance', was arrested in a NYPD sting for murder.", Difficulty.FIVE);
+        questionRepository.save(questionNinetySix);
+
+        Answer q96AnswerOne = new Answer("Bobby Shmurda", questionNinetySix, true);
+        answerRepository.save(q96AnswerOne);
+
+        Answer q96AnswerTwo = new Answer("DJ Snake", questionNinetySix, false);
+        answerRepository.save(q96AnswerTwo);
+
+        Answer q96AnswerThree = new Answer("Swae Lee", questionNinetySix, false);
+        answerRepository.save(q96AnswerThree);
+
+        Answer q96AnswerFour = new Answer("Young Thug", questionNinetySix, false);
+        answerRepository.save(q96AnswerFour);
+
+        Question questionNinetySeven = new Question("Which greek mathematician ran through the streets of Syracuse naked while shouting &quot;Eureka&quot; after discovering the principle of displacement?", Difficulty.FIVE);
+        questionRepository.save(questionNinetySeven);
+
+        Answer q97AnswerOne = new Answer("Archimedes", questionNinetySeven, true);
+        answerRepository.save(q97AnswerOne);
+
+        Answer q97AnswerTwo = new Answer("Euclid", questionNinetySeven, false);
+        answerRepository.save(q97AnswerTwo);
+
+        Answer q97AnswerThree = new Answer("Homer", questionNinetySeven, false);
+        answerRepository.save(q97AnswerThree);
+
+        Answer q97AnswerFour = new Answer("Eratosthenes", questionNinetySeven, false);
+        answerRepository.save(q97AnswerFour);
+
+        Question questionNinetyEight = new Question("What was the African nation of Zimbabwe formerly known as?", Difficulty.FIVE);
+        questionRepository.save(questionNinetyEight);
+
+        Answer q98AnswerOne = new Answer("Rhodesia", questionNinetyEight, true);
+        answerRepository.save(q98AnswerOne);
+
+        Answer q98AnswerTwo = new Answer("Zambia", questionNinetyEight, false);
+        answerRepository.save(q98AnswerTwo);
+
+        Answer q98AnswerThree = new Answer("Mozambique", questionNinetyEight, false);
+        answerRepository.save(q98AnswerThree);
+
+        Answer q98AnswerFour = new Answer("Bulawayo", questionNinetyEight, false);
+        answerRepository.save(q98AnswerFour);
+
+        Question questionNinetyNine = new Question("According to the BBPA, what is the most common pub name in the UK?", Difficulty.FIVE);
+        questionRepository.save(questionNinetyNine);
+
+        Answer q99AnswerOne = new Answer("Red Lion", questionNinetyNine, true);
+        answerRepository.save(q99AnswerOne);
+
+        Answer q99AnswerTwo = new Answer("Royal Oak", questionNinetyNine, false);
+        answerRepository.save(q99AnswerTwo);
+
+        Answer q99AnswerThree = new Answer("White Hart", questionNinetyNine, false);
+        answerRepository.save(q99AnswerThree);
+
+        Answer q99AnswerFour = new Answer("King's Head", questionNinetyNine, false);
+        answerRepository.save(q99AnswerFour);
+
+        Question questionOneHundred = new Question("What is the capital of Peru?", Difficulty.FIVE);
+        questionRepository.save(questionOneHundred);
+
+        Answer q100AnswerOne = new Answer("Lima", questionOneHundred, true);
+        answerRepository.save(q100AnswerOne);
+
+        Answer q100AnswerTwo = new Answer("Santiago", questionOneHundred, false);
+        answerRepository.save(q100AnswerTwo);
+
+        Answer q100AnswerThree = new Answer("Montevideo", questionOneHundred, false);
+        answerRepository.save(q100AnswerThree);
+
+        Answer q100AnswerFour = new Answer("Buenos Aires", questionOneHundred, false);
+        answerRepository.save(q100AnswerFour);
+
+
+
 
 
 
