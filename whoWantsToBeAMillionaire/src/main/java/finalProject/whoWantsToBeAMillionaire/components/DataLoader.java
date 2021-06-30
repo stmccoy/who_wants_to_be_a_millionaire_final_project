@@ -2121,14 +2121,305 @@ public class DataLoader implements ApplicationRunner {
         Answer q140AnswerFour = new Answer("100 Hz", questionOneHundredAndForty, false);
         answerRepository.save(q140AnswerFour);
 
+        Question questionOneHundredAndFortyOne = new Question("Where was the Games of the XXII Olympiad held?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFortyOne);
 
+        Answer q141AnswerOne = new Answer("Moscow", questionOneHundredAndFortyOne, true);
+        answerRepository.save(q141AnswerOne);
 
+        Answer q141AnswerTwo = new Answer("Barcelona", questionOneHundredAndFortyOne, false);
+        answerRepository.save(q141AnswerTwo);
 
+        Answer q141AnswerThree = new Answer("Tokyo", questionOneHundredAndFortyOne, false);
+        answerRepository.save(q141AnswerThree);
 
+        Answer q141AnswerFour = new Answer("Los Angeles", questionOneHundredAndFortyOne, false);
+        answerRepository.save(q141AnswerFour);
 
+        Question questionOneHundredAndFortyTwo = new Question("How many sonatas did Ludwig van Beethoven write?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFortyTwo);
 
+        Answer q142AnswerOne = new Answer("32", questionOneHundredAndFortyTwo, true);
+        answerRepository.save(q142AnswerOne);
 
+        Answer q142AnswerTwo = new Answer("50", questionOneHundredAndFortyTwo, false);
+        answerRepository.save(q142AnswerTwo);
 
+        Answer q142AnswerThree = new Answer("31", questionOneHundredAndFortyTwo, false);
+        answerRepository.save(q142AnswerThree);
 
+        Answer q142AnswerFour = new Answer("21", questionOneHundredAndFortyTwo, false);
+        answerRepository.save(q142AnswerFour);
+
+        Question questionOneHundredAndFortyThree = new Question("During the Roman Triumvirate of 42 BCE, what region of the Roman Republic was given to Lepidus?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFortyThree);
+
+        Answer q143AnswerOne = new Answer("Hispania", questionOneHundredAndFortyThree, true);
+        answerRepository.save(q143AnswerOne);
+
+        Answer q143AnswerTwo = new Answer("Italia", questionOneHundredAndFortyThree, false);
+        answerRepository.save(q143AnswerTwo);
+
+        Answer q143AnswerThree = new Answer("Gallia", questionOneHundredAndFortyThree, false);
+        answerRepository.save(q143AnswerThree);
+
+        Answer q143AnswerFour = new Answer("Asia", questionOneHundredAndFortyThree, false);
+        answerRepository.save(q143AnswerFour);
+
+        Question questionOneHundredAndFortyFour = new Question("Which male player won the gold medal of table tennis singles in 2016 Olympics Games?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFortyFour);
+
+        Answer q144AnswerOne = new Answer("Ma Long", questionOneHundredAndFortyFour, true);
+        answerRepository.save(q144AnswerOne);
+
+        Answer q144AnswerTwo = new Answer("Zhang Jike", questionOneHundredAndFortyFour, false);
+        answerRepository.save(q144AnswerTwo);
+
+        Answer q144AnswerThree = new Answer("Jun Mizutani", questionOneHundredAndFortyFour, false);
+        answerRepository.save(q144AnswerThree);
+
+        Answer q144AnswerFour = new Answer("Vladimir Samsonov", questionOneHundredAndFortyFour, false);
+        answerRepository.save(q144AnswerFour);
+
+        Question questionOneHundredAndFortyFive = new Question("What was the name of the German offensive operation in October 1941 to take Moscow before winter?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFortyFive);
+
+        Answer q145AnswerOne = new Answer("Operation Typhoon", questionOneHundredAndFortyFive, true);
+        answerRepository.save(q145AnswerOne);
+
+        Answer q145AnswerTwo = new Answer("Operation Sunflower", questionOneHundredAndFortyFive, false);
+        answerRepository.save(q145AnswerTwo);
+
+        Answer q145AnswerThree = new Answer("Operation Barbarossa", questionOneHundredAndFortyFive, false);
+        answerRepository.save(q145AnswerThree);
+
+        Answer q145AnswerFour = new Answer("Case Blue", questionOneHundredAndFortyFive, false);
+        answerRepository.save(q145AnswerFour);
+
+        Question questionOneHundredAndFortySix = new Question("How many stations does the Central Line have on the London Underground?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFortySix);
+
+        Answer q146AnswerOne = new Answer("49", questionOneHundredAndFortySix, true);
+        answerRepository.save(q146AnswerOne);
+
+        Answer q146AnswerTwo = new Answer("51", questionOneHundredAndFortySix, false);
+        answerRepository.save(q146AnswerTwo);
+
+        Answer q146AnswerThree = new Answer("43", questionOneHundredAndFortySix, false);
+        answerRepository.save(q146AnswerThree);
+
+        Answer q146AnswerFour = new Answer("47", questionOneHundredAndFortySix, false);
+        answerRepository.save(q146AnswerFour);
+
+        Question questionOneHundredAndFortySeven = new Question("What is the scientific name for the extinct hominin known as 'Lucy'?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFortySeven);
+
+        Answer q147AnswerOne = new Answer("Australopithecus Afarensis", questionOneHundredAndFortySeven, true);
+        answerRepository.save(q147AnswerOne);
+
+        Answer q147AnswerTwo = new Answer("Australopithecus Africanus", questionOneHundredAndFortySeven, false);
+        answerRepository.save(q147AnswerTwo);
+
+        Answer q147AnswerThree = new Answer("Australopithecus Architeuthis", questionOneHundredAndFortySeven, false);
+        answerRepository.save(q147AnswerThree);
+
+        Answer q147AnswerFour = new Answer("Australopithecus Antaris", questionOneHundredAndFortySeven, false);
+        answerRepository.save(q147AnswerFour);
+
+        Question questionOneHundredAndFortyEight = new Question("The Western Lowland Gorilla is scientifically know as?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFortyEight);
+
+        Answer q148AnswerOne = new Answer("Gorilla Gorilla Gorilla", questionOneHundredAndFortyEight, true);
+        answerRepository.save(q148AnswerOne);
+
+        Answer q148AnswerTwo = new Answer("Gorilla Gorilla Diehli", questionOneHundredAndFortyEight, false);
+        answerRepository.save(q148AnswerTwo);
+
+        Answer q148AnswerThree = new Answer("Gorilla Beringei Graueri", questionOneHundredAndFortyEight, false);
+        answerRepository.save(q148AnswerThree);
+
+        Answer q148AnswerFour = new Answer("Gorilla Beringei Beringei", questionOneHundredAndFortyEight, false);
+        answerRepository.save(q148AnswerFour);
+
+        Question questionOneHundredAndFortyNine = new Question("The Western Lowland Gorilla is scientifically know as?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFortyNine);
+
+        Answer q149AnswerOne = new Answer("Gorilla Gorilla Gorilla", questionOneHundredAndFortyNine, true);
+        answerRepository.save(q149AnswerOne);
+
+        Answer q149AnswerTwo = new Answer("Gorilla Gorilla Diehli", questionOneHundredAndFortyNine, false);
+        answerRepository.save(q149AnswerTwo);
+
+        Answer q149AnswerThree = new Answer("Gorilla Beringei Graueri", questionOneHundredAndFortyNine, false);
+        answerRepository.save(q149AnswerThree);
+
+        Answer q149AnswerFour = new Answer("Gorilla Beringei Beringei", questionOneHundredAndFortyNine, false);
+        answerRepository.save(q149AnswerFour);
+
+        Question questionOneHundredAndFifty = new Question("From 1940 to 1942, what was the capital-in-exile of Free France ?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFifty);
+
+        Answer q150AnswerOne = new Answer("Brazzaville", questionOneHundredAndFifty, true);
+        answerRepository.save(q150AnswerOne);
+
+        Answer q150AnswerTwo = new Answer("Algiers", questionOneHundredAndFifty, false);
+        answerRepository.save(q150AnswerTwo);
+
+        Answer q150AnswerThree = new Answer("Paris", questionOneHundredAndFifty, false);
+        answerRepository.save(q150AnswerThree);
+
+        Answer q150AnswerFour = new Answer("Tunis", questionOneHundredAndFifty, false);
+        answerRepository.save(q150AnswerFour);
+
+        Question questionOneHundredAndFiftyOne = new Question("What physics principle relates the net electric flux out of a closed surface to the charge enclosed by that surface?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFiftyOne);
+
+        Answer q151AnswerOne = new Answer("Gauss's Law", questionOneHundredAndFiftyOne, true);
+        answerRepository.save(q151AnswerOne);
+
+        Answer q151AnswerTwo = new Answer("Faraday's Law", questionOneHundredAndFiftyOne, false);
+        answerRepository.save(q151AnswerTwo);
+
+        Answer q151AnswerThree = new Answer("Ampere's Law", questionOneHundredAndFiftyOne, false);
+        answerRepository.save(q151AnswerThree);
+
+        Answer q151AnswerFour = new Answer("Biot-Savart Law", questionOneHundredAndFiftyOne, false);
+        answerRepository.save(q151AnswerFour);
+
+        Question questionOneHundredAndFiftyTwo = new Question("What type of sound chip does the Super Nintendo Entertainment System (SNES) have?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFiftyTwo);
+
+        Answer q152AnswerOne = new Answer("ADPCM Sampler", questionOneHundredAndFiftyTwo, true);
+        answerRepository.save(q152AnswerOne);
+
+        Answer q152AnswerTwo = new Answer("FM Synthesizer", questionOneHundredAndFiftyTwo, false);
+        answerRepository.save(q152AnswerTwo);
+
+        Answer q152AnswerThree = new Answer("Programmable Sound Generator (PSG)", questionOneHundredAndFiftyTwo, false);
+        answerRepository.save(q152AnswerThree);
+
+        Answer q152AnswerFour = new Answer("PCM Sampler", questionOneHundredAndFiftyTwo, false);
+        answerRepository.save(q152AnswerFour);
+
+        Question questionOneHundredAndFiftyThree = new Question("What type of sound chip does the Super Nintendo Entertainment System (SNES) have?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFiftyThree);
+
+        Answer q153AnswerOne = new Answer("ADPCM Sampler", questionOneHundredAndFiftyThree, true);
+        answerRepository.save(q153AnswerOne);
+
+        Answer q153AnswerTwo = new Answer("FM Synthesizer", questionOneHundredAndFiftyThree, false);
+        answerRepository.save(q153AnswerTwo);
+
+        Answer q153AnswerThree = new Answer("Programmable Sound Generator (PSG)", questionOneHundredAndFiftyThree, false);
+        answerRepository.save(q153AnswerThree);
+
+        Answer q153AnswerFour = new Answer("PCM Sampler", questionOneHundredAndFiftyThree, false);
+        answerRepository.save(q153AnswerFour);
+
+        Question questionOneHundredAndFiftyFour = new Question("Which kind of algorithm is Ron Rivest not famous for creating?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFiftyFour);
+
+        Answer q154AnswerOne = new Answer("Secret sharing scheme", questionOneHundredAndFiftyFour, true);
+        answerRepository.save(q154AnswerOne);
+
+        Answer q154AnswerTwo = new Answer("Hashing algorithm", questionOneHundredAndFiftyFour, false);
+        answerRepository.save(q154AnswerTwo);
+
+        Answer q154AnswerThree = new Answer("Asymmetric encryption", questionOneHundredAndFiftyFour, false);
+        answerRepository.save(q154AnswerThree);
+
+        Answer q154AnswerFour = new Answer("Stream cipher", questionOneHundredAndFiftyFour, false);
+        answerRepository.save(q154AnswerFour);
+
+        Question questionOneHundredAndFiftyFive = new Question("How many times did Martina Navratilova win the Wimbledon Singles Championship?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFiftyFive);
+
+        Answer q155AnswerOne = new Answer("Nine", questionOneHundredAndFiftyFive, true);
+        answerRepository.save(q155AnswerOne);
+
+        Answer q155AnswerTwo = new Answer("Ten", questionOneHundredAndFiftyFive, false);
+        answerRepository.save(q155AnswerTwo);
+
+        Answer q155AnswerThree = new Answer("Seven", questionOneHundredAndFiftyFive, false);
+        answerRepository.save(q155AnswerThree);
+
+        Answer q155AnswerFour = new Answer("Eight", questionOneHundredAndFiftyFive, false);
+        answerRepository.save(q155AnswerFour);
+
+        Question questionOneHundredAndFiftySix = new Question("How many objects are equivalent to one mole?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFiftySix);
+
+        Answer q156AnswerOne = new Answer("6.022 x 10^23", questionOneHundredAndFiftySix, true);
+        answerRepository.save(q156AnswerOne);
+
+        Answer q156AnswerTwo = new Answer("6.002 x 10^22", questionOneHundredAndFiftySix, false);
+        answerRepository.save(q156AnswerTwo);
+
+        Answer q156AnswerThree = new Answer("6.022 x 10^22", questionOneHundredAndFiftySix, false);
+        answerRepository.save(q156AnswerThree);
+
+        Answer q156AnswerFour = new Answer("6.002 x 10^23", questionOneHundredAndFiftySix, false);
+        answerRepository.save(q156AnswerFour);
+
+        Question questionOneHundredAndFiftySeven = new Question("On which day did ARPANET suffer a 4 hour long network crash?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFiftySeven);
+
+        Answer q157AnswerOne = new Answer("October 27, 1980", questionOneHundredAndFiftySeven, true);
+        answerRepository.save(q157AnswerOne);
+
+        Answer q157AnswerTwo = new Answer("November 21, 1969", questionOneHundredAndFiftySeven, false);
+        answerRepository.save(q157AnswerTwo);
+
+        Answer q157AnswerThree = new Answer("October 29, 1969", questionOneHundredAndFiftySeven, false);
+        answerRepository.save(q157AnswerThree);
+
+        Answer q157AnswerFour = new Answer("December 9, 1991", questionOneHundredAndFiftySeven, false);
+        answerRepository.save(q157AnswerFour);
+
+        Question questionOneHundredAndFiftyEight = new Question("What year was Queen Elizabeth II born?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFiftyEight);
+
+        Answer q158AnswerOne = new Answer("1926", questionOneHundredAndFiftyEight, true);
+        answerRepository.save(q158AnswerOne);
+
+        Answer q158AnswerTwo = new Answer("1923", questionOneHundredAndFiftyEight, false);
+        answerRepository.save(q158AnswerTwo);
+
+        Answer q158AnswerThree = new Answer("1929", questionOneHundredAndFiftyEight, false);
+        answerRepository.save(q158AnswerThree);
+
+        Answer q158AnswerFour = new Answer("1930", questionOneHundredAndFiftyEight, false);
+        answerRepository.save(q158AnswerFour);
+
+        Question questionOneHundredAndFiftyNine = new Question("What internet protocol was documented in RFC 1459?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndFiftyNine);
+
+        Answer q159AnswerOne = new Answer("IRC", questionOneHundredAndFiftyNine, true);
+        answerRepository.save(q159AnswerOne);
+
+        Answer q159AnswerTwo = new Answer("HTTP", questionOneHundredAndFiftyNine, false);
+        answerRepository.save(q159AnswerTwo);
+
+        Answer q159AnswerThree = new Answer("HTTPS", questionOneHundredAndFiftyNine, false);
+        answerRepository.save(q159AnswerThree);
+
+        Answer q159AnswerFour = new Answer("FTP", questionOneHundredAndFiftyNine, false);
+        answerRepository.save(q159AnswerFour);
+
+        Question questionOneHundredAndSixty = new Question("Which RAID array type is associated with data mirroring?", Difficulty.EIGHT);
+        questionRepository.save(questionOneHundredAndSixty);
+
+        Answer q160AnswerOne = new Answer("RAID 1", questionOneHundredAndSixty, true);
+        answerRepository.save(q160AnswerOne);
+
+        Answer q160AnswerTwo = new Answer("RAID 0", questionOneHundredAndSixty, false);
+        answerRepository.save(q160AnswerTwo);
+
+        Answer q160AnswerThree = new Answer("RAID 10", questionOneHundredAndSixty, false);
+        answerRepository.save(q160AnswerThree);
+
+        Answer q160AnswerFour = new Answer("RAID 5", questionOneHundredAndSixty, false);
+        answerRepository.save(q160AnswerFour);
+        
     }
 }
