@@ -1821,6 +1821,306 @@ public class DataLoader implements ApplicationRunner {
         Answer q120AnswerFour = new Answer("Celeborn", questionOneHundredAndTwenty, false);
         answerRepository.save(q120AnswerFour);
 
+        Question questionOneHundredAndTwentyOne = new Question("With which Greek philosopher would you associate the phrase, 'I know that I know nothing'?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndTwentyOne);
+
+        Answer q121AnswerOne = new Answer("Socrates", questionOneHundredAndTwentyOne, true);
+        answerRepository.save(q121AnswerOne);
+
+        Answer q121AnswerTwo = new Answer("Aristotle", questionOneHundredAndTwentyOne, false);
+        answerRepository.save(q121AnswerTwo);
+
+        Answer q121AnswerThree = new Answer("Plato", questionOneHundredAndTwentyOne, false);
+        answerRepository.save(q121AnswerThree);
+
+        Answer q121AnswerFour = new Answer("Pythagoras", questionOneHundredAndTwentyOne, false);
+        answerRepository.save(q121AnswerFour);
+
+        Question questionOneHundredAndTwentyTwo = new Question("Who was the original drummer for The Beatles?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndTwentyTwo);
+
+        Answer q122AnswerOne = new Answer("Tommy Moore", questionOneHundredAndTwentyTwo, true);
+        answerRepository.save(q122AnswerOne);
+
+        Answer q122AnswerTwo = new Answer("Ringo Starr", questionOneHundredAndTwentyTwo, false);
+        answerRepository.save(q122AnswerTwo);
+
+        Answer q122AnswerThree = new Answer("Stuart Sutcliffe", questionOneHundredAndTwentyTwo, false);
+        answerRepository.save(q122AnswerThree);
+
+        Answer q122AnswerFour = new Answer("Pete Best", questionOneHundredAndTwentyTwo, false);
+        answerRepository.save(q122AnswerFour);
+
+        Question questionOneHundredAndTwentyThree = new Question("What is Hermione Granger's middle name?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndTwentyThree);
+
+        Answer q123AnswerOne = new Answer("Jean", questionOneHundredAndTwentyThree, true);
+        answerRepository.save(q123AnswerOne);
+
+        Answer q123AnswerTwo = new Answer("Jane", questionOneHundredAndTwentyThree, false);
+        answerRepository.save(q123AnswerTwo);
+
+        Answer q123AnswerThree = new Answer("Emma", questionOneHundredAndTwentyThree, false);
+        answerRepository.save(q123AnswerThree);
+
+        Answer q123AnswerFour = new Answer("Jo", questionOneHundredAndTwentyThree, false);
+        answerRepository.save(q123AnswerFour);
+
+        Question questionOneHundredAndTwentyFour = new Question("The mountainous Khyber Pass connects which of the two following countries?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndTwentyFour);
+
+        Answer q124AnswerOne = new Answer("Afghanistan and Pakistan", questionOneHundredAndTwentyFour, true);
+        answerRepository.save(q124AnswerOne);
+
+        Answer q124AnswerTwo = new Answer("India and Nepal", questionOneHundredAndTwentyFour, false);
+        answerRepository.save(q124AnswerTwo);
+
+        Answer q124AnswerThree = new Answer("Pakistan and India", questionOneHundredAndTwentyFour, false);
+        answerRepository.save(q124AnswerThree);
+
+        Answer q124AnswerFour = new Answer("Tajikistan and Kyrgyzstan", questionOneHundredAndTwentyFour, false);
+        answerRepository.save(q124AnswerFour);
+
+        Question questionOneHundredAndTwentyFive = new Question("Why was the character Trevor Philips, from GTA V, discharged from the Air Force?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndTwentyFive);
+
+        Answer q125AnswerOne = new Answer("Mental Health Issues", questionOneHundredAndTwentyFive, true);
+        answerRepository.save(q125AnswerOne);
+
+        Answer q125AnswerTwo = new Answer("Injuries", questionOneHundredAndTwentyFive, false);
+        answerRepository.save(q125AnswerTwo);
+
+        Answer q125AnswerThree = new Answer("Disease", questionOneHundredAndTwentyFive, false);
+        answerRepository.save(q125AnswerThree);
+
+        Answer q125AnswerFour = new Answer("Danger to Others", questionOneHundredAndTwentyFive, false);
+        answerRepository.save(q125AnswerFour);
+
+        Question questionOneHundredAndTwentySix = new Question("Which of the following is not another name for the eggplant?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndTwentySix);
+
+        Answer q126AnswerOne = new Answer("Potimarron", questionOneHundredAndTwentySix, true);
+        answerRepository.save(q126AnswerOne);
+
+        Answer q126AnswerTwo = new Answer("Brinjal", questionOneHundredAndTwentySix, false);
+        answerRepository.save(q126AnswerTwo);
+
+        Answer q126AnswerThree = new Answer("Guinea Squash", questionOneHundredAndTwentySix, false);
+        answerRepository.save(q126AnswerThree);
+
+        Answer q126AnswerFour = new Answer("Melongene", questionOneHundredAndTwentySix, false);
+        answerRepository.save(q126AnswerFour);
+
+        Question questionOneHundredAndTwentySeven = new Question("When was the Garfield comic first published?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndTwentySeven);
+
+        Answer q127AnswerOne = new Answer("1978", questionOneHundredAndTwentySeven, true);
+        answerRepository.save(q127AnswerOne);
+
+        Answer q127AnswerTwo = new Answer("1982", questionOneHundredAndTwentySeven, false);
+        answerRepository.save(q127AnswerTwo);
+
+        Answer q127AnswerThree = new Answer("1973", questionOneHundredAndTwentySeven, false);
+        answerRepository.save(q127AnswerThree);
+
+        Answer q127AnswerFour = new Answer("1988", questionOneHundredAndTwentySeven, false);
+        answerRepository.save(q127AnswerFour);
+
+        Question questionOneHundredAndTwentyEight = new Question("What is Canada's largest island?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndTwentyEight);
+
+        Answer q128AnswerOne = new Answer("Baffin Island", questionOneHundredAndTwentyEight, true);
+        answerRepository.save(q128AnswerOne);
+
+        Answer q128AnswerTwo = new Answer("Prince Edward Island", questionOneHundredAndTwentyEight, false);
+        answerRepository.save(q128AnswerTwo);
+
+        Answer q128AnswerThree = new Answer("Vancouver Island", questionOneHundredAndTwentyEight, false);
+        answerRepository.save(q128AnswerThree);
+
+        Answer q128AnswerFour = new Answer("Newfoundland", questionOneHundredAndTwentyEight, false);
+        answerRepository.save(q128AnswerFour);
+
+        Question questionOneHundredAndTwentyNine = new Question("What is Canada's largest island?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndTwentyNine);
+
+        Answer q129AnswerOne = new Answer("Baffin Island", questionOneHundredAndTwentyNine, true);
+        answerRepository.save(q129AnswerOne);
+
+        Answer q129AnswerTwo = new Answer("Prince Edward Island", questionOneHundredAndTwentyNine, false);
+        answerRepository.save(q129AnswerTwo);
+
+        Answer q129AnswerThree = new Answer("Vancouver Island", questionOneHundredAndTwentyNine, false);
+        answerRepository.save(q129AnswerThree);
+
+        Answer q129AnswerFour = new Answer("Newfoundland", questionOneHundredAndTwentyNine, false);
+        answerRepository.save(q129AnswerFour);
+
+        Question questionOneHundredAndThirty = new Question("Which of these in the Star Trek series is NOT Klingon food?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndThirty);
+
+        Answer q130AnswerOne = new Answer("Hors d'oeuvre", questionOneHundredAndThirty, true);
+        answerRepository.save(q130AnswerOne);
+
+        Answer q130AnswerTwo = new Answer("Racht", questionOneHundredAndThirty, false);
+        answerRepository.save(q130AnswerTwo);
+
+        Answer q130AnswerThree = new Answer("Gagh", questionOneHundredAndThirty, false);
+        answerRepository.save(q130AnswerThree);
+
+        Answer q130AnswerFour = new Answer("Bloodwine", questionOneHundredAndThirty, false);
+        answerRepository.save(q130AnswerFour);
+
+        Question questionOneHundredAndThirtyOne = new Question("When Magic: The Gathering was first solicited, which of the following was it originally titled?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndThirtyOne);
+
+        Answer q131AnswerOne = new Answer("Mana Clash", questionOneHundredAndThirtyOne, true);
+        answerRepository.save(q131AnswerOne);
+
+        Answer q131AnswerTwo = new Answer("Magic", questionOneHundredAndThirtyOne, false);
+        answerRepository.save(q131AnswerTwo);
+
+        Answer q131AnswerThree = new Answer("Magic Clash", questionOneHundredAndThirtyOne, false);
+        answerRepository.save(q131AnswerThree);
+
+        Answer q131AnswerFour = new Answer("Mana Duels", questionOneHundredAndThirtyOne, false);
+        answerRepository.save(q131AnswerFour);
+
+        Question questionOneHundredAndThirtyTwo = new Question("Coulrophobia is the irrational fear of what?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndThirtyTwo);
+
+        Answer q132AnswerOne = new Answer("Clowns", questionOneHundredAndThirtyTwo, true);
+        answerRepository.save(q132AnswerOne);
+
+        Answer q132AnswerTwo = new Answer("Cemeteries", questionOneHundredAndThirtyTwo, false);
+        answerRepository.save(q132AnswerTwo);
+
+        Answer q132AnswerThree = new Answer("Needles", questionOneHundredAndThirtyTwo, false);
+        answerRepository.save(q132AnswerThree);
+
+        Answer q132AnswerFour = new Answer("Tunnels", questionOneHundredAndThirtyTwo, false);
+        answerRepository.save(q132AnswerFour);
+
+        Question questionOneHundredAndThirtyThree = new Question("The ancient city of 'Chich-&eacute;n itz-acute' was built by which civilization?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndThirtyThree);
+
+        Answer q133AnswerOne = new Answer("Mayans", questionOneHundredAndThirtyThree, true);
+        answerRepository.save(q133AnswerOne);
+
+        Answer q133AnswerTwo = new Answer("Aztecs", questionOneHundredAndThirtyThree, false);
+        answerRepository.save(q133AnswerTwo);
+
+        Answer q133AnswerThree = new Answer("Incas", questionOneHundredAndThirtyThree, false);
+        answerRepository.save(q133AnswerThree);
+
+        Answer q133AnswerFour = new Answer("Toltecs", questionOneHundredAndThirtyThree, false);
+        answerRepository.save(q133AnswerFour);
+
+        Question questionOneHundredAndThirtyFour = new Question("Townsend Coleman provided the voice for which turtle in the original 1987 series of 'Teenage Mutant Ninja Turtles'?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndThirtyFour);
+
+        Answer q134AnswerOne = new Answer("Michelangelo", questionOneHundredAndThirtyFour, true);
+        answerRepository.save(q134AnswerOne);
+
+        Answer q134AnswerTwo = new Answer("Leonardo", questionOneHundredAndThirtyFour, false);
+        answerRepository.save(q134AnswerTwo);
+
+        Answer q134AnswerThree = new Answer("Donatello", questionOneHundredAndThirtyFour, false);
+        answerRepository.save(q134AnswerThree);
+
+        Answer q134AnswerFour = new Answer("Raphael", questionOneHundredAndThirtyFour, false);
+        answerRepository.save(q134AnswerFour);
+
+        Question questionOneHundredAndThirtyFive = new Question("Which scientific unit is named after an Italian nobleman?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndThirtyFive);
+
+        Answer q135AnswerOne = new Answer("Volt", questionOneHundredAndThirtyFive, true);
+        answerRepository.save(q135AnswerOne);
+
+        Answer q135AnswerTwo = new Answer("Pascal", questionOneHundredAndThirtyFive, false);
+        answerRepository.save(q135AnswerTwo);
+
+        Answer q135AnswerThree = new Answer("Ohm", questionOneHundredAndThirtyFive, false);
+        answerRepository.save(q135AnswerThree);
+
+        Answer q135AnswerFour = new Answer("Hertz", questionOneHundredAndThirtyFive, false);
+        answerRepository.save(q135AnswerFour);
+
+        Question questionOneHundredAndThirtySix = new Question("What is the most commonly used noun in the English language?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndThirtySix);
+
+        Answer q136AnswerOne = new Answer("Time", questionOneHundredAndThirtySix, true);
+        answerRepository.save(q136AnswerOne);
+
+        Answer q136AnswerTwo = new Answer("Home", questionOneHundredAndThirtySix, false);
+        answerRepository.save(q136AnswerTwo);
+
+        Answer q136AnswerThree = new Answer("Water", questionOneHundredAndThirtySix, false);
+        answerRepository.save(q136AnswerThree);
+
+        Answer q136AnswerFour = new Answer("Man", questionOneHundredAndThirtySix, false);
+        answerRepository.save(q136AnswerFour);
+
+        Question questionOneHundredAndThirtySeven = new Question("In quantum physics, which of these theorised sub-atomic particles has yet to be observed?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndThirtySeven);
+
+        Answer q137AnswerOne = new Answer("Graviton", questionOneHundredAndThirtySeven, true);
+        answerRepository.save(q137AnswerOne);
+
+        Answer q137AnswerTwo = new Answer("Z boson", questionOneHundredAndThirtySeven, false);
+        answerRepository.save(q137AnswerTwo);
+
+        Answer q137AnswerThree = new Answer("Tau neutrino", questionOneHundredAndThirtySeven, false);
+        answerRepository.save(q137AnswerThree);
+
+        Answer q137AnswerFour = new Answer("Gluon", questionOneHundredAndThirtySeven, false);
+        answerRepository.save(q137AnswerFour);
+
+        Question questionOneHundredAndThirtyEight = new Question("When did the French Revolution begin?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndThirtyEight);
+
+        Answer q138AnswerOne = new Answer("1789", questionOneHundredAndThirtyEight, true);
+        answerRepository.save(q138AnswerOne);
+
+        Answer q138AnswerTwo = new Answer("1823", questionOneHundredAndThirtyEight, false);
+        answerRepository.save(q138AnswerTwo);
+
+        Answer q138AnswerThree = new Answer("1756", questionOneHundredAndThirtyEight, false);
+        answerRepository.save(q138AnswerThree);
+
+        Answer q138AnswerFour = new Answer("1799", questionOneHundredAndThirtyEight, false);
+        answerRepository.save(q138AnswerFour);
+
+        Question questionOneHundredAndThirtyNine = new Question("In the Harry Potter universe, who does Draco Malfoy end up marrying?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndThirtyNine);
+
+        Answer q139AnswerOne = new Answer("Astoria Greengrass", questionOneHundredAndThirtyNine, true);
+        answerRepository.save(q139AnswerOne);
+
+        Answer q139AnswerTwo = new Answer("Pansy Parkinson", questionOneHundredAndThirtyNine, false);
+        answerRepository.save(q139AnswerTwo);
+
+        Answer q139AnswerThree = new Answer("Millicent Bulstrode", questionOneHundredAndThirtyNine, false);
+        answerRepository.save(q139AnswerThree);
+
+        Answer q139AnswerFour = new Answer("Hermione Granger", questionOneHundredAndThirtyNine, false);
+        answerRepository.save(q139AnswerFour);
+
+        Question questionOneHundredAndForty = new Question("Which of the following is the standard THX subwoofer crossover frequency?", Difficulty.SEVEN);
+        questionRepository.save(questionOneHundredAndForty);
+
+        Answer q140AnswerOne = new Answer("80 Hz", questionOneHundredAndForty, true);
+        answerRepository.save(q140AnswerOne);
+
+        Answer q140AnswerTwo = new Answer("70 Hz", questionOneHundredAndForty, false);
+        answerRepository.save(q140AnswerTwo);
+
+        Answer q140AnswerThree = new Answer("90 Hz", questionOneHundredAndForty, false);
+        answerRepository.save(q140AnswerThree);
+
+        Answer q140AnswerFour = new Answer("100 Hz", questionOneHundredAndForty, false);
+        answerRepository.save(q140AnswerFour);
+
 
 
 
