@@ -1521,6 +1521,306 @@ public class DataLoader implements ApplicationRunner {
         Answer q100AnswerFour = new Answer("Buenos Aires", questionOneHundred, false);
         answerRepository.save(q100AnswerFour);
 
+        Question questionOneHundredAndOne = new Question("What is the only country in the world with a flag that doesn't have four right angles?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndOne);
+
+        Answer q101AnswerOne = new Answer("Nepal", questionOneHundredAndOne, true);
+        answerRepository.save(q101AnswerOne);
+
+        Answer q101AnswerTwo = new Answer("Panama", questionOneHundredAndOne, false);
+        answerRepository.save(q101AnswerTwo);
+
+        Answer q101AnswerThree = new Answer("Angola", questionOneHundredAndOne, false);
+        answerRepository.save(q101AnswerThree);
+
+        Answer q101AnswerFour = new Answer("Egypt", questionOneHundredAndOne, false);
+        answerRepository.save(q101AnswerFour);
+
+        Question questionOneHundredAndTwo = new Question("In which Shakespearean play will you find the suicide of Ophelia?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndTwo);
+
+        Answer q102AnswerOne = new Answer("Hamlet", questionOneHundredAndTwo, true);
+        answerRepository.save(q102AnswerOne);
+
+        Answer q102AnswerTwo = new Answer("Macbeth", questionOneHundredAndTwo, false);
+        answerRepository.save(q102AnswerTwo);
+
+        Answer q102AnswerThree = new Answer("Othello", questionOneHundredAndTwo, false);
+        answerRepository.save(q102AnswerThree);
+
+        Answer q102AnswerFour = new Answer("King Lear", questionOneHundredAndTwo, false);
+        answerRepository.save(q102AnswerFour);
+
+        Question questionOneHundredAndThree = new Question("What is the largest lake in the African continent?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndThree);
+
+        Answer q103AnswerOne = new Answer("Lake Victoria", questionOneHundredAndThree, true);
+        answerRepository.save(q103AnswerOne);
+
+        Answer q103AnswerTwo = new Answer("Lake Tanganyika", questionOneHundredAndThree, false);
+        answerRepository.save(q103AnswerTwo);
+
+        Answer q103AnswerThree = new Answer("Lake Malawi", questionOneHundredAndThree, false);
+        answerRepository.save(q103AnswerThree);
+
+        Answer q103AnswerFour = new Answer("Lake Turkana", questionOneHundredAndThree, false);
+        answerRepository.save(q103AnswerFour);
+
+        Question questionOneHundredAndFour = new Question("How many copies have Metallica album 'Metallica' (A.K.A The Black Album) sold worldwide (in Millions of Copies)?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndFour);
+
+        Answer q104AnswerOne = new Answer("20.5", questionOneHundredAndFour, true);
+        answerRepository.save(q104AnswerOne);
+
+        Answer q104AnswerTwo = new Answer("19.5", questionOneHundredAndFour, false);
+        answerRepository.save(q104AnswerTwo);
+
+        Answer q104AnswerThree = new Answer("22.5", questionOneHundredAndFour, false);
+        answerRepository.save(q104AnswerThree);
+
+        Answer q104AnswerFour = new Answer("25.5", questionOneHundredAndFour, false);
+        answerRepository.save(q104AnswerFour);
+
+        Question questionOneHundredAndFive = new Question("When did the British hand-over sovereignty of Hong Kong back to China?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndFive);
+
+        Answer q105AnswerOne = new Answer("1997", questionOneHundredAndFive, true);
+        answerRepository.save(q105AnswerOne);
+
+        Answer q105AnswerTwo = new Answer("1999", questionOneHundredAndFive, false);
+        answerRepository.save(q105AnswerTwo);
+
+        Answer q105AnswerThree = new Answer("1841", questionOneHundredAndFive, false);
+        answerRepository.save(q105AnswerThree);
+
+        Answer q105AnswerFour = new Answer("1900", questionOneHundredAndFive, false);
+        answerRepository.save(q105AnswerFour);
+
+        Question questionOneHundredAndSix = new Question("Computer manufacturer Compaq was acquired for $25 billion dollars in 2002 by which company?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndSix);
+
+        Answer q106AnswerOne = new Answer("Hewlett-Packard", questionOneHundredAndSix, true);
+        answerRepository.save(q106AnswerOne);
+
+        Answer q106AnswerTwo = new Answer("Toshiba", questionOneHundredAndSix, false);
+        answerRepository.save(q106AnswerTwo);
+
+        Answer q106AnswerThree = new Answer("Asus", questionOneHundredAndSix, false);
+        answerRepository.save(q106AnswerThree);
+
+        Answer q106AnswerFour = new Answer("Dell", questionOneHundredAndSix, false);
+        answerRepository.save(q106AnswerFour);
+
+        Question questionOneHundredAndSeven = new Question("The Sun consists of mostly which two elements?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndSeven);
+
+        Answer q107AnswerOne = new Answer("Hydrogen & Helium", questionOneHundredAndSeven, true);
+        answerRepository.save(q107AnswerOne);
+
+        Answer q107AnswerTwo = new Answer("Hydrogen & Nitrogen", questionOneHundredAndSeven, false);
+        answerRepository.save(q107AnswerTwo);
+
+        Answer q107AnswerThree = new Answer("Carbon & Nitrogen", questionOneHundredAndSeven, false);
+        answerRepository.save(q107AnswerThree);
+
+        Answer q107AnswerFour = new Answer("Carbon & Helium", questionOneHundredAndSeven, false);
+        answerRepository.save(q107AnswerFour);
+
+        Question questionOneHundredAndEight = new Question("In Psychology, which need appears highest in the 'Maslow's hierarchy of needs' pyramid?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndEight);
+
+        Answer q108AnswerOne = new Answer("Esteem", questionOneHundredAndEight, true);
+        answerRepository.save(q108AnswerOne);
+
+        Answer q108AnswerTwo = new Answer("Love", questionOneHundredAndEight, false);
+        answerRepository.save(q108AnswerTwo);
+
+        Answer q108AnswerThree = new Answer("Safety", questionOneHundredAndEight, false);
+        answerRepository.save(q108AnswerThree);
+
+        Answer q108AnswerFour = new Answer("Physiological", questionOneHundredAndEight, false);
+        answerRepository.save(q108AnswerFour);
+
+        Question questionOneHundredAndNine = new Question("Who was the only US President to be elected four times?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndNine);
+
+        Answer q109AnswerOne = new Answer("Franklin Roosevelt", questionOneHundredAndNine, true);
+        answerRepository.save(q109AnswerOne);
+
+        Answer q109AnswerTwo = new Answer("Theodore Roosevelt", questionOneHundredAndNine, false);
+        answerRepository.save(q109AnswerTwo);
+
+        Answer q109AnswerThree = new Answer("George Washington", questionOneHundredAndNine, false);
+        answerRepository.save(q109AnswerThree);
+
+        Answer q109AnswerFour = new Answer("Abraham Lincoln", questionOneHundredAndNine, false);
+        answerRepository.save(q109AnswerFour);
+
+        Question questionOneHundredAndTen = new Question("Which of these Japanese islands is the largest by area?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndTen);
+
+        Answer q110AnswerOne = new Answer("Shikoku", questionOneHundredAndTen, true);
+        answerRepository.save(q110AnswerOne);
+
+        Answer q110AnswerTwo = new Answer("Iki", questionOneHundredAndTen, false);
+        answerRepository.save(q110AnswerTwo);
+
+        Answer q110AnswerThree = new Answer("Odaiba", questionOneHundredAndTen, false);
+        answerRepository.save(q110AnswerThree);
+
+        Answer q110AnswerFour = new Answer("Okinawa", questionOneHundredAndTen, false);
+        answerRepository.save(q110AnswerFour);
+
+        Question questionOneHundredAndEleven = new Question("The #64 in the Nintendo-64 console refers to what?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndEleven);
+
+        Answer q111AnswerOne = new Answer("The bits in the CPU architecture", questionOneHundredAndEleven, true);
+        answerRepository.save(q111AnswerOne);
+
+        Answer q111AnswerTwo = new Answer("The number of megabytes of RAM", questionOneHundredAndEleven, false);
+        answerRepository.save(q111AnswerTwo);
+
+        Answer q111AnswerThree = new Answer("Capacity of the ROM Cartridges in megabytes", questionOneHundredAndEleven, false);
+        answerRepository.save(q111AnswerThree);
+
+        Answer q111AnswerFour = new Answer("Clock speed of the CPU in Hertz", questionOneHundredAndEleven, false);
+        answerRepository.save(q111AnswerFour);
+
+        Question questionOneHundredAndTwelve = new Question("Which of these is not a member of the virtual band Gorillaz?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndTwelve);
+
+        Answer q112AnswerOne = new Answer("Phi Cypher", questionOneHundredAndTwelve, true);
+        answerRepository.save(q112AnswerOne);
+
+        Answer q112AnswerTwo = new Answer("Murdoc Niccals", questionOneHundredAndTwelve, false);
+        answerRepository.save(q112AnswerTwo);
+
+        Answer q112AnswerThree = new Answer("Noodle", questionOneHundredAndTwelve, false);
+        answerRepository.save(q112AnswerThree);
+
+        Answer q112AnswerFour = new Answer("Russel Hobbs", questionOneHundredAndTwelve, false);
+        answerRepository.save(q112AnswerFour);
+
+        Question questionOneHundredAndThirteen = new Question("Which river flows through the Scottish city of Glasgow?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndThirteen);
+
+        Answer q113AnswerOne = new Answer("Clyde", questionOneHundredAndThirteen, true);
+        answerRepository.save(q113AnswerOne);
+
+        Answer q113AnswerTwo = new Answer("Tay", questionOneHundredAndThirteen, false);
+        answerRepository.save(q113AnswerTwo);
+
+        Answer q113AnswerThree = new Answer("Dee", questionOneHundredAndThirteen, false);
+        answerRepository.save(q113AnswerThree);
+
+        Answer q113AnswerFour = new Answer("Tweed", questionOneHundredAndThirteen, false);
+        answerRepository.save(q113AnswerFour);
+
+        Question questionOneHundredAndFourteen = new Question("The humerus, paired radius, and ulna come together to form what joint?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndFourteen);
+
+        Answer q114AnswerOne = new Answer("Elbow", questionOneHundredAndFourteen, true);
+        answerRepository.save(q114AnswerOne);
+
+        Answer q114AnswerTwo = new Answer("Knee", questionOneHundredAndFourteen, false);
+        answerRepository.save(q114AnswerTwo);
+
+        Answer q114AnswerThree = new Answer("Shoulder", questionOneHundredAndFourteen, false);
+        answerRepository.save(q114AnswerThree);
+
+        Answer q114AnswerFour = new Answer("Ankle", questionOneHundredAndFourteen, false);
+        answerRepository.save(q114AnswerFour);
+
+        Question questionOneHundredAndFifteen = new Question("In relation to the British Occupation in Ireland, what does the IRA stand for?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndFifteen);
+
+        Answer q115AnswerOne = new Answer("Irish Republican Army", questionOneHundredAndFifteen, true);
+        answerRepository.save(q115AnswerOne);
+
+        Answer q115AnswerTwo = new Answer("Irish Rebel Alliance", questionOneHundredAndFifteen, false);
+        answerRepository.save(q115AnswerTwo);
+
+        Answer q115AnswerThree = new Answer("Irish Reformation Army", questionOneHundredAndFifteen, false);
+        answerRepository.save(q115AnswerThree);
+
+        Answer q115AnswerFour = new Answer("Irish-Royal Alliance", questionOneHundredAndFifteen, false);
+        answerRepository.save(q115AnswerFour);
+
+        Question questionOneHundredAndSixteen = new Question("What five letter word is the motto of the IBM Computer company?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndSixteen);
+
+        Answer q116AnswerOne = new Answer("Think", questionOneHundredAndSixteen, true);
+        answerRepository.save(q116AnswerOne);
+
+        Answer q116AnswerTwo = new Answer("Click", questionOneHundredAndSixteen, false);
+        answerRepository.save(q116AnswerTwo);
+
+        Answer q116AnswerThree = new Answer("Logic", questionOneHundredAndSixteen, false);
+        answerRepository.save(q116AnswerThree);
+
+        Answer q116AnswerFour = new Answer("Pixel", questionOneHundredAndSixteen, false);
+        answerRepository.save(q116AnswerFour);
+
+        Question questionOneHundredAndSeventeen = new Question("Which element has the atomic number of 7?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndSeventeen);
+
+        Answer q117AnswerOne = new Answer("Nitrogen", questionOneHundredAndSeventeen, true);
+        answerRepository.save(q117AnswerOne);
+
+        Answer q117AnswerTwo = new Answer("Oxygen", questionOneHundredAndSeventeen, false);
+        answerRepository.save(q117AnswerTwo);
+
+        Answer q117AnswerThree = new Answer("Hydrogen", questionOneHundredAndSeventeen, false);
+        answerRepository.save(q117AnswerThree);
+
+        Answer q117AnswerFour = new Answer("Neon", questionOneHundredAndSeventeen, false);
+        answerRepository.save(q117AnswerFour);
+
+        Question questionOneHundredAndEighteen = new Question("Who was the star of the TV series '24'?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndEighteen);
+
+        Answer q118AnswerOne = new Answer("Kiefer Sutherland", questionOneHundredAndEighteen, true);
+        answerRepository.save(q118AnswerOne);
+
+        Answer q118AnswerTwo = new Answer("Kevin Bacon", questionOneHundredAndEighteen, false);
+        answerRepository.save(q118AnswerTwo);
+
+        Answer q118AnswerThree = new Answer("Hugh Laurie", questionOneHundredAndEighteen, false);
+        answerRepository.save(q118AnswerThree);
+
+        Answer q118AnswerFour = new Answer("Rob Lowe", questionOneHundredAndEighteen, false);
+        answerRepository.save(q118AnswerFour);
+
+        Question questionOneHundredAndNineteen = new Question("How many points is the Z tile worth in Scrabble?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndNineteen);
+
+        Answer q119AnswerOne = new Answer("10", questionOneHundredAndNineteen, true);
+        answerRepository.save(q119AnswerOne);
+
+        Answer q119AnswerTwo = new Answer("12", questionOneHundredAndNineteen, false);
+        answerRepository.save(q119AnswerTwo);
+
+        Answer q119AnswerThree = new Answer("14", questionOneHundredAndNineteen, false);
+        answerRepository.save(q119AnswerThree);
+
+        Answer q119AnswerFour = new Answer("8", questionOneHundredAndNineteen, false);
+        answerRepository.save(q119AnswerFour);
+
+        Question questionOneHundredAndTwenty = new Question("In The Lord of the Rings: The Fellowship of the Ring, which one of the following characters from the book was left out of the film?", Difficulty.SIX);
+        questionRepository.save(questionOneHundredAndTwenty);
+
+        Answer q120AnswerOne = new Answer("Tom Bombadil", questionOneHundredAndTwenty, true);
+        answerRepository.save(q120AnswerOne);
+
+        Answer q120AnswerTwo = new Answer("Strider", questionOneHundredAndTwenty, false);
+        answerRepository.save(q120AnswerTwo);
+
+        Answer q120AnswerThree = new Answer("Barliman Butterbur", questionOneHundredAndTwenty, false);
+        answerRepository.save(q120AnswerThree);
+
+        Answer q120AnswerFour = new Answer("Celeborn", questionOneHundredAndTwenty, false);
+        answerRepository.save(q120AnswerFour);
+
 
 
 
