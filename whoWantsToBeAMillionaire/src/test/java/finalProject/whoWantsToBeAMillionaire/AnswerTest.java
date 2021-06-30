@@ -18,7 +18,7 @@ public class AnswerTest {
 
     @Before()
     public void before(){
-        question = new Question("What is the capital of england", Difficulty.ONE);
+        question = new Question("What is the capital of england", Difficulty.ZERO);
         correctAnswer = new Answer("Liverpool", question, true);
         incorrectAnswer = new Answer("Manchester", question, false);
     }

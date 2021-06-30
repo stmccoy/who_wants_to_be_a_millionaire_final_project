@@ -21,4 +21,5 @@ public class QuestionsController {
         List<Question> foundQuestions = questionRepository.findAll();
         return new ResponseEntity<>(foundQuestions, HttpStatus.OK);
     }
+
 }

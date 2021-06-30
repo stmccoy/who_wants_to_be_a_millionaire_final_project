@@ -12,12 +12,18 @@ public class DifficultyTests {
 
     @Before
     public void before(){
-        difficulty = Difficulty.ONE;
+        difficulty = Difficulty.ZERO;
     }
 
     @Test
     public void canGetDifficultyValue(){
-        assertEquals(1, difficulty.getValue());
+        assertEquals(0, difficulty.getValue());
+    }
+
+    @Test
+    public void canGetDifficultyByOrdinal(){
+        int ordinal = 0;
+        assertEquals(Difficulty.ZERO, Difficulty.getDifficultyByOrdinal(ordinal));
     }
 
 }

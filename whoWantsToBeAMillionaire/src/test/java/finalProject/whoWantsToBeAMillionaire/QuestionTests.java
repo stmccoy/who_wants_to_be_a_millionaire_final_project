@@ -22,7 +22,7 @@ public class QuestionTests {
 
     @Before
     public void before(){
-        question = new Question("What is the capital of the UK", Difficulty.ONE);
+        question = new Question("What is the capital of the UK", Difficulty.ZERO);
     }
 
     @Test
@@ -32,7 +32,7 @@ public class QuestionTests {
 
     @Test
     public void questionHasDifficulty(){
-        assertEquals(Difficulty.ONE, question.getDifficulty());
+        assertEquals(Difficulty.ZERO, question.getDifficulty());
     }
 
     @Test
@@ -72,7 +72,7 @@ public class QuestionTests {
 
     @Test
     public void canSetDifficulty(){
-        question.setDifficulty(Difficulty.TWO);
-        assertEquals(Difficulty.TWO, question.getDifficulty());
+        question.setDifficulty(Difficulty.ONE);
+        assertEquals(Difficulty.ONE, question.getDifficulty());
     }
 }

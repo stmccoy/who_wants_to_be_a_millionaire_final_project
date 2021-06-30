@@ -21,7 +21,7 @@ public class DataLoader implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception{
-        Question questionOne = new Question("Who Wrote Harry Potter", Difficulty.ONE);
+        Question questionOne = new Question("Who Wrote Harry Potter", Difficulty.ZERO);
         questionRepository.save(questionOne);
 
         Answer q1AnswerOne = new Answer("J.K. Rowling", questionOne, true);
@@ -36,7 +36,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q1AnswerFour = new Answer("Daniel Radcliffe", questionOne, false);
         answerRepository.save(q1AnswerFour);
 
-        Question questionTwo = new Question("Who discovered Penicillin", Difficulty.ONE);
+        Question questionTwo = new Question("Who discovered Penicillin", Difficulty.ZERO);
         questionRepository.save(questionTwo);
 
         Answer q2AnswerOne = new Answer("Alexander Flemming", questionTwo, true);
@@ -51,7 +51,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q2AnswerFour = new Answer("Louis Pasteur", questionTwo, false);
         answerRepository.save(q2AnswerFour);
 
-        Question questionThree = new Question("Kanye West at 2009 VMA's interrupted which celebrity?", Difficulty.ONE);
+        Question questionThree = new Question("Kanye West at 2009 VMA's interrupted which celebrity?", Difficulty.ZERO);
         questionRepository.save(questionThree);
 
         Answer q3AnswerOne = new Answer("Taylor Swift", questionThree, true);
@@ -66,7 +66,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q3AnswerFour = new Answer("Beck", questionThree, false);
         answerRepository.save(q3AnswerFour);
 
-        Question questionFour = new Question("What is the capital of Scotland?", Difficulty.ONE);
+        Question questionFour = new Question("What is the capital of Scotland?", Difficulty.ZERO);
         questionRepository.save(questionFour);
 
         Answer q4AnswerOne = new Answer("Edinburgh", questionFour, true);
@@ -81,7 +81,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q4AnswerFour = new Answer("London", questionFour, false);
         answerRepository.save(q4AnswerFour);
 
-        Question questionFive = new Question("Which of these characters live in a pineapple under the sea", Difficulty.ONE);
+        Question questionFive = new Question("Which of these characters live in a pineapple under the sea", Difficulty.ZERO);
         questionRepository.save(questionFive);
 
         Answer q5AnswerOne = new Answer("SpongeBob SquarePants", questionFive, true);
@@ -96,7 +96,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q5AnswerFour = new Answer("Mr. Krabs", questionFive, false);
         answerRepository.save(q5AnswerFour);
 
-        Question questionSix = new Question("Who painted the Mona Lisa?", Difficulty.ONE);
+        Question questionSix = new Question("Who painted the Mona Lisa?", Difficulty.ZERO);
         questionRepository.save(questionSix);
 
         Answer q6AnswerOne = new Answer("Leonardo da Vinci", questionSix, true);
@@ -111,7 +111,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q6AnswerFour = new Answer("Vincent van Gogh", questionSix, false);
         answerRepository.save(q6AnswerFour);
 
-        Question questionSeven = new Question("In what sport is a 'shuttlecock' used?", Difficulty.ONE);
+        Question questionSeven = new Question("In what sport is a 'shuttlecock' used?", Difficulty.ZERO);
         questionRepository.save(questionSeven);
 
         Answer q7AnswerOne = new Answer("Badminton", questionSeven, true);
@@ -126,7 +126,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q7AnswerFour = new Answer("Cricket", questionSeven, false);
         answerRepository.save(q7AnswerFour);
 
-        Question questionEight = new Question("Who is the lead singer of the band Coldplay?", Difficulty.ONE);
+        Question questionEight = new Question("Who is the lead singer of the band Coldplay?", Difficulty.ZERO);
         questionRepository.save(questionEight);
 
         Answer q8AnswerOne = new Answer("Chris Martin", questionEight, true);
@@ -141,7 +141,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q8AnswerFour = new Answer("Chris Connelly", questionEight, false);
         answerRepository.save(q8AnswerFour);
 
-        Question questionNine = new Question("Alzheimer's disease primarily affects which part of the human body?", Difficulty.ONE);
+        Question questionNine = new Question("Alzheimer's disease primarily affects which part of the human body?", Difficulty.ZERO);
         questionRepository.save(questionNine);
 
         Answer q9AnswerOne = new Answer("Brain", questionNine, true);
@@ -156,7 +156,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q9AnswerFour = new Answer("Heart", questionNine, false);
         answerRepository.save(q9AnswerFour);
 
-        Question questionTen = new Question("Which punk rock band released hit songs such as 'Californication', 'Can't Stop' and 'Under the Bridge'", Difficulty.ONE);
+        Question questionTen = new Question("Which punk rock band released hit songs such as 'Californication', 'Can't Stop' and 'Under the Bridge'", Difficulty.ZERO);
         questionRepository.save(questionTen);
 
         Answer q10AnswerOne = new Answer("Red Hot Chilli Peppers", questionTen, true);
@@ -171,7 +171,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q10AnswerFour = new Answer("Foo Fighters", questionTen, false);
         answerRepository.save(q10AnswerFour);
 
-        Question questionEleven = new Question("In which city of America was the Fresh Prince of Bel-Air born and raised in?", Difficulty.ONE);
+        Question questionEleven = new Question("In which city of America was the Fresh Prince of Bel-Air born and raised in?", Difficulty.ZERO);
         questionRepository.save(questionEleven);
 
         Answer q11AnswerOne = new Answer("Philadelphia", questionEleven, true);
@@ -186,7 +186,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q11AnswerFour = new Answer("Dallas", questionEleven, false);
         answerRepository.save(q11AnswerFour);
 
-        Question questionTwelve = new Question("Who was the villain of The Lion King?", Difficulty.ONE);
+        Question questionTwelve = new Question("Who was the villain of The Lion King?", Difficulty.ZERO);
         questionRepository.save(questionTwelve);
 
         Answer q12AnswerOne = new Answer("Scar", questionTwelve, true);
@@ -201,7 +201,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q12AnswerFour = new Answer("Vada", questionTwelve, false);
         answerRepository.save(q12AnswerFour);
 
-        Question questionThirteen = new Question("Which former boy-band star released hit solo single 'Angels' in 1997?", Difficulty.ONE);
+        Question questionThirteen = new Question("Which former boy-band star released hit solo single 'Angels' in 1997?", Difficulty.ZERO);
         questionRepository.save(questionThirteen);
 
         Answer q13AnswerOne = new Answer("Robbie Williams", questionThirteen, true);
@@ -216,7 +216,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q13AnswerFour = new Answer("Gary Barlow", questionThirteen, false);
         answerRepository.save(q13AnswerFour);
 
-        Question questionFourteen = new Question("When someone is cowardly, they are said to have what color belly?", Difficulty.ONE);
+        Question questionFourteen = new Question("When someone is cowardly, they are said to have what color belly?", Difficulty.ZERO);
         questionRepository.save(questionFourteen);
 
         Answer q14AnswerOne = new Answer("Yellow", questionFourteen, true);
@@ -231,7 +231,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q14AnswerFour = new Answer("Blue", questionFourteen, false);
         answerRepository.save(q14AnswerFour);
 
-        Question questionFifteen = new Question("Who is the star of the AMC series Breaking Bad?", Difficulty.ONE);
+        Question questionFifteen = new Question("Who is the star of the AMC series Breaking Bad?", Difficulty.ZERO);
         questionRepository.save(questionFifteen);
 
         Answer q15AnswerOne = new Answer("Walter White", questionFifteen, true);
@@ -246,7 +246,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q15AnswerFour = new Answer("Skyler White", questionFifteen, false);
         answerRepository.save(q15AnswerFour);
 
-        Question questionSixteen = new Question("Which song on Daft Punk's album 'Random Access Memories' features Pharrell Williams?", Difficulty.ONE);
+        Question questionSixteen = new Question("Which song on Daft Punk's album 'Random Access Memories' features Pharrell Williams?", Difficulty.ZERO);
         questionRepository.save(questionSixteen);
 
         Answer q16AnswerOne = new Answer("Sandstorm", questionSixteen, true);
@@ -261,7 +261,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q16AnswerFour = new Answer("Khamsin", questionSixteen, false);
         answerRepository.save(q16AnswerFour);
 
-        Question questionSeventeen = new Question("Which famous cartoon features a mouse and a cat as the two main characters?", Difficulty.ONE);
+        Question questionSeventeen = new Question("Which famous cartoon features a mouse and a cat as the two main characters?", Difficulty.ZERO);
         questionRepository.save(questionSeventeen);
 
         Answer q17AnswerOne = new Answer("Tom and Jerry", questionSeventeen, true);
@@ -276,7 +276,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q17AnswerFour = new Answer("Futurama", questionSeventeen, false);
         answerRepository.save(q17AnswerFour);
 
-        Question questionEighteen = new Question("What colour is the circle on the Japanese flag?", Difficulty.ONE);
+        Question questionEighteen = new Question("What colour is the circle on the Japanese flag?", Difficulty.ZERO);
         questionRepository.save(questionEighteen);
 
         Answer q18AnswerOne = new Answer("Red", questionEighteen, true);
@@ -291,7 +291,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q18AnswerFour = new Answer("Black", questionEighteen, false);
         answerRepository.save(q18AnswerFour);
 
-        Question questionNineteen = new Question("In the movie Gremlins, after what time of day should you not feed Mogwai?", Difficulty.ONE);
+        Question questionNineteen = new Question("In the movie Gremlins, after what time of day should you not feed Mogwai?", Difficulty.ZERO);
         questionRepository.save(questionNineteen);
 
         Answer q19AnswerOne = new Answer("Midnight", questionNineteen, true);
@@ -306,7 +306,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q19AnswerFour = new Answer("Afternoon", questionNineteen, false);
         answerRepository.save(q19AnswerFour);
 
-        Question questionTwenty = new Question("What do the letters of the fast food chain KFC stand for?", Difficulty.ONE);
+        Question questionTwenty = new Question("What do the letters of the fast food chain KFC stand for?", Difficulty.ZERO);
         questionRepository.save(questionTwenty);
 
         Answer q20AnswerOne = new Answer("Kentucky Fried Chicken", questionTwenty, true);
@@ -321,7 +321,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q20AnswerFour = new Answer("Kiwi Food Cut", questionTwenty, false);
         answerRepository.save(q20AnswerFour);
 
-        Question questionTwentyOne = new Question("Which of these is NOT a Disney cartoon character?", Difficulty.TWO);
+        Question questionTwentyOne = new Question("Which of these is NOT a Disney cartoon character?", Difficulty.ONE);
         questionRepository.save(questionTwentyOne);
 
         Answer q21AnswerOne = new Answer("Daffy Duck", questionTwentyOne, true);
@@ -336,7 +336,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q21AnswerFour = new Answer("Dumbo", questionTwentyOne, false);
         answerRepository.save(q21AnswerFour);
 
-        Question questionTwentyTwo = new Question("Which UK country features a dragon on their flag?", Difficulty.TWO);
+        Question questionTwentyTwo = new Question("Which UK country features a dragon on their flag?", Difficulty.ONE);
         questionRepository.save(questionTwentyTwo);
 
         Answer q22AnswerOne = new Answer("Wales", questionTwentyTwo, true);
@@ -351,7 +351,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q22AnswerFour = new Answer("Scotland", questionTwentyTwo, false);
         answerRepository.save(q22AnswerFour);
 
-        Question questionTwentyThree = new Question("Which city is the capital of the United States of America?", Difficulty.TWO);
+        Question questionTwentyThree = new Question("Which city is the capital of the United States of America?", Difficulty.ONE);
         questionRepository.save(questionTwentyThree);
 
         Answer q23AnswerOne = new Answer("Washington D.C", questionTwentyThree, true);
@@ -366,7 +366,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q23AnswerFour = new Answer("Los Angeles", questionTwentyThree, false);
         answerRepository.save(q23AnswerFour);
 
-        Question questionTwentyFour = new Question("What is the capital of India?", Difficulty.TWO);
+        Question questionTwentyFour = new Question("What is the capital of India?", Difficulty.ONE);
         questionRepository.save(questionTwentyFour);
 
         Answer q24AnswerOne = new Answer("New Delhi", questionTwentyFour, true);
@@ -381,7 +381,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q24AnswerFour = new Answer("Tithi", questionTwentyFour, false);
         answerRepository.save(q24AnswerFour);
 
-        Question questionTwentyFive = new Question("Which actor portrays 'Walter White' in the series 'Breaking Bad&quot'?", Difficulty.TWO);
+        Question questionTwentyFive = new Question("Which actor portrays 'Walter White' in the series 'Breaking Bad&quot'?", Difficulty.ONE);
         questionRepository.save(questionTwentyFive);
 
         Answer q25AnswerOne = new Answer("Bryan Cranston", questionTwentyFive, true);
@@ -396,7 +396,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q25AnswerFour = new Answer("RJ Mitte", questionTwentyFive, false);
         answerRepository.save(q25AnswerFour);
 
-        Question questionTwentySix = new Question("The Kiwi is a flightless bird native to which country?", Difficulty.TWO);
+        Question questionTwentySix = new Question("The Kiwi is a flightless bird native to which country?", Difficulty.ONE);
         questionRepository.save(questionTwentySix);
 
         Answer q26AnswerOne = new Answer("New Zealand", questionTwentySix, true);
@@ -411,7 +411,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q26AnswerFour = new Answer("Madagascar", questionTwentySix, false);
         answerRepository.save(q26AnswerFour);
 
-        Question questionTwentySeven = new Question("What is the name of Finnish DJ Darude's hit single released in October 1999?", Difficulty.TWO);
+        Question questionTwentySeven = new Question("What is the name of Finnish DJ Darude's hit single released in October 1999?", Difficulty.ONE);
         questionRepository.save(questionTwentySeven);
 
         Answer q27AnswerOne = new Answer("Sandstorm", questionTwentySeven, true);
@@ -426,7 +426,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q27AnswerFour = new Answer("Khamsin", questionTwentySeven, false);
         answerRepository.save(q27AnswerFour);
 
-        Question questionTwentyEight = new Question("Who is the lead singer of Foo Fighters?", Difficulty.TWO);
+        Question questionTwentyEight = new Question("Who is the lead singer of Foo Fighters?", Difficulty.ONE);
         questionRepository.save(questionTwentyEight);
 
         Answer q28AnswerOne = new Answer("Dave Grohl", questionTwentyEight, true);
@@ -441,7 +441,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q28AnswerFour = new Answer("Little Red Riding Hood", questionTwentyEight, false);
         answerRepository.save(q28AnswerFour);
 
-        Question questionTwentyNine = new Question("George Orwell wrote this book, which is often considered a statement on government oversight.", Difficulty.TWO);
+        Question questionTwentyNine = new Question("George Orwell wrote this book, which is often considered a statement on government oversight.", Difficulty.ONE);
         questionRepository.save(questionTwentyNine);
 
         Answer q29AnswerOne = new Answer("1984", questionTwentyNine, true);
@@ -456,7 +456,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q29AnswerFour = new Answer("To Kill a Mockingbird", questionTwentyNine, false);
         answerRepository.save(q29AnswerFour);
 
-        Question questionThirty = new Question("What is the capital of South Korea?", Difficulty.TWO);
+        Question questionThirty = new Question("What is the capital of South Korea?", Difficulty.ONE);
         questionRepository.save(questionThirty);
 
         Answer q30AnswerOne = new Answer("Seoul", questionThirty, true);
@@ -471,7 +471,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q30AnswerFour = new Answer("Kitakyushu", questionThirty, false);
         answerRepository.save(q30AnswerFour);
 
-        Question questionThirtyOne = new Question("The film 28 Day's Later is mainly set in which European country?", Difficulty.TWO);
+        Question questionThirtyOne = new Question("The film 28 Day's Later is mainly set in which European country?", Difficulty.ONE);
         questionRepository.save(questionThirtyOne);
 
         Answer q31AnswerOne = new Answer("United Kingdom", questionThirtyOne, true);
@@ -486,7 +486,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q31AnswerFour = new Answer("Germany", questionThirtyOne, false);
         answerRepository.save(q31AnswerFour);
 
-        Question questionThirtyTwo = new Question("What is not a wind instrument?", Difficulty.TWO);
+        Question questionThirtyTwo = new Question("What is not a wind instrument?", Difficulty.ONE);
         questionRepository.save(questionThirtyTwo);
 
         Answer q32AnswerOne = new Answer("Violin", questionThirtyTwo, true);
@@ -501,7 +501,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q32AnswerFour = new Answer("Tuba", questionThirtyTwo, false);
         answerRepository.save(q32AnswerFour);
 
-        Question questionThirtyThree = new Question("The first rule is: 'you don't talk about it' is a reference to which movie?", Difficulty.TWO);
+        Question questionThirtyThree = new Question("The first rule is: 'you don't talk about it' is a reference to which movie?", Difficulty.ONE);
         questionRepository.save(questionThirtyThree);
 
         Answer q33AnswerOne = new Answer("Fight Club", questionThirtyThree, true);
@@ -516,7 +516,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q33AnswerFour = new Answer("American Pie", questionThirtyThree, false);
         answerRepository.save(q33AnswerFour);
 
-        Question questionThirtyFour = new Question("What is the chemical makeup of water?", Difficulty.TWO);
+        Question questionThirtyFour = new Question("What is the chemical makeup of water?", Difficulty.ONE);
         questionRepository.save(questionThirtyFour);
 
         Answer q34AnswerOne = new Answer("H20", questionThirtyFour, true);
@@ -531,7 +531,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q34AnswerFour = new Answer("H", questionThirtyFour, false);
         answerRepository.save(q34AnswerFour);
 
-        Question questionThirtyFive = new Question("What was the name of the sea witch in the 1989 Disney film 'The Little Mermaid'?", Difficulty.TWO);
+        Question questionThirtyFive = new Question("What was the name of the sea witch in the 1989 Disney film 'The Little Mermaid'?", Difficulty.ONE);
         questionRepository.save(questionThirtyFive);
 
         Answer q35AnswerOne = new Answer("Ursula", questionThirtyFive, true);
@@ -546,7 +546,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q35AnswerFour = new Answer("Lady Tremaine", questionThirtyFive, false);
         answerRepository.save(q35AnswerFour);
 
-        Question questionThirtySix = new Question("Who is the lead vocalist of the band 'The Police", Difficulty.TWO);
+        Question questionThirtySix = new Question("Who is the lead vocalist of the band 'The Police", Difficulty.ONE);
         questionRepository.save(questionThirtySix);
 
         Answer q36AnswerOne = new Answer("Sting", questionThirtySix, true);
@@ -561,7 +561,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q36AnswerFour = new Answer("Axl Rose", questionThirtySix, false);
         answerRepository.save(q36AnswerFour);
 
-        Question questionThirtySeven = new Question("Who performed the song 'I Took A Pill In Ibiza'?", Difficulty.TWO);
+        Question questionThirtySeven = new Question("Who performed the song 'I Took A Pill In Ibiza'?", Difficulty.ONE);
         questionRepository.save(questionThirtySeven);
 
         Answer q37AnswerOne = new Answer("Mike Posner", questionThirtySeven, true);
@@ -576,7 +576,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q37AnswerFour = new Answer("Avicii", questionThirtySeven, false);
         answerRepository.save(q37AnswerFour);
 
-        Question questionThirtyEight = new Question("Which programming language shares its name with an island in Indonesia?", Difficulty.TWO);
+        Question questionThirtyEight = new Question("Which programming language shares its name with an island in Indonesia?", Difficulty.ONE);
         questionRepository.save(questionThirtyEight);
 
         Answer q38AnswerOne = new Answer("Java", questionThirtyEight, true);
@@ -591,7 +591,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q38AnswerFour = new Answer("C#", questionThirtyEight, false);
         answerRepository.save(q38AnswerFour);
 
-        Question questionThirtyNine = new Question("Earth is located in which galaxy?", Difficulty.TWO);
+        Question questionThirtyNine = new Question("Earth is located in which galaxy?", Difficulty.ONE);
         questionRepository.save(questionThirtyNine);
 
         Answer q39AnswerOne = new Answer("The Milky Way Galaxy", questionThirtyNine, true);
@@ -606,7 +606,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q39AnswerFour = new Answer("The Black Hole", questionThirtyNine, false);
         answerRepository.save(q39AnswerFour);
 
-        Question questionForty = new Question("Which of the following is NOT a Nintendo game console?", Difficulty.TWO);
+        Question questionForty = new Question("Which of the following is NOT a Nintendo game console?", Difficulty.ONE);
         questionRepository.save(questionForty);
 
         Answer q40AnswerOne = new Answer("Dreamcast", questionForty, true);
@@ -621,7 +621,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q40AnswerFour = new Answer("Switch", questionForty, false);
         answerRepository.save(q40AnswerFour);
 
-        Question questionFortyOne = new Question("What does the letter 'S' stand for in 'NASA'?", Difficulty.THREE);
+        Question questionFortyOne = new Question("What does the letter 'S' stand for in 'NASA'?", Difficulty.TWO);
         questionRepository.save(questionFortyOne);
 
         Answer q41AnswerOne = new Answer("Space", questionFortyOne, true);
@@ -636,7 +636,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q41AnswerFour = new Answer("Star", questionFortyOne, false);
         answerRepository.save(q41AnswerFour);
 
-        Question questionFortyTwo = new Question("The body of the Egyptian Sphinx was based on which animal?", Difficulty.THREE);
+        Question questionFortyTwo = new Question("The body of the Egyptian Sphinx was based on which animal?", Difficulty.TWO);
         questionRepository.save(questionFortyTwo);
 
         Answer q42AnswerOne = new Answer("Lion", questionFortyTwo, true);
@@ -651,7 +651,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q42AnswerFour = new Answer("Dog", questionFortyTwo, false);
         answerRepository.save(q42AnswerFour);
 
-        Question questionFortyThree = new Question("Ringo Starr of The Beatles mainly played what instrument?", Difficulty.THREE);
+        Question questionFortyThree = new Question("Ringo Starr of The Beatles mainly played what instrument?", Difficulty.TWO);
         questionRepository.save(questionFortyThree);
 
         Answer q43AnswerOne = new Answer("Drums", questionFortyThree, true);
@@ -666,7 +666,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q43AnswerFour = new Answer("Piano", questionFortyThree, false);
         answerRepository.save(q43AnswerFour);
 
-        Question questionFortyFour = new Question("Which singer was featured in Jack-U (Skrillex & Diplo)'s 2015 song 'Where Are U Now'?", Difficulty.THREE);
+        Question questionFortyFour = new Question("Which singer was featured in Jack-U (Skrillex & Diplo)'s 2015 song 'Where Are U Now'?", Difficulty.TWO);
         questionRepository.save(questionFortyFour);
 
         Answer q44AnswerOne = new Answer("Justin Bieber", questionFortyFour, true);
@@ -681,7 +681,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q44AnswerFour = new Answer("The Weeknd", questionFortyFour, false);
         answerRepository.save(q44AnswerFour);
 
-        Question questionFortyFive = new Question("Which movie contains the quote, 'Say hello to my little friend!'?", Difficulty.THREE);
+        Question questionFortyFive = new Question("Which movie contains the quote, 'Say hello to my little friend!'?", Difficulty.TWO);
         questionRepository.save(questionFortyFive);
 
         Answer q45AnswerOne = new Answer("Scarface", questionFortyFive, true);
@@ -696,7 +696,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q45AnswerFour = new Answer("Goodfellas", questionFortyFive, false);
         answerRepository.save(q45AnswerFour);
 
-        Question questionFortySix = new Question("Which movie contains the quote, 'Houston, we have a problem'?", Difficulty.THREE);
+        Question questionFortySix = new Question("Which movie contains the quote, 'Houston, we have a problem'?", Difficulty.TWO);
         questionRepository.save(questionFortySix);
 
         Answer q46AnswerOne = new Answer("Apollo 13", questionFortySix, true);
@@ -711,7 +711,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q46AnswerFour = new Answer("Marooned", questionFortySix, false);
         answerRepository.save(q46AnswerFour);
 
-        Question questionFortySeven = new Question("What is the official language of Costa Rica?", Difficulty.THREE);
+        Question questionFortySeven = new Question("What is the official language of Costa Rica?", Difficulty.TWO);
         questionRepository.save(questionFortySeven);
 
         Answer q47AnswerOne = new Answer("Spanish", questionFortySeven, true);
@@ -726,7 +726,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q47AnswerFour = new Answer("Creole", questionFortySeven, false);
         answerRepository.save(q47AnswerFour);
 
-        Question questionFortyEight = new Question("'Hallelujah' is a song written by which Canadian recording artist?", Difficulty.THREE);
+        Question questionFortyEight = new Question("'Hallelujah' is a song written by which Canadian recording artist?", Difficulty.TWO);
         questionRepository.save(questionFortyEight);
 
         Answer q48AnswerOne = new Answer("Leonard Cohen", questionFortyEight, true);
@@ -741,7 +741,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q48AnswerFour = new Answer("Justin Bieber", questionFortyEight, false);
         answerRepository.save(q48AnswerFour);
 
-        Question questionFortyNine = new Question("What is the shape of the toy invented by Hungarian professor Ernő Rubik?", Difficulty.THREE);
+        Question questionFortyNine = new Question("What is the shape of the toy invented by Hungarian professor Ernő Rubik?", Difficulty.TWO);
         questionRepository.save(questionFortyNine);
 
         Answer q49AnswerOne = new Answer("Cube", questionFortyNine, true);
@@ -756,7 +756,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q49AnswerFour = new Answer("Pyramid", questionFortyNine, false);
         answerRepository.save(q49AnswerFour);
 
-        Question questionFifty = new Question("If you were to code software in this language you'd only be able to type 0's and 1's.", Difficulty.THREE);
+        Question questionFifty = new Question("If you were to code software in this language you'd only be able to type 0's and 1's.", Difficulty.TWO);
         questionRepository.save(questionFifty);
 
         Answer q50AnswerOne = new Answer("Binary", questionFifty, true);
@@ -771,7 +771,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q50AnswerFour = new Answer("Python", questionFifty, false);
         answerRepository.save(q50AnswerFour);
 
-        Question questionFiftyOne = new Question("Which artist released the 2012 single 'Harlem Shake', which was used in numerous YouTube videos in 2013?", Difficulty.THREE);
+        Question questionFiftyOne = new Question("Which artist released the 2012 single 'Harlem Shake', which was used in numerous YouTube videos in 2013?", Difficulty.TWO);
         questionRepository.save(questionFiftyOne);
 
         Answer q51AnswerOne = new Answer("Baauer", questionFiftyOne, true);
@@ -786,7 +786,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q51AnswerFour = new Answer("Flosstradamus", questionFiftyOne, false);
         answerRepository.save(q51AnswerFour);
 
-        Question questionFiftyTwo = new Question("In the Pixar film, 'Toy Story', what was the name of the child who owned the toys?", Difficulty.THREE);
+        Question questionFiftyTwo = new Question("In the Pixar film, 'Toy Story', what was the name of the child who owned the toys?", Difficulty.TWO);
         questionRepository.save(questionFiftyTwo);
 
         Answer q52AnswerOne = new Answer("Andy", questionFiftyTwo, true);
@@ -801,7 +801,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q52AnswerFour = new Answer("Matt", questionFiftyTwo, false);
         answerRepository.save(q52AnswerFour);
 
-        Question questionFiftyThree = new Question("Which Nirvana album had a naked baby on the cover?", Difficulty.THREE);
+        Question questionFiftyThree = new Question("Which Nirvana album had a naked baby on the cover?", Difficulty.TWO);
         questionRepository.save(questionFiftyThree);
 
         Answer q53AnswerOne = new Answer("Nevermind", questionFiftyThree, true);
@@ -816,7 +816,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q53AnswerFour = new Answer("Incesticide", questionFiftyThree, false);
         answerRepository.save(q53AnswerFour);
 
-        Question questionFiftyFour = new Question("According to Sherlock Holmes, 'If you eliminate the impossible, whatever remains, however improbable, must be the...'", Difficulty.THREE);
+        Question questionFiftyFour = new Question("According to Sherlock Holmes, 'If you eliminate the impossible, whatever remains, however improbable, must be the...'", Difficulty.TWO);
         questionRepository.save(questionFiftyFour);
 
         Answer q54AnswerOne = new Answer("Truth", questionFiftyFour, true);
@@ -831,7 +831,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q54AnswerFour = new Answer("Source", questionFiftyFour, false);
         answerRepository.save(q54AnswerFour);
 
-        Question questionFiftyFive = new Question("In the movie 'Blade Runner', what is the term used for human-like androids ?", Difficulty.THREE);
+        Question questionFiftyFive = new Question("In the movie 'Blade Runner', what is the term used for human-like androids ?", Difficulty.TWO);
         questionRepository.save(questionFiftyFive);
 
         Answer q55AnswerOne = new Answer("Replicants", questionFiftyFive, true);
@@ -846,7 +846,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q55AnswerFour = new Answer("Skinjobs", questionFiftyFive, false);
         answerRepository.save(q55AnswerFour);
 
-        Question questionFiftySix = new Question("What is the official name of the star located closest to the North Celestial Pole?", Difficulty.THREE);
+        Question questionFiftySix = new Question("What is the official name of the star located closest to the North Celestial Pole?", Difficulty.TWO);
         questionRepository.save(questionFiftySix);
 
         Answer q56AnswerOne = new Answer("Polaris", questionFiftySix, true);
@@ -861,7 +861,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q56AnswerFour = new Answer("Iota Cephei", questionFiftySix, false);
         answerRepository.save(q56AnswerFour);
 
-        Question questionFiftySeven = new Question("Who created the digital distribution platform Steam?", Difficulty.THREE);
+        Question questionFiftySeven = new Question("Who created the digital distribution platform Steam?", Difficulty.TWO);
         questionRepository.save(questionFiftySeven);
 
         Answer q57AnswerOne = new Answer("Valve", questionFiftySeven, true);
@@ -876,7 +876,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q57AnswerFour = new Answer("Electronic Arts", questionFiftySeven, false);
         answerRepository.save(q57AnswerFour);
 
-        Question questionFiftyEight = new Question("Who directed the movies 'Pulp Fiction', 'Reservoir Dogs'; and 'Django Unchained'?", Difficulty.THREE);
+        Question questionFiftyEight = new Question("Who directed the movies 'Pulp Fiction', 'Reservoir Dogs'; and 'Django Unchained'?", Difficulty.TWO);
         questionRepository.save(questionFiftyEight);
 
         Answer q58AnswerOne = new Answer("Quentin Tarantino", questionFiftyEight, true);
@@ -891,7 +891,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q58AnswerFour = new Answer("James Cameron", questionFiftyEight, false);
         answerRepository.save(q58AnswerFour);
 
-        Question questionFiftyNine = new Question("Who is the frontman of the band 30 Seconds to Mars?", Difficulty.THREE);
+        Question questionFiftyNine = new Question("Who is the frontman of the band 30 Seconds to Mars?", Difficulty.TWO);
         questionRepository.save(questionFiftyNine);
 
         Answer q59AnswerOne = new Answer("Jared Leto", questionFiftyNine, true);
@@ -906,7 +906,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q59AnswerFour = new Answer("Mike Shinoda", questionFiftyNine, false);
         answerRepository.save(q59AnswerFour);
 
-        Question questionSixty = new Question("How many members are there in the band Nirvana?", Difficulty.THREE);
+        Question questionSixty = new Question("How many members are there in the band Nirvana?", Difficulty.TWO);
         questionRepository.save(questionSixty);
 
         Answer q60AnswerOne = new Answer("Three", questionSixty, true);
@@ -921,7 +921,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q60AnswerFour = new Answer("Five", questionSixty, false);
         answerRepository.save(q60AnswerFour);
 
-        Question questionSixtyOne = new Question("Which American president appears on a one dollar bill?", Difficulty.FOUR);
+        Question questionSixtyOne = new Question("Which American president appears on a one dollar bill?", Difficulty.THREE);
         questionRepository.save(questionSixtyOne);
 
         Answer q61AnswerOne = new Answer("George Washington", questionSixtyOne, true);
@@ -936,7 +936,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q61AnswerFour = new Answer("Benjamin Franklin", questionSixtyOne, false);
         answerRepository.save(q61AnswerFour);
 
-        Question questionSixtyTwo = new Question("Human cells typically have how many copies of each gene?", Difficulty.FOUR);
+        Question questionSixtyTwo = new Question("Human cells typically have how many copies of each gene?", Difficulty.THREE);
         questionRepository.save(questionSixtyTwo);
 
         Answer q62AnswerOne = new Answer("2", questionSixtyTwo, true);
@@ -951,7 +951,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q62AnswerFour = new Answer("3", questionSixtyTwo, false);
         answerRepository.save(q62AnswerFour);
 
-        Question questionSixtyThree = new Question("What are the cylinder-like parts that pump up and down within the engine?", Difficulty.FOUR);
+        Question questionSixtyThree = new Question("What are the cylinder-like parts that pump up and down within the engine?", Difficulty.THREE);
         questionRepository.save(questionSixtyThree);
 
         Answer q63AnswerOne = new Answer("Pistons", questionSixtyThree, true);
@@ -966,7 +966,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q63AnswerFour = new Answer("ABS", questionSixtyThree, false);
         answerRepository.save(q63AnswerFour);
 
-        Question questionSixtyFour = new Question("What are the cylinder-like parts that pump up and down within the engine?", Difficulty.FOUR);
+        Question questionSixtyFour = new Question("What are the cylinder-like parts that pump up and down within the engine?", Difficulty.THREE);
         questionRepository.save(questionSixtyFour);
 
         Answer q64AnswerOne = new Answer("Pistons", questionSixtyFour, true);
@@ -981,7 +981,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q64AnswerFour = new Answer("ABS", questionSixtyFour, false);
         answerRepository.save(q64AnswerFour);
 
-        Question questionSixtyFive = new Question("What is the capital of Indonesia?", Difficulty.FOUR);
+        Question questionSixtyFive = new Question("What is the capital of Indonesia?", Difficulty.THREE);
         questionRepository.save(questionSixtyFive);
 
         Answer q65AnswerOne = new Answer("Jakarta", questionSixtyFive, true);
@@ -996,7 +996,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q65AnswerFour = new Answer("Medan", questionSixtyFive, false);
         answerRepository.save(q65AnswerFour);
 
-        Question questionSixtySix = new Question("During WWII, in 1945, the United States dropped atomic bombs on the two Japanese cities of Hiroshima and what other city?", Difficulty.FOUR);
+        Question questionSixtySix = new Question("During WWII, in 1945, the United States dropped atomic bombs on the two Japanese cities of Hiroshima and what other city?", Difficulty.THREE);
         questionRepository.save(questionSixtySix);
 
         Answer q66AnswerOne = new Answer("Jakarta", questionSixtySix, true);
@@ -1011,7 +1011,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q66AnswerFour = new Answer("Medan", questionSixtySix, false);
         answerRepository.save(q66AnswerFour);
 
-        Question questionSixtySeven = new Question("Who wrote the novel 'Fear And Loathing In Las Vegas'?", Difficulty.FOUR);
+        Question questionSixtySeven = new Question("Who wrote the novel 'Fear And Loathing In Las Vegas'?", Difficulty.THREE);
         questionRepository.save(questionSixtySeven);
 
         Answer q67AnswerOne = new Answer("Hunter S. Thompson", questionSixtySeven, true);
@@ -1026,7 +1026,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q67AnswerFour = new Answer("William S. Burroughs", questionSixtySeven, false);
         answerRepository.save(q67AnswerFour);
 
-        Question questionSixtyEight = new Question("Which of these video game engines was made by the company Epic Games?", Difficulty.FOUR);
+        Question questionSixtyEight = new Question("Which of these video game engines was made by the company Epic Games?", Difficulty.THREE);
         questionRepository.save(questionSixtyEight);
 
         Answer q68AnswerOne = new Answer("Unreal", questionSixtyEight, true);
@@ -1041,7 +1041,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q68AnswerFour = new Answer("Cry Engine", questionSixtyEight, false);
         answerRepository.save(q68AnswerFour);
 
-        Question questionSixtyNine = new Question("Finish these lyrics from the 2016 song &quot;Panda&quot; by Desiigner: 'I got broads in....'", Difficulty.FOUR);
+        Question questionSixtyNine = new Question("Finish these lyrics from the 2016 song &quot;Panda&quot; by Desiigner: 'I got broads in....'", Difficulty.THREE);
         questionRepository.save(questionSixtyNine);
 
         Answer q69AnswerOne = new Answer("Atlanta", questionSixtyNine, true);
@@ -1056,7 +1056,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q69AnswerFour = new Answer("Marietta", questionSixtyNine, false);
         answerRepository.save(q69AnswerFour);
 
-        Question questionSeventy = new Question("In web design, what does CSS stand for?", Difficulty.FOUR);
+        Question questionSeventy = new Question("In web design, what does CSS stand for?", Difficulty.THREE);
         questionRepository.save(questionSeventy);
 
         Answer q70AnswerOne = new Answer("Cascading Style Sheet", questionSeventy, true);
@@ -1071,7 +1071,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q70AnswerFour = new Answer("Computer Style Sheet", questionSeventy, false);
         answerRepository.save(q70AnswerFour);
 
-        Question questionSeventyOne = new Question("How many colors are there in a rainbow?", Difficulty.FOUR);
+        Question questionSeventyOne = new Question("How many colors are there in a rainbow?", Difficulty.THREE);
         questionRepository.save(questionSeventyOne);
 
         Answer q71AnswerOne = new Answer("7", questionSeventyOne, true);
@@ -1086,7 +1086,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q71AnswerFour = new Answer("9", questionSeventyOne, false);
         answerRepository.save(q71AnswerFour);
 
-        Question questionSeventyTwo = new Question("Which movie includes a giant bunny-like spirit who has magic powers including growing trees?", Difficulty.FOUR);
+        Question questionSeventyTwo = new Question("Which movie includes a giant bunny-like spirit who has magic powers including growing trees?", Difficulty.THREE);
         questionRepository.save(questionSeventyTwo);
 
         Answer q72AnswerOne = new Answer("My Neighbor Totoro", questionSeventyTwo, true);
@@ -1101,7 +1101,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q72AnswerFour = new Answer("Alice in Wonderland", questionSeventyTwo, false);
         answerRepository.save(q72AnswerFour);
 
-        Question questionSeventyThree = new Question("How many faces does a dodecahedron have?", Difficulty.FOUR);
+        Question questionSeventyThree = new Question("How many faces does a dodecahedron have?", Difficulty.THREE);
         questionRepository.save(questionSeventyThree);
 
         Answer q73AnswerOne = new Answer("12", questionSeventyThree, true);
@@ -1116,7 +1116,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q73AnswerFour = new Answer("8", questionSeventyThree, false);
         answerRepository.save(q73AnswerFour);
 
-        Question questionSeventyFour = new Question("What do you call a baby bat?", Difficulty.FOUR);
+        Question questionSeventyFour = new Question("What do you call a baby bat?", Difficulty.THREE);
         questionRepository.save(questionSeventyFour);
 
         Answer q74AnswerOne = new Answer("Pup", questionSeventyFour, true);
@@ -1131,7 +1131,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q74AnswerFour = new Answer("Kid", questionSeventyFour, false);
         answerRepository.save(q74AnswerFour);
 
-        Question questionSeventyFive = new Question("In the show Stranger Things, what is Eleven's favorite breakfast food?", Difficulty.FOUR);
+        Question questionSeventyFive = new Question("In the show Stranger Things, what is Eleven's favorite breakfast food?", Difficulty.THREE);
         questionRepository.save(questionSeventyFive);
 
         Answer q75AnswerOne = new Answer("Eggo Waffles", questionSeventyFive, true);
@@ -1146,7 +1146,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q75AnswerFour = new Answer("Bacon and Eggs", questionSeventyFive, false);
         answerRepository.save(q75AnswerFour);
 
-        Question questionSeventySix = new Question("Which of these African countries list Spanish as an official language?", Difficulty.FOUR);
+        Question questionSeventySix = new Question("Which of these African countries list Spanish as an official language?", Difficulty.THREE);
         questionRepository.save(questionSeventySix);
 
         Answer q76AnswerOne = new Answer("Equatorial Guinea", questionSeventySix, true);
@@ -1161,7 +1161,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q76AnswerFour = new Answer("Angola", questionSeventySix, false);
         answerRepository.save(q76AnswerFour);
 
-        Question questionSeventySeven = new Question("Which buzzword did Apple Inc. use to describe their removal of the headphone jack?", Difficulty.FOUR);
+        Question questionSeventySeven = new Question("Which buzzword did Apple Inc. use to describe their removal of the headphone jack?", Difficulty.THREE);
         questionRepository.save(questionSeventySeven);
 
         Answer q77AnswerOne = new Answer("Courage", questionSeventySeven, true);
@@ -1176,7 +1176,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q77AnswerFour = new Answer("Bravery", questionSeventySeven, false);
         answerRepository.save(q77AnswerFour);
 
-        Question questionSeventyEight = new Question("Which one of these is not a real game in the Dungeons & Dragons series?", Difficulty.FOUR);
+        Question questionSeventyEight = new Question("Which one of these is not a real game in the Dungeons & Dragons series?", Difficulty.THREE);
         questionRepository.save(questionSeventyEight);
 
         Answer q78AnswerOne = new Answer("Extreme Dungeons & Dragons", questionSeventyEight, true);
@@ -1191,7 +1191,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q78AnswerFour = new Answer("Advanced Dungeons & Dragons 2nd edition", questionSeventyEight, false);
         answerRepository.save(q78AnswerFour);
 
-        Question questionSeventyNine = new Question("What was the name of the the first episode of Doctor Who to air in 1963?", Difficulty.FOUR);
+        Question questionSeventyNine = new Question("What was the name of the the first episode of Doctor Who to air in 1963?", Difficulty.THREE);
         questionRepository.save(questionSeventyNine);
 
         Answer q79AnswerOne = new Answer("An Unearthly Child", questionSeventyNine, true);
@@ -1206,7 +1206,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q79AnswerFour = new Answer("The Edge of Destruction", questionSeventyNine, false);
         answerRepository.save(q79AnswerFour);
 
-        Question questionEighty = new Question("On what street did the 1666 Great Fire of London start?", Difficulty.FOUR);
+        Question questionEighty = new Question("On what street did the 1666 Great Fire of London start?", Difficulty.THREE);
         questionRepository.save(questionEighty);
 
         Answer q80AnswerOne = new Answer("Pudding Lane", questionEighty, true);
@@ -1221,7 +1221,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q80AnswerFour = new Answer("Baker Avenue", questionEighty, false);
         answerRepository.save(q80AnswerFour);
 
-        Question questionEightyOne = new Question("What year did the television company BBC officially launch the channel BBC One?", Difficulty.FIVE);
+        Question questionEightyOne = new Question("What year did the television company BBC officially launch the channel BBC One?", Difficulty.FOUR);
         questionRepository.save(questionEightyOne);
 
         Answer q81AnswerOne = new Answer("1936", questionEightyOne, true);
@@ -1236,7 +1236,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q81AnswerFour = new Answer("1955", questionEightyOne, false);
         answerRepository.save(q81AnswerFour);
 
-        Question questionEightyTwo = new Question("The 'Tibia' is found in which part of the body?", Difficulty.FIVE);
+        Question questionEightyTwo = new Question("The 'Tibia' is found in which part of the body?", Difficulty.FOUR);
         questionRepository.save(questionEightyTwo);
 
         Answer q82AnswerOne = new Answer("Leg", questionEightyTwo, true);
@@ -1251,7 +1251,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q82AnswerFour = new Answer("Head", questionEightyTwo, false);
         answerRepository.save(q82AnswerFour);
 
-        Question questionEightyThree = new Question("Which part of the body does glaucoma affect?", Difficulty.FIVE);
+        Question questionEightyThree = new Question("Which part of the body does glaucoma affect?", Difficulty.FOUR);
         questionRepository.save(questionEightyThree);
 
         Answer q83AnswerOne = new Answer("Eyes", questionEightyThree, true);
@@ -1266,7 +1266,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q83AnswerFour = new Answer("Blood", questionEightyThree, false);
         answerRepository.save(q83AnswerFour);
 
-        Question questionEightyFour = new Question("What was the name of Ross's pet monkey on 'Friends'", Difficulty.FIVE);
+        Question questionEightyFour = new Question("What was the name of Ross's pet monkey on 'Friends'", Difficulty.FOUR);
         questionRepository.save(questionEightyFour);
 
         Answer q84AnswerOne = new Answer("Marcel", questionEightyFour, true);
@@ -1281,7 +1281,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q84AnswerFour = new Answer("Champ", questionEightyFour, false);
         answerRepository.save(q84AnswerFour);
 
-        Question questionEightyFive = new Question("The novel 'Of Mice And Men' was written by what author?", Difficulty.FIVE);
+        Question questionEightyFive = new Question("The novel 'Of Mice And Men' was written by what author?", Difficulty.FOUR);
         questionRepository.save(questionEightyFive);
 
         Answer q85AnswerOne = new Answer("John Steinbeck", questionEightyFive, true);
@@ -1296,7 +1296,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q85AnswerFour = new Answer("Harper Lee", questionEightyFive, false);
         answerRepository.save(q85AnswerFour);
 
-        Question questionEightySix = new Question("Which of these is NOT a name of an album released by American rapper Pitbull?", Difficulty.FIVE);
+        Question questionEightySix = new Question("Which of these is NOT a name of an album released by American rapper Pitbull?", Difficulty.FOUR);
         questionRepository.save(questionEightySix);
 
         Answer q86AnswerOne = new Answer("Welcome to Miami", questionEightySix, true);
@@ -1311,7 +1311,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q86AnswerFour = new Answer("Armando", questionEightySix, false);
         answerRepository.save(q86AnswerFour);
 
-        Question questionEightySeven = new Question("What is the designation given to the Marvel Cinematic Universe?", Difficulty.FIVE);
+        Question questionEightySeven = new Question("What is the designation given to the Marvel Cinematic Universe?", Difficulty.FOUR);
         questionRepository.save(questionEightySeven);
 
         Answer q87AnswerOne = new Answer("Earth-199999", questionEightySeven, true);
@@ -1326,7 +1326,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q87AnswerFour = new Answer("Earth-2008", questionEightySeven, false);
         answerRepository.save(q87AnswerFour);
 
-        Question questionEightyEight = new Question("Where did the pineapple plant originate?", Difficulty.FIVE);
+        Question questionEightyEight = new Question("Where did the pineapple plant originate?", Difficulty.FOUR);
         questionRepository.save(questionEightyEight);
 
         Answer q88AnswerOne = new Answer("South America", questionEightyEight, true);
@@ -1341,7 +1341,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q88AnswerFour = new Answer("Asia", questionEightyEight, false);
         answerRepository.save(q88AnswerFour);
 
-        Question questionEightyNine = new Question("At which bridge does the annual Oxford and Cambridge boat race start?", Difficulty.FIVE);
+        Question questionEightyNine = new Question("At which bridge does the annual Oxford and Cambridge boat race start?", Difficulty.FOUR);
         questionRepository.save(questionEightyNine);
 
         Answer q89AnswerOne = new Answer("Putney", questionEightyNine, true);
@@ -1356,7 +1356,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q89AnswerFour = new Answer("Battersea", questionEightyNine, false);
         answerRepository.save(q89AnswerFour);
 
-        Question questionNinety = new Question("One of the deadliest pandemics, the 'Spanish Flu', killed off what percentage of the human world population at the time?", Difficulty.FIVE);
+        Question questionNinety = new Question("One of the deadliest pandemics, the 'Spanish Flu', killed off what percentage of the human world population at the time?", Difficulty.FOUR);
         questionRepository.save(questionNinety);
 
         Answer q90AnswerOne = new Answer("3 to 6 percent", questionNinety, true);
@@ -1371,7 +1371,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q90AnswerFour = new Answer("less than 1 percent", questionNinety, false);
         answerRepository.save(q90AnswerFour);
 
-        Question questionNinetyOne = new Question("On average, Americans consume 100 pounds of what per second?", Difficulty.FIVE);
+        Question questionNinetyOne = new Question("On average, Americans consume 100 pounds of what per second?", Difficulty.FOUR);
         questionRepository.save(questionNinetyOne);
 
         Answer q91AnswerOne = new Answer("Chocolate", questionNinetyOne, true);
@@ -1386,7 +1386,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q91AnswerFour = new Answer("Cocaine", questionNinetyOne, false);
         answerRepository.save(q91AnswerFour);
 
-        Question questionNinetyTwo = new Question("The now extinct species 'Thylacine' was native to where?", Difficulty.FIVE);
+        Question questionNinetyTwo = new Question("The now extinct species 'Thylacine' was native to where?", Difficulty.FOUR);
         questionRepository.save(questionNinetyTwo);
 
         Answer q92AnswerOne = new Answer("Tasmania, Australia", questionNinetyTwo, true);
@@ -1401,7 +1401,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q92AnswerFour = new Answer("Oregon, United States", questionNinetyTwo, false);
         answerRepository.save(q92AnswerFour);
 
-        Question questionNinetyThree = new Question("What was the first PlayStation game to require the use of the DualShock controller?", Difficulty.FIVE);
+        Question questionNinetyThree = new Question("What was the first PlayStation game to require the use of the DualShock controller?", Difficulty.FOUR);
         questionRepository.save(questionNinetyThree);
 
         Answer q93AnswerOne = new Answer("Ape Escape", questionNinetyThree, true);
@@ -1416,7 +1416,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q93AnswerFour = new Answer("Tomba 2!", questionNinetyThree, false);
         answerRepository.save(q93AnswerFour);
 
-        Question questionNinetyFour = new Question("Myopia is the scientific term for which condition?", Difficulty.FIVE);
+        Question questionNinetyFour = new Question("Myopia is the scientific term for which condition?", Difficulty.FOUR);
         questionRepository.save(questionNinetyFour);
 
         Answer q94AnswerOne = new Answer("Shortsightedness", questionNinetyFour, true);
@@ -1431,7 +1431,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q94AnswerFour = new Answer("Clouded Vision", questionNinetyFour, false);
         answerRepository.save(q94AnswerFour);
 
-        Question questionNinetyFive = new Question("Which of the following was not developed by Bethesda?", Difficulty.FIVE);
+        Question questionNinetyFive = new Question("Which of the following was not developed by Bethesda?", Difficulty.FOUR);
         questionRepository.save(questionNinetyFive);
 
         Answer q95AnswerOne = new Answer("Fallout: New Vegas", questionNinetyFive, true);
@@ -1446,7 +1446,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q95AnswerFour = new Answer("Fallout 4", questionNinetyFive, false);
         answerRepository.save(q95AnswerFour);
 
-        Question questionNinetySix = new Question("Which new top 100 rapper, who featured in 'Computers' and 'Body Dance', was arrested in a NYPD sting for murder.", Difficulty.FIVE);
+        Question questionNinetySix = new Question("Which new top 100 rapper, who featured in 'Computers' and 'Body Dance', was arrested in a NYPD sting for murder.", Difficulty.FOUR);
         questionRepository.save(questionNinetySix);
 
         Answer q96AnswerOne = new Answer("Bobby Shmurda", questionNinetySix, true);
@@ -1461,7 +1461,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q96AnswerFour = new Answer("Young Thug", questionNinetySix, false);
         answerRepository.save(q96AnswerFour);
 
-        Question questionNinetySeven = new Question("Which greek mathematician ran through the streets of Syracuse naked while shouting &quot;Eureka&quot; after discovering the principle of displacement?", Difficulty.FIVE);
+        Question questionNinetySeven = new Question("Which greek mathematician ran through the streets of Syracuse naked while shouting &quot;Eureka&quot; after discovering the principle of displacement?", Difficulty.FOUR);
         questionRepository.save(questionNinetySeven);
 
         Answer q97AnswerOne = new Answer("Archimedes", questionNinetySeven, true);
@@ -1476,7 +1476,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q97AnswerFour = new Answer("Eratosthenes", questionNinetySeven, false);
         answerRepository.save(q97AnswerFour);
 
-        Question questionNinetyEight = new Question("What was the African nation of Zimbabwe formerly known as?", Difficulty.FIVE);
+        Question questionNinetyEight = new Question("What was the African nation of Zimbabwe formerly known as?", Difficulty.FOUR);
         questionRepository.save(questionNinetyEight);
 
         Answer q98AnswerOne = new Answer("Rhodesia", questionNinetyEight, true);
@@ -1491,7 +1491,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q98AnswerFour = new Answer("Bulawayo", questionNinetyEight, false);
         answerRepository.save(q98AnswerFour);
 
-        Question questionNinetyNine = new Question("According to the BBPA, what is the most common pub name in the UK?", Difficulty.FIVE);
+        Question questionNinetyNine = new Question("According to the BBPA, what is the most common pub name in the UK?", Difficulty.FOUR);
         questionRepository.save(questionNinetyNine);
 
         Answer q99AnswerOne = new Answer("Red Lion", questionNinetyNine, true);
@@ -1506,7 +1506,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q99AnswerFour = new Answer("King's Head", questionNinetyNine, false);
         answerRepository.save(q99AnswerFour);
 
-        Question questionOneHundred = new Question("What is the capital of Peru?", Difficulty.FIVE);
+        Question questionOneHundred = new Question("What is the capital of Peru?", Difficulty.FOUR);
         questionRepository.save(questionOneHundred);
 
         Answer q100AnswerOne = new Answer("Lima", questionOneHundred, true);
@@ -1521,7 +1521,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q100AnswerFour = new Answer("Buenos Aires", questionOneHundred, false);
         answerRepository.save(q100AnswerFour);
 
-        Question questionOneHundredAndOne = new Question("What is the only country in the world with a flag that doesn't have four right angles?", Difficulty.SIX);
+        Question questionOneHundredAndOne = new Question("What is the only country in the world with a flag that doesn't have four right angles?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndOne);
 
         Answer q101AnswerOne = new Answer("Nepal", questionOneHundredAndOne, true);
@@ -1536,7 +1536,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q101AnswerFour = new Answer("Egypt", questionOneHundredAndOne, false);
         answerRepository.save(q101AnswerFour);
 
-        Question questionOneHundredAndTwo = new Question("In which Shakespearean play will you find the suicide of Ophelia?", Difficulty.SIX);
+        Question questionOneHundredAndTwo = new Question("In which Shakespearean play will you find the suicide of Ophelia?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndTwo);
 
         Answer q102AnswerOne = new Answer("Hamlet", questionOneHundredAndTwo, true);
@@ -1551,7 +1551,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q102AnswerFour = new Answer("King Lear", questionOneHundredAndTwo, false);
         answerRepository.save(q102AnswerFour);
 
-        Question questionOneHundredAndThree = new Question("What is the largest lake in the African continent?", Difficulty.SIX);
+        Question questionOneHundredAndThree = new Question("What is the largest lake in the African continent?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndThree);
 
         Answer q103AnswerOne = new Answer("Lake Victoria", questionOneHundredAndThree, true);
@@ -1566,7 +1566,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q103AnswerFour = new Answer("Lake Turkana", questionOneHundredAndThree, false);
         answerRepository.save(q103AnswerFour);
 
-        Question questionOneHundredAndFour = new Question("How many copies have Metallica album 'Metallica' (A.K.A The Black Album) sold worldwide (in Millions of Copies)?", Difficulty.SIX);
+        Question questionOneHundredAndFour = new Question("How many copies have Metallica album 'Metallica' (A.K.A The Black Album) sold worldwide (in Millions of Copies)?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndFour);
 
         Answer q104AnswerOne = new Answer("20.5", questionOneHundredAndFour, true);
@@ -1581,7 +1581,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q104AnswerFour = new Answer("25.5", questionOneHundredAndFour, false);
         answerRepository.save(q104AnswerFour);
 
-        Question questionOneHundredAndFive = new Question("When did the British hand-over sovereignty of Hong Kong back to China?", Difficulty.SIX);
+        Question questionOneHundredAndFive = new Question("When did the British hand-over sovereignty of Hong Kong back to China?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndFive);
 
         Answer q105AnswerOne = new Answer("1997", questionOneHundredAndFive, true);
@@ -1596,7 +1596,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q105AnswerFour = new Answer("1900", questionOneHundredAndFive, false);
         answerRepository.save(q105AnswerFour);
 
-        Question questionOneHundredAndSix = new Question("Computer manufacturer Compaq was acquired for $25 billion dollars in 2002 by which company?", Difficulty.SIX);
+        Question questionOneHundredAndSix = new Question("Computer manufacturer Compaq was acquired for $25 billion dollars in 2002 by which company?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndSix);
 
         Answer q106AnswerOne = new Answer("Hewlett-Packard", questionOneHundredAndSix, true);
@@ -1611,7 +1611,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q106AnswerFour = new Answer("Dell", questionOneHundredAndSix, false);
         answerRepository.save(q106AnswerFour);
 
-        Question questionOneHundredAndSeven = new Question("The Sun consists of mostly which two elements?", Difficulty.SIX);
+        Question questionOneHundredAndSeven = new Question("The Sun consists of mostly which two elements?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndSeven);
 
         Answer q107AnswerOne = new Answer("Hydrogen & Helium", questionOneHundredAndSeven, true);
@@ -1626,7 +1626,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q107AnswerFour = new Answer("Carbon & Helium", questionOneHundredAndSeven, false);
         answerRepository.save(q107AnswerFour);
 
-        Question questionOneHundredAndEight = new Question("In Psychology, which need appears highest in the 'Maslow's hierarchy of needs' pyramid?", Difficulty.SIX);
+        Question questionOneHundredAndEight = new Question("In Psychology, which need appears highest in the 'Maslow's hierarchy of needs' pyramid?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndEight);
 
         Answer q108AnswerOne = new Answer("Esteem", questionOneHundredAndEight, true);
@@ -1641,7 +1641,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q108AnswerFour = new Answer("Physiological", questionOneHundredAndEight, false);
         answerRepository.save(q108AnswerFour);
 
-        Question questionOneHundredAndNine = new Question("Who was the only US President to be elected four times?", Difficulty.SIX);
+        Question questionOneHundredAndNine = new Question("Who was the only US President to be elected four times?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndNine);
 
         Answer q109AnswerOne = new Answer("Franklin Roosevelt", questionOneHundredAndNine, true);
@@ -1656,7 +1656,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q109AnswerFour = new Answer("Abraham Lincoln", questionOneHundredAndNine, false);
         answerRepository.save(q109AnswerFour);
 
-        Question questionOneHundredAndTen = new Question("Which of these Japanese islands is the largest by area?", Difficulty.SIX);
+        Question questionOneHundredAndTen = new Question("Which of these Japanese islands is the largest by area?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndTen);
 
         Answer q110AnswerOne = new Answer("Shikoku", questionOneHundredAndTen, true);
@@ -1671,7 +1671,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q110AnswerFour = new Answer("Okinawa", questionOneHundredAndTen, false);
         answerRepository.save(q110AnswerFour);
 
-        Question questionOneHundredAndEleven = new Question("The #64 in the Nintendo-64 console refers to what?", Difficulty.SIX);
+        Question questionOneHundredAndEleven = new Question("The #64 in the Nintendo-64 console refers to what?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndEleven);
 
         Answer q111AnswerOne = new Answer("The bits in the CPU architecture", questionOneHundredAndEleven, true);
@@ -1686,7 +1686,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q111AnswerFour = new Answer("Clock speed of the CPU in Hertz", questionOneHundredAndEleven, false);
         answerRepository.save(q111AnswerFour);
 
-        Question questionOneHundredAndTwelve = new Question("Which of these is not a member of the virtual band Gorillaz?", Difficulty.SIX);
+        Question questionOneHundredAndTwelve = new Question("Which of these is not a member of the virtual band Gorillaz?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndTwelve);
 
         Answer q112AnswerOne = new Answer("Phi Cypher", questionOneHundredAndTwelve, true);
@@ -1701,7 +1701,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q112AnswerFour = new Answer("Russel Hobbs", questionOneHundredAndTwelve, false);
         answerRepository.save(q112AnswerFour);
 
-        Question questionOneHundredAndThirteen = new Question("Which river flows through the Scottish city of Glasgow?", Difficulty.SIX);
+        Question questionOneHundredAndThirteen = new Question("Which river flows through the Scottish city of Glasgow?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndThirteen);
 
         Answer q113AnswerOne = new Answer("Clyde", questionOneHundredAndThirteen, true);
@@ -1716,7 +1716,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q113AnswerFour = new Answer("Tweed", questionOneHundredAndThirteen, false);
         answerRepository.save(q113AnswerFour);
 
-        Question questionOneHundredAndFourteen = new Question("The humerus, paired radius, and ulna come together to form what joint?", Difficulty.SIX);
+        Question questionOneHundredAndFourteen = new Question("The humerus, paired radius, and ulna come together to form what joint?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndFourteen);
 
         Answer q114AnswerOne = new Answer("Elbow", questionOneHundredAndFourteen, true);
@@ -1731,7 +1731,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q114AnswerFour = new Answer("Ankle", questionOneHundredAndFourteen, false);
         answerRepository.save(q114AnswerFour);
 
-        Question questionOneHundredAndFifteen = new Question("In relation to the British Occupation in Ireland, what does the IRA stand for?", Difficulty.SIX);
+        Question questionOneHundredAndFifteen = new Question("In relation to the British Occupation in Ireland, what does the IRA stand for?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndFifteen);
 
         Answer q115AnswerOne = new Answer("Irish Republican Army", questionOneHundredAndFifteen, true);
@@ -1746,7 +1746,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q115AnswerFour = new Answer("Irish-Royal Alliance", questionOneHundredAndFifteen, false);
         answerRepository.save(q115AnswerFour);
 
-        Question questionOneHundredAndSixteen = new Question("What five letter word is the motto of the IBM Computer company?", Difficulty.SIX);
+        Question questionOneHundredAndSixteen = new Question("What five letter word is the motto of the IBM Computer company?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndSixteen);
 
         Answer q116AnswerOne = new Answer("Think", questionOneHundredAndSixteen, true);
@@ -1761,7 +1761,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q116AnswerFour = new Answer("Pixel", questionOneHundredAndSixteen, false);
         answerRepository.save(q116AnswerFour);
 
-        Question questionOneHundredAndSeventeen = new Question("Which element has the atomic number of 7?", Difficulty.SIX);
+        Question questionOneHundredAndSeventeen = new Question("Which element has the atomic number of 7?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndSeventeen);
 
         Answer q117AnswerOne = new Answer("Nitrogen", questionOneHundredAndSeventeen, true);
@@ -1776,7 +1776,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q117AnswerFour = new Answer("Neon", questionOneHundredAndSeventeen, false);
         answerRepository.save(q117AnswerFour);
 
-        Question questionOneHundredAndEighteen = new Question("Who was the star of the TV series '24'?", Difficulty.SIX);
+        Question questionOneHundredAndEighteen = new Question("Who was the star of the TV series '24'?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndEighteen);
 
         Answer q118AnswerOne = new Answer("Kiefer Sutherland", questionOneHundredAndEighteen, true);
@@ -1791,7 +1791,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q118AnswerFour = new Answer("Rob Lowe", questionOneHundredAndEighteen, false);
         answerRepository.save(q118AnswerFour);
 
-        Question questionOneHundredAndNineteen = new Question("How many points is the Z tile worth in Scrabble?", Difficulty.SIX);
+        Question questionOneHundredAndNineteen = new Question("How many points is the Z tile worth in Scrabble?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndNineteen);
 
         Answer q119AnswerOne = new Answer("10", questionOneHundredAndNineteen, true);
@@ -1806,7 +1806,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q119AnswerFour = new Answer("8", questionOneHundredAndNineteen, false);
         answerRepository.save(q119AnswerFour);
 
-        Question questionOneHundredAndTwenty = new Question("In The Lord of the Rings: The Fellowship of the Ring, which one of the following characters from the book was left out of the film?", Difficulty.SIX);
+        Question questionOneHundredAndTwenty = new Question("In The Lord of the Rings: The Fellowship of the Ring, which one of the following characters from the book was left out of the film?", Difficulty.FIVE);
         questionRepository.save(questionOneHundredAndTwenty);
 
         Answer q120AnswerOne = new Answer("Tom Bombadil", questionOneHundredAndTwenty, true);
@@ -1821,7 +1821,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q120AnswerFour = new Answer("Celeborn", questionOneHundredAndTwenty, false);
         answerRepository.save(q120AnswerFour);
 
-        Question questionOneHundredAndTwentyOne = new Question("With which Greek philosopher would you associate the phrase, 'I know that I know nothing'?", Difficulty.SEVEN);
+        Question questionOneHundredAndTwentyOne = new Question("With which Greek philosopher would you associate the phrase, 'I know that I know nothing'?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndTwentyOne);
 
         Answer q121AnswerOne = new Answer("Socrates", questionOneHundredAndTwentyOne, true);
@@ -1836,7 +1836,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q121AnswerFour = new Answer("Pythagoras", questionOneHundredAndTwentyOne, false);
         answerRepository.save(q121AnswerFour);
 
-        Question questionOneHundredAndTwentyTwo = new Question("Who was the original drummer for The Beatles?", Difficulty.SEVEN);
+        Question questionOneHundredAndTwentyTwo = new Question("Who was the original drummer for The Beatles?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndTwentyTwo);
 
         Answer q122AnswerOne = new Answer("Tommy Moore", questionOneHundredAndTwentyTwo, true);
@@ -1851,7 +1851,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q122AnswerFour = new Answer("Pete Best", questionOneHundredAndTwentyTwo, false);
         answerRepository.save(q122AnswerFour);
 
-        Question questionOneHundredAndTwentyThree = new Question("What is Hermione Granger's middle name?", Difficulty.SEVEN);
+        Question questionOneHundredAndTwentyThree = new Question("What is Hermione Granger's middle name?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndTwentyThree);
 
         Answer q123AnswerOne = new Answer("Jean", questionOneHundredAndTwentyThree, true);
@@ -1866,7 +1866,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q123AnswerFour = new Answer("Jo", questionOneHundredAndTwentyThree, false);
         answerRepository.save(q123AnswerFour);
 
-        Question questionOneHundredAndTwentyFour = new Question("The mountainous Khyber Pass connects which of the two following countries?", Difficulty.SEVEN);
+        Question questionOneHundredAndTwentyFour = new Question("The mountainous Khyber Pass connects which of the two following countries?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndTwentyFour);
 
         Answer q124AnswerOne = new Answer("Afghanistan and Pakistan", questionOneHundredAndTwentyFour, true);
@@ -1881,7 +1881,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q124AnswerFour = new Answer("Tajikistan and Kyrgyzstan", questionOneHundredAndTwentyFour, false);
         answerRepository.save(q124AnswerFour);
 
-        Question questionOneHundredAndTwentyFive = new Question("Why was the character Trevor Philips, from GTA V, discharged from the Air Force?", Difficulty.SEVEN);
+        Question questionOneHundredAndTwentyFive = new Question("Why was the character Trevor Philips, from GTA V, discharged from the Air Force?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndTwentyFive);
 
         Answer q125AnswerOne = new Answer("Mental Health Issues", questionOneHundredAndTwentyFive, true);
@@ -1896,7 +1896,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q125AnswerFour = new Answer("Danger to Others", questionOneHundredAndTwentyFive, false);
         answerRepository.save(q125AnswerFour);
 
-        Question questionOneHundredAndTwentySix = new Question("Which of the following is not another name for the eggplant?", Difficulty.SEVEN);
+        Question questionOneHundredAndTwentySix = new Question("Which of the following is not another name for the eggplant?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndTwentySix);
 
         Answer q126AnswerOne = new Answer("Potimarron", questionOneHundredAndTwentySix, true);
@@ -1911,7 +1911,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q126AnswerFour = new Answer("Melongene", questionOneHundredAndTwentySix, false);
         answerRepository.save(q126AnswerFour);
 
-        Question questionOneHundredAndTwentySeven = new Question("When was the Garfield comic first published?", Difficulty.SEVEN);
+        Question questionOneHundredAndTwentySeven = new Question("When was the Garfield comic first published?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndTwentySeven);
 
         Answer q127AnswerOne = new Answer("1978", questionOneHundredAndTwentySeven, true);
@@ -1926,7 +1926,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q127AnswerFour = new Answer("1988", questionOneHundredAndTwentySeven, false);
         answerRepository.save(q127AnswerFour);
 
-        Question questionOneHundredAndTwentyEight = new Question("What is Canada's largest island?", Difficulty.SEVEN);
+        Question questionOneHundredAndTwentyEight = new Question("What is Canada's largest island?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndTwentyEight);
 
         Answer q128AnswerOne = new Answer("Baffin Island", questionOneHundredAndTwentyEight, true);
@@ -1941,7 +1941,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q128AnswerFour = new Answer("Newfoundland", questionOneHundredAndTwentyEight, false);
         answerRepository.save(q128AnswerFour);
 
-        Question questionOneHundredAndTwentyNine = new Question("What is Canada's largest island?", Difficulty.SEVEN);
+        Question questionOneHundredAndTwentyNine = new Question("What is Canada's largest island?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndTwentyNine);
 
         Answer q129AnswerOne = new Answer("Baffin Island", questionOneHundredAndTwentyNine, true);
@@ -1956,7 +1956,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q129AnswerFour = new Answer("Newfoundland", questionOneHundredAndTwentyNine, false);
         answerRepository.save(q129AnswerFour);
 
-        Question questionOneHundredAndThirty = new Question("Which of these in the Star Trek series is NOT Klingon food?", Difficulty.SEVEN);
+        Question questionOneHundredAndThirty = new Question("Which of these in the Star Trek series is NOT Klingon food?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndThirty);
 
         Answer q130AnswerOne = new Answer("Hors d'oeuvre", questionOneHundredAndThirty, true);
@@ -1971,7 +1971,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q130AnswerFour = new Answer("Bloodwine", questionOneHundredAndThirty, false);
         answerRepository.save(q130AnswerFour);
 
-        Question questionOneHundredAndThirtyOne = new Question("When Magic: The Gathering was first solicited, which of the following was it originally titled?", Difficulty.SEVEN);
+        Question questionOneHundredAndThirtyOne = new Question("When Magic: The Gathering was first solicited, which of the following was it originally titled?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndThirtyOne);
 
         Answer q131AnswerOne = new Answer("Mana Clash", questionOneHundredAndThirtyOne, true);
@@ -1986,7 +1986,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q131AnswerFour = new Answer("Mana Duels", questionOneHundredAndThirtyOne, false);
         answerRepository.save(q131AnswerFour);
 
-        Question questionOneHundredAndThirtyTwo = new Question("Coulrophobia is the irrational fear of what?", Difficulty.SEVEN);
+        Question questionOneHundredAndThirtyTwo = new Question("Coulrophobia is the irrational fear of what?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndThirtyTwo);
 
         Answer q132AnswerOne = new Answer("Clowns", questionOneHundredAndThirtyTwo, true);
@@ -2001,7 +2001,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q132AnswerFour = new Answer("Tunnels", questionOneHundredAndThirtyTwo, false);
         answerRepository.save(q132AnswerFour);
 
-        Question questionOneHundredAndThirtyThree = new Question("The ancient city of 'Chich-&eacute;n itz-acute' was built by which civilization?", Difficulty.SEVEN);
+        Question questionOneHundredAndThirtyThree = new Question("The ancient city of 'Chich-&eacute;n itz-acute' was built by which civilization?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndThirtyThree);
 
         Answer q133AnswerOne = new Answer("Mayans", questionOneHundredAndThirtyThree, true);
@@ -2016,7 +2016,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q133AnswerFour = new Answer("Toltecs", questionOneHundredAndThirtyThree, false);
         answerRepository.save(q133AnswerFour);
 
-        Question questionOneHundredAndThirtyFour = new Question("Townsend Coleman provided the voice for which turtle in the original 1987 series of 'Teenage Mutant Ninja Turtles'?", Difficulty.SEVEN);
+        Question questionOneHundredAndThirtyFour = new Question("Townsend Coleman provided the voice for which turtle in the original 1987 series of 'Teenage Mutant Ninja Turtles'?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndThirtyFour);
 
         Answer q134AnswerOne = new Answer("Michelangelo", questionOneHundredAndThirtyFour, true);
@@ -2031,7 +2031,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q134AnswerFour = new Answer("Raphael", questionOneHundredAndThirtyFour, false);
         answerRepository.save(q134AnswerFour);
 
-        Question questionOneHundredAndThirtyFive = new Question("Which scientific unit is named after an Italian nobleman?", Difficulty.SEVEN);
+        Question questionOneHundredAndThirtyFive = new Question("Which scientific unit is named after an Italian nobleman?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndThirtyFive);
 
         Answer q135AnswerOne = new Answer("Volt", questionOneHundredAndThirtyFive, true);
@@ -2046,7 +2046,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q135AnswerFour = new Answer("Hertz", questionOneHundredAndThirtyFive, false);
         answerRepository.save(q135AnswerFour);
 
-        Question questionOneHundredAndThirtySix = new Question("What is the most commonly used noun in the English language?", Difficulty.SEVEN);
+        Question questionOneHundredAndThirtySix = new Question("What is the most commonly used noun in the English language?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndThirtySix);
 
         Answer q136AnswerOne = new Answer("Time", questionOneHundredAndThirtySix, true);
@@ -2061,7 +2061,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q136AnswerFour = new Answer("Man", questionOneHundredAndThirtySix, false);
         answerRepository.save(q136AnswerFour);
 
-        Question questionOneHundredAndThirtySeven = new Question("In quantum physics, which of these theorised sub-atomic particles has yet to be observed?", Difficulty.SEVEN);
+        Question questionOneHundredAndThirtySeven = new Question("In quantum physics, which of these theorised sub-atomic particles has yet to be observed?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndThirtySeven);
 
         Answer q137AnswerOne = new Answer("Graviton", questionOneHundredAndThirtySeven, true);
@@ -2076,7 +2076,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q137AnswerFour = new Answer("Gluon", questionOneHundredAndThirtySeven, false);
         answerRepository.save(q137AnswerFour);
 
-        Question questionOneHundredAndThirtyEight = new Question("When did the French Revolution begin?", Difficulty.SEVEN);
+        Question questionOneHundredAndThirtyEight = new Question("When did the French Revolution begin?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndThirtyEight);
 
         Answer q138AnswerOne = new Answer("1789", questionOneHundredAndThirtyEight, true);
@@ -2091,7 +2091,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q138AnswerFour = new Answer("1799", questionOneHundredAndThirtyEight, false);
         answerRepository.save(q138AnswerFour);
 
-        Question questionOneHundredAndThirtyNine = new Question("In the Harry Potter universe, who does Draco Malfoy end up marrying?", Difficulty.SEVEN);
+        Question questionOneHundredAndThirtyNine = new Question("In the Harry Potter universe, who does Draco Malfoy end up marrying?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndThirtyNine);
 
         Answer q139AnswerOne = new Answer("Astoria Greengrass", questionOneHundredAndThirtyNine, true);
@@ -2106,7 +2106,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q139AnswerFour = new Answer("Hermione Granger", questionOneHundredAndThirtyNine, false);
         answerRepository.save(q139AnswerFour);
 
-        Question questionOneHundredAndForty = new Question("Which of the following is the standard THX subwoofer crossover frequency?", Difficulty.SEVEN);
+        Question questionOneHundredAndForty = new Question("Which of the following is the standard THX subwoofer crossover frequency?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndForty);
 
         Answer q140AnswerOne = new Answer("80 Hz", questionOneHundredAndForty, true);
@@ -2121,7 +2121,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q140AnswerFour = new Answer("100 Hz", questionOneHundredAndForty, false);
         answerRepository.save(q140AnswerFour);
 
-        Question questionOneHundredAndFortyOne = new Question("Where was the Games of the XXII Olympiad held?", Difficulty.EIGHT);
+        Question questionOneHundredAndFortyOne = new Question("Where was the Games of the XXII Olympiad held?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFortyOne);
 
         Answer q141AnswerOne = new Answer("Moscow", questionOneHundredAndFortyOne, true);
@@ -2136,7 +2136,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q141AnswerFour = new Answer("Los Angeles", questionOneHundredAndFortyOne, false);
         answerRepository.save(q141AnswerFour);
 
-        Question questionOneHundredAndFortyTwo = new Question("How many sonatas did Ludwig van Beethoven write?", Difficulty.EIGHT);
+        Question questionOneHundredAndFortyTwo = new Question("How many sonatas did Ludwig van Beethoven write?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFortyTwo);
 
         Answer q142AnswerOne = new Answer("32", questionOneHundredAndFortyTwo, true);
@@ -2151,7 +2151,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q142AnswerFour = new Answer("21", questionOneHundredAndFortyTwo, false);
         answerRepository.save(q142AnswerFour);
 
-        Question questionOneHundredAndFortyThree = new Question("During the Roman Triumvirate of 42 BCE, what region of the Roman Republic was given to Lepidus?", Difficulty.EIGHT);
+        Question questionOneHundredAndFortyThree = new Question("During the Roman Triumvirate of 42 BCE, what region of the Roman Republic was given to Lepidus?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFortyThree);
 
         Answer q143AnswerOne = new Answer("Hispania", questionOneHundredAndFortyThree, true);
@@ -2166,7 +2166,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q143AnswerFour = new Answer("Asia", questionOneHundredAndFortyThree, false);
         answerRepository.save(q143AnswerFour);
 
-        Question questionOneHundredAndFortyFour = new Question("Which male player won the gold medal of table tennis singles in 2016 Olympics Games?", Difficulty.EIGHT);
+        Question questionOneHundredAndFortyFour = new Question("Which male player won the gold medal of table tennis singles in 2016 Olympics Games?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFortyFour);
 
         Answer q144AnswerOne = new Answer("Ma Long", questionOneHundredAndFortyFour, true);
@@ -2181,7 +2181,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q144AnswerFour = new Answer("Vladimir Samsonov", questionOneHundredAndFortyFour, false);
         answerRepository.save(q144AnswerFour);
 
-        Question questionOneHundredAndFortyFive = new Question("What was the name of the German offensive operation in October 1941 to take Moscow before winter?", Difficulty.EIGHT);
+        Question questionOneHundredAndFortyFive = new Question("What was the name of the German offensive operation in October 1941 to take Moscow before winter?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFortyFive);
 
         Answer q145AnswerOne = new Answer("Operation Typhoon", questionOneHundredAndFortyFive, true);
@@ -2196,7 +2196,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q145AnswerFour = new Answer("Case Blue", questionOneHundredAndFortyFive, false);
         answerRepository.save(q145AnswerFour);
 
-        Question questionOneHundredAndFortySix = new Question("How many stations does the Central Line have on the London Underground?", Difficulty.EIGHT);
+        Question questionOneHundredAndFortySix = new Question("How many stations does the Central Line have on the London Underground?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFortySix);
 
         Answer q146AnswerOne = new Answer("49", questionOneHundredAndFortySix, true);
@@ -2211,7 +2211,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q146AnswerFour = new Answer("47", questionOneHundredAndFortySix, false);
         answerRepository.save(q146AnswerFour);
 
-        Question questionOneHundredAndFortySeven = new Question("What is the scientific name for the extinct hominin known as 'Lucy'?", Difficulty.EIGHT);
+        Question questionOneHundredAndFortySeven = new Question("What is the scientific name for the extinct hominin known as 'Lucy'?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFortySeven);
 
         Answer q147AnswerOne = new Answer("Australopithecus Afarensis", questionOneHundredAndFortySeven, true);
@@ -2226,7 +2226,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q147AnswerFour = new Answer("Australopithecus Antaris", questionOneHundredAndFortySeven, false);
         answerRepository.save(q147AnswerFour);
 
-        Question questionOneHundredAndFortyEight = new Question("The Western Lowland Gorilla is scientifically know as?", Difficulty.EIGHT);
+        Question questionOneHundredAndFortyEight = new Question("The Western Lowland Gorilla is scientifically know as?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFortyEight);
 
         Answer q148AnswerOne = new Answer("Gorilla Gorilla Gorilla", questionOneHundredAndFortyEight, true);
@@ -2241,7 +2241,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q148AnswerFour = new Answer("Gorilla Beringei Beringei", questionOneHundredAndFortyEight, false);
         answerRepository.save(q148AnswerFour);
 
-        Question questionOneHundredAndFortyNine = new Question("The Western Lowland Gorilla is scientifically know as?", Difficulty.EIGHT);
+        Question questionOneHundredAndFortyNine = new Question("The Western Lowland Gorilla is scientifically know as?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFortyNine);
 
         Answer q149AnswerOne = new Answer("Gorilla Gorilla Gorilla", questionOneHundredAndFortyNine, true);
@@ -2256,7 +2256,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q149AnswerFour = new Answer("Gorilla Beringei Beringei", questionOneHundredAndFortyNine, false);
         answerRepository.save(q149AnswerFour);
 
-        Question questionOneHundredAndFifty = new Question("From 1940 to 1942, what was the capital-in-exile of Free France ?", Difficulty.EIGHT);
+        Question questionOneHundredAndFifty = new Question("From 1940 to 1942, what was the capital-in-exile of Free France ?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFifty);
 
         Answer q150AnswerOne = new Answer("Brazzaville", questionOneHundredAndFifty, true);
@@ -2271,7 +2271,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q150AnswerFour = new Answer("Tunis", questionOneHundredAndFifty, false);
         answerRepository.save(q150AnswerFour);
 
-        Question questionOneHundredAndFiftyOne = new Question("What physics principle relates the net electric flux out of a closed surface to the charge enclosed by that surface?", Difficulty.EIGHT);
+        Question questionOneHundredAndFiftyOne = new Question("What physics principle relates the net electric flux out of a closed surface to the charge enclosed by that surface?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFiftyOne);
 
         Answer q151AnswerOne = new Answer("Gauss's Law", questionOneHundredAndFiftyOne, true);
@@ -2286,7 +2286,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q151AnswerFour = new Answer("Biot-Savart Law", questionOneHundredAndFiftyOne, false);
         answerRepository.save(q151AnswerFour);
 
-        Question questionOneHundredAndFiftyTwo = new Question("What type of sound chip does the Super Nintendo Entertainment System (SNES) have?", Difficulty.EIGHT);
+        Question questionOneHundredAndFiftyTwo = new Question("What type of sound chip does the Super Nintendo Entertainment System (SNES) have?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFiftyTwo);
 
         Answer q152AnswerOne = new Answer("ADPCM Sampler", questionOneHundredAndFiftyTwo, true);
@@ -2301,7 +2301,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q152AnswerFour = new Answer("PCM Sampler", questionOneHundredAndFiftyTwo, false);
         answerRepository.save(q152AnswerFour);
 
-        Question questionOneHundredAndFiftyThree = new Question("What type of sound chip does the Super Nintendo Entertainment System (SNES) have?", Difficulty.EIGHT);
+        Question questionOneHundredAndFiftyThree = new Question("What type of sound chip does the Super Nintendo Entertainment System (SNES) have?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFiftyThree);
 
         Answer q153AnswerOne = new Answer("ADPCM Sampler", questionOneHundredAndFiftyThree, true);
@@ -2316,7 +2316,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q153AnswerFour = new Answer("PCM Sampler", questionOneHundredAndFiftyThree, false);
         answerRepository.save(q153AnswerFour);
 
-        Question questionOneHundredAndFiftyFour = new Question("Which kind of algorithm is Ron Rivest not famous for creating?", Difficulty.EIGHT);
+        Question questionOneHundredAndFiftyFour = new Question("Which kind of algorithm is Ron Rivest not famous for creating?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFiftyFour);
 
         Answer q154AnswerOne = new Answer("Secret sharing scheme", questionOneHundredAndFiftyFour, true);
@@ -2331,7 +2331,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q154AnswerFour = new Answer("Stream cipher", questionOneHundredAndFiftyFour, false);
         answerRepository.save(q154AnswerFour);
 
-        Question questionOneHundredAndFiftyFive = new Question("How many times did Martina Navratilova win the Wimbledon Singles Championship?", Difficulty.EIGHT);
+        Question questionOneHundredAndFiftyFive = new Question("How many times did Martina Navratilova win the Wimbledon Singles Championship?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFiftyFive);
 
         Answer q155AnswerOne = new Answer("Nine", questionOneHundredAndFiftyFive, true);
@@ -2346,7 +2346,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q155AnswerFour = new Answer("Eight", questionOneHundredAndFiftyFive, false);
         answerRepository.save(q155AnswerFour);
 
-        Question questionOneHundredAndFiftySix = new Question("How many objects are equivalent to one mole?", Difficulty.EIGHT);
+        Question questionOneHundredAndFiftySix = new Question("How many objects are equivalent to one mole?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFiftySix);
 
         Answer q156AnswerOne = new Answer("6.022 x 10^23", questionOneHundredAndFiftySix, true);
@@ -2361,7 +2361,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q156AnswerFour = new Answer("6.002 x 10^23", questionOneHundredAndFiftySix, false);
         answerRepository.save(q156AnswerFour);
 
-        Question questionOneHundredAndFiftySeven = new Question("On which day did ARPANET suffer a 4 hour long network crash?", Difficulty.EIGHT);
+        Question questionOneHundredAndFiftySeven = new Question("On which day did ARPANET suffer a 4 hour long network crash?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFiftySeven);
 
         Answer q157AnswerOne = new Answer("October 27, 1980", questionOneHundredAndFiftySeven, true);
@@ -2376,7 +2376,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q157AnswerFour = new Answer("December 9, 1991", questionOneHundredAndFiftySeven, false);
         answerRepository.save(q157AnswerFour);
 
-        Question questionOneHundredAndFiftyEight = new Question("What year was Queen Elizabeth II born?", Difficulty.EIGHT);
+        Question questionOneHundredAndFiftyEight = new Question("What year was Queen Elizabeth II born?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFiftyEight);
 
         Answer q158AnswerOne = new Answer("1926", questionOneHundredAndFiftyEight, true);
@@ -2391,7 +2391,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q158AnswerFour = new Answer("1930", questionOneHundredAndFiftyEight, false);
         answerRepository.save(q158AnswerFour);
 
-        Question questionOneHundredAndFiftyNine = new Question("What internet protocol was documented in RFC 1459?", Difficulty.EIGHT);
+        Question questionOneHundredAndFiftyNine = new Question("What internet protocol was documented in RFC 1459?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFiftyNine);
 
         Answer q159AnswerOne = new Answer("IRC", questionOneHundredAndFiftyNine, true);
@@ -2406,7 +2406,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q159AnswerFour = new Answer("FTP", questionOneHundredAndFiftyNine, false);
         answerRepository.save(q159AnswerFour);
 
-        Question questionOneHundredAndSixty = new Question("Which RAID array type is associated with data mirroring?", Difficulty.EIGHT);
+        Question questionOneHundredAndSixty = new Question("Which RAID array type is associated with data mirroring?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndSixty);
 
         Answer q160AnswerOne = new Answer("RAID 1", questionOneHundredAndSixty, true);
