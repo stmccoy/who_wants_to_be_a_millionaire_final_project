@@ -921,6 +921,306 @@ public class DataLoader implements ApplicationRunner {
         Answer q60AnswerFour = new Answer("Five", questionSixty, false);
         answerRepository.save(q60AnswerFour);
 
+        Question questionSixtyOne = new Question("Which American president appears on a one dollar bill?", Difficulty.FOUR);
+        questionRepository.save(questionSixtyOne);
+
+        Answer q61AnswerOne = new Answer("George Washington", questionSixtyOne, true);
+        answerRepository.save(q61AnswerOne);
+
+        Answer q61AnswerTwo = new Answer("Thomas Jefferson", questionSixtyOne, false);
+        answerRepository.save(q61AnswerTwo);
+
+        Answer q61AnswerThree = new Answer("Abraham Lincoln", questionSixtyOne, false);
+        answerRepository.save(q61AnswerThree);
+
+        Answer q61AnswerFour = new Answer("Benjamin Franklin", questionSixtyOne, false);
+        answerRepository.save(q61AnswerFour);
+
+        Question questionSixtyTwo = new Question("Human cells typically have how many copies of each gene?", Difficulty.FOUR);
+        questionRepository.save(questionSixtyTwo);
+
+        Answer q62AnswerOne = new Answer("2", questionSixtyTwo, true);
+        answerRepository.save(q62AnswerOne);
+
+        Answer q62AnswerTwo = new Answer("1", questionSixtyTwo, false);
+        answerRepository.save(q62AnswerTwo);
+
+        Answer q62AnswerThree = new Answer("4", questionSixtyTwo, false);
+        answerRepository.save(q62AnswerThree);
+
+        Answer q62AnswerFour = new Answer("3", questionSixtyTwo, false);
+        answerRepository.save(q62AnswerFour);
+
+        Question questionSixtyThree = new Question("What are the cylinder-like parts that pump up and down within the engine?", Difficulty.FOUR);
+        questionRepository.save(questionSixtyThree);
+
+        Answer q63AnswerOne = new Answer("Pistons", questionSixtyThree, true);
+        answerRepository.save(q63AnswerOne);
+
+        Answer q63AnswerTwo = new Answer("Leaf Springs", questionSixtyThree, false);
+        answerRepository.save(q63AnswerTwo);
+
+        Answer q63AnswerThree = new Answer("Radiators", questionSixtyThree, false);
+        answerRepository.save(q63AnswerThree);
+
+        Answer q63AnswerFour = new Answer("ABS", questionSixtyThree, false);
+        answerRepository.save(q63AnswerFour);
+
+        Question questionSixtyFour = new Question("What are the cylinder-like parts that pump up and down within the engine?", Difficulty.FOUR);
+        questionRepository.save(questionSixtyFour);
+
+        Answer q64AnswerOne = new Answer("Pistons", questionSixtyFour, true);
+        answerRepository.save(q64AnswerOne);
+
+        Answer q64AnswerTwo = new Answer("Leaf Springs", questionSixtyFour, false);
+        answerRepository.save(q64AnswerTwo);
+
+        Answer q64AnswerThree = new Answer("Radiators", questionSixtyFour, false);
+        answerRepository.save(q64AnswerThree);
+
+        Answer q64AnswerFour = new Answer("ABS", questionSixtyFour, false);
+        answerRepository.save(q64AnswerFour);
+
+        Question questionSixtyFive = new Question("What is the capital of Indonesia?", Difficulty.FOUR);
+        questionRepository.save(questionSixtyFive);
+
+        Answer q65AnswerOne = new Answer("Jakarta", questionSixtyFive, true);
+        answerRepository.save(q65AnswerOne);
+
+        Answer q65AnswerTwo = new Answer("Bandung", questionSixtyFive, false);
+        answerRepository.save(q65AnswerTwo);
+
+        Answer q65AnswerThree = new Answer("Palembang", questionSixtyFive, false);
+        answerRepository.save(q65AnswerThree);
+
+        Answer q65AnswerFour = new Answer("Medan", questionSixtyFive, false);
+        answerRepository.save(q65AnswerFour);
+
+        Question questionSixtySix = new Question("During WWII, in 1945, the United States dropped atomic bombs on the two Japanese cities of Hiroshima and what other city?", Difficulty.FOUR);
+        questionRepository.save(questionSixtySix);
+
+        Answer q66AnswerOne = new Answer("Jakarta", questionSixtySix, true);
+        answerRepository.save(q66AnswerOne);
+
+        Answer q66AnswerTwo = new Answer("Bandung", questionSixtySix, false);
+        answerRepository.save(q66AnswerTwo);
+
+        Answer q66AnswerThree = new Answer("Palembang", questionSixtySix, false);
+        answerRepository.save(q66AnswerThree);
+
+        Answer q66AnswerFour = new Answer("Medan", questionSixtySix, false);
+        answerRepository.save(q66AnswerFour);
+
+        Question questionSixtySeven = new Question("Who wrote the novel 'Fear And Loathing In Las Vegas'?", Difficulty.FOUR);
+        questionRepository.save(questionSixtySeven);
+
+        Answer q67AnswerOne = new Answer("Hunter S. Thompson", questionSixtySeven, true);
+        answerRepository.save(q67AnswerOne);
+
+        Answer q67AnswerTwo = new Answer("F. Scott Fitzgerald", questionSixtySeven, false);
+        answerRepository.save(q67AnswerTwo);
+
+        Answer q67AnswerThree = new Answer("Henry Miller", questionSixtySeven, false);
+        answerRepository.save(q67AnswerThree);
+
+        Answer q67AnswerFour = new Answer("William S. Burroughs", questionSixtySeven, false);
+        answerRepository.save(q67AnswerFour);
+
+        Question questionSixtyEight = new Question("Which of these video game engines was made by the company Epic Games?", Difficulty.FOUR);
+        questionRepository.save(questionSixtyEight);
+
+        Answer q68AnswerOne = new Answer("Unreal", questionSixtyEight, true);
+        answerRepository.save(q68AnswerOne);
+
+        Answer q68AnswerTwo = new Answer("Unity", questionSixtyEight, false);
+        answerRepository.save(q68AnswerTwo);
+
+        Answer q68AnswerThree = new Answer("Game Maker: Studio", questionSixtyEight, false);
+        answerRepository.save(q68AnswerThree);
+
+        Answer q68AnswerFour = new Answer("Cry Engine", questionSixtyEight, false);
+        answerRepository.save(q68AnswerFour);
+
+        Question questionSixtyNine = new Question("Finish these lyrics from the 2016 song &quot;Panda&quot; by Desiigner: 'I got broads in....'", Difficulty.FOUR);
+        questionRepository.save(questionSixtyNine);
+
+        Answer q69AnswerOne = new Answer("Atlanta", questionSixtyNine, true);
+        answerRepository.save(q69AnswerOne);
+
+        Answer q69AnswerTwo = new Answer("Savannah", questionSixtyNine, false);
+        answerRepository.save(q69AnswerTwo);
+
+        Answer q69AnswerThree = new Answer("Augusta", questionSixtyNine, false);
+        answerRepository.save(q69AnswerThree);
+
+        Answer q69AnswerFour = new Answer("Marietta", questionSixtyNine, false);
+        answerRepository.save(q69AnswerFour);
+
+        Question questionSeventy = new Question("In web design, what does CSS stand for?", Difficulty.FOUR);
+        questionRepository.save(questionSeventy);
+
+        Answer q70AnswerOne = new Answer("Cascading Style Sheet", questionSeventy, true);
+        answerRepository.save(q70AnswerOne);
+
+        Answer q70AnswerTwo = new Answer("Complementary Style Sheet", questionSeventy, false);
+        answerRepository.save(q70AnswerTwo);
+
+        Answer q70AnswerThree = new Answer("Corrective Style Sheet", questionSeventy, false);
+        answerRepository.save(q70AnswerThree);
+
+        Answer q70AnswerFour = new Answer("Computer Style Sheet", questionSeventy, false);
+        answerRepository.save(q70AnswerFour);
+
+        Question questionSeventyOne = new Question("How many colors are there in a rainbow?", Difficulty.FOUR);
+        questionRepository.save(questionSeventyOne);
+
+        Answer q71AnswerOne = new Answer("7", questionSeventyOne, true);
+        answerRepository.save(q71AnswerOne);
+
+        Answer q71AnswerTwo = new Answer("8", questionSeventyOne, false);
+        answerRepository.save(q71AnswerTwo);
+
+        Answer q71AnswerThree = new Answer("6", questionSeventyOne, false);
+        answerRepository.save(q71AnswerThree);
+
+        Answer q71AnswerFour = new Answer("9", questionSeventyOne, false);
+        answerRepository.save(q71AnswerFour);
+
+        Question questionSeventyTwo = new Question("Which movie includes a giant bunny-like spirit who has magic powers including growing trees?", Difficulty.FOUR);
+        questionRepository.save(questionSeventyTwo);
+
+        Answer q72AnswerOne = new Answer("My Neighbor Totoro", questionSeventyTwo, true);
+        answerRepository.save(q72AnswerOne);
+
+        Answer q72AnswerTwo = new Answer("Hop", questionSeventyTwo, false);
+        answerRepository.save(q72AnswerTwo);
+
+        Answer q72AnswerThree = new Answer("Rise of the Guardians", questionSeventyTwo, false);
+        answerRepository.save(q72AnswerThree);
+
+        Answer q72AnswerFour = new Answer("Alice in Wonderland", questionSeventyTwo, false);
+        answerRepository.save(q72AnswerFour);
+
+        Question questionSeventyThree = new Question("How many faces does a dodecahedron have?", Difficulty.FOUR);
+        questionRepository.save(questionSeventyThree);
+
+        Answer q73AnswerOne = new Answer("12", questionSeventyThree, true);
+        answerRepository.save(q73AnswerOne);
+
+        Answer q73AnswerTwo = new Answer("10", questionSeventyThree, false);
+        answerRepository.save(q73AnswerTwo);
+
+        Answer q73AnswerThree = new Answer("14", questionSeventyThree, false);
+        answerRepository.save(q73AnswerThree);
+
+        Answer q73AnswerFour = new Answer("8", questionSeventyThree, false);
+        answerRepository.save(q73AnswerFour);
+
+        Question questionSeventyFour = new Question("What do you call a baby bat?", Difficulty.FOUR);
+        questionRepository.save(questionSeventyFour);
+
+        Answer q74AnswerOne = new Answer("Pup", questionSeventyFour, true);
+        answerRepository.save(q74AnswerOne);
+
+        Answer q74AnswerTwo = new Answer("Cub", questionSeventyFour, false);
+        answerRepository.save(q74AnswerTwo);
+
+        Answer q74AnswerThree = new Answer("Chick", questionSeventyFour, false);
+        answerRepository.save(q74AnswerThree);
+
+        Answer q74AnswerFour = new Answer("Kid", questionSeventyFour, false);
+        answerRepository.save(q74AnswerFour);
+
+        Question questionSeventyFive = new Question("In the show Stranger Things, what is Eleven's favorite breakfast food?", Difficulty.FOUR);
+        questionRepository.save(questionSeventyFive);
+
+        Answer q75AnswerOne = new Answer("Eggo Waffles", questionSeventyFive, true);
+        answerRepository.save(q75AnswerOne);
+
+        Answer q75AnswerTwo = new Answer("Toast", questionSeventyFive, false);
+        answerRepository.save(q75AnswerTwo);
+
+        Answer q75AnswerThree = new Answer("Captain Crunch", questionSeventyFive, false);
+        answerRepository.save(q75AnswerThree);
+
+        Answer q75AnswerFour = new Answer("Bacon and Eggs", questionSeventyFive, false);
+        answerRepository.save(q75AnswerFour);
+
+        Question questionSeventySix = new Question("Which of these African countries list Spanish as an official language?", Difficulty.FOUR);
+        questionRepository.save(questionSeventySix);
+
+        Answer q76AnswerOne = new Answer("Equatorial Guinea", questionSeventySix, true);
+        answerRepository.save(q76AnswerOne);
+
+        Answer q76AnswerTwo = new Answer("Guinea", questionSeventySix, false);
+        answerRepository.save(q76AnswerTwo);
+
+        Answer q76AnswerThree = new Answer("Cameroon", questionSeventySix, false);
+        answerRepository.save(q76AnswerThree);
+
+        Answer q76AnswerFour = new Answer("Angola", questionSeventySix, false);
+        answerRepository.save(q76AnswerFour);
+
+        Question questionSeventySeven = new Question("Which buzzword did Apple Inc. use to describe their removal of the headphone jack?", Difficulty.FOUR);
+        questionRepository.save(questionSeventySeven);
+
+        Answer q77AnswerOne = new Answer("Courage", questionSeventySeven, true);
+        answerRepository.save(q77AnswerOne);
+
+        Answer q77AnswerTwo = new Answer("Innovation", questionSeventySeven, false);
+        answerRepository.save(q77AnswerTwo);
+
+        Answer q77AnswerThree = new Answer("Revolution", questionSeventySeven, false);
+        answerRepository.save(q77AnswerThree);
+
+        Answer q77AnswerFour = new Answer("Bravery", questionSeventySeven, false);
+        answerRepository.save(q77AnswerFour);
+
+        Question questionSeventyEight = new Question("Which one of these is not a real game in the Dungeons & Dragons series?", Difficulty.FOUR);
+        questionRepository.save(questionSeventyEight);
+
+        Answer q78AnswerOne = new Answer("Extreme Dungeons & Dragons", questionSeventyEight, true);
+        answerRepository.save(q78AnswerOne);
+
+        Answer q78AnswerTwo = new Answer("Advanced Dungeons & Dragons", questionSeventyEight, false);
+        answerRepository.save(q78AnswerTwo);
+
+        Answer q78AnswerThree = new Answer("Dungeons & Dragons 3.5th edition", questionSeventyEight, false);
+        answerRepository.save(q78AnswerThree);
+
+        Answer q78AnswerFour = new Answer("Advanced Dungeons & Dragons 2nd edition", questionSeventyEight, false);
+        answerRepository.save(q78AnswerFour);
+
+        Question questionSeventyNine = new Question("What was the name of the the first episode of Doctor Who to air in 1963?", Difficulty.FOUR);
+        questionRepository.save(questionSeventyNine);
+
+        Answer q79AnswerOne = new Answer("An Unearthly Child", questionSeventyNine, true);
+        answerRepository.save(q79AnswerOne);
+
+        Answer q79AnswerTwo = new Answer("The Daleks", questionSeventyNine, false);
+        answerRepository.save(q79AnswerTwo);
+
+        Answer q79AnswerThree = new Answer("The Aztecs", questionSeventyNine, false);
+        answerRepository.save(q79AnswerThree);
+
+        Answer q79AnswerFour = new Answer("The Edge of Destruction", questionSeventyNine, false);
+        answerRepository.save(q79AnswerFour);
+
+        Question questionEighty = new Question("On what street did the 1666 Great Fire of London start?", Difficulty.FOUR);
+        questionRepository.save(questionEighty);
+
+        Answer q80AnswerOne = new Answer("Pudding Lane", questionEighty, true);
+        answerRepository.save(q80AnswerOne);
+
+        Answer q80AnswerTwo = new Answer("Baker Street", questionEighty, false);
+        answerRepository.save(q80AnswerTwo);
+
+        Answer q80AnswerThree = new Answer("Bread Lane", questionEighty, false);
+        answerRepository.save(q80AnswerThree);
+
+        Answer q80AnswerFour = new Answer("Baker Avenue", questionEighty, false);
+        answerRepository.save(q80AnswerFour);
+
 
 
 
