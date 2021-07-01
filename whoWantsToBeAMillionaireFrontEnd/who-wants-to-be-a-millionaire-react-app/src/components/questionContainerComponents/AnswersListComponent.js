@@ -1,10 +1,11 @@
 import React from 'react';
 import AnswerComponent from './AnswerComponent';
+import './AnswerList.css';
 
-function AnswersListComponent({answers}){
+function AnswersListComponent({answers, handleAnswerSelect}){
 
     const answerList = answers.map( (item) => {
-        return (<li key={item.correct}>{item.answer}</li>)
+        return (<li onClick={handleAnswerSelect} key={item.correct}>{item.answer}</li>)
     });
 
     return(

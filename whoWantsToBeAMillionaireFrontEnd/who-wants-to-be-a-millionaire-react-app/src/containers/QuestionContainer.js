@@ -11,6 +11,9 @@ function QuestionContainer(){
     const [answers, setAnswers] = useState([]);
     const [difficulty, setDifficulty] = useState(0);
     const [questionNumber, setQuestionNumber] = useState(0);
+    const [round, setRound] = useState(0);
+
+    const numberOfQuestions = 19;
 
     const findQuestionByDifficultyRating = function(){
         const request = new Request();
@@ -18,23 +21,39 @@ function QuestionContainer(){
             .then(res => setQuestions(res))
     }
 
+    const randomNumberGenerator = function(){
+        return Math.floor((Math.random() * numberOfQuestions))
+    }
+
+    const handleAnswerSelect = function (){
+        setRound(round + 1);
+        setQuestionNumber(randomNumberGenerator)
+    }
+
     useEffect(() => {
-        setQuestionNumber(Math.floor((Math.random() * 19)))
+        setQuestionNumber(randomNumberGenerator)    
         findQuestionByDifficultyRating()
-    }, [])
+    }, [difficulty])
 
     useEffect(()=>{
         if(questions){
             setQuestion(questions[questionNumber].question)
             setAnswers(questions[questionNumber].answers)
         }
-    }, [questions])
+    }, [questions, questionNumber])
+
+    useEffect(() => {
+        if(round % 2 == 0 && round != 0){
+            setDifficulty(difficulty + 1);
+            findQuestionByDifficultyRating();
+        }
+    },[round])
 
     return (
         <section>
             QuestionContainer stuff 
             <QuestionComponent question = {question}/>
-            <AnswersListComponent answers = {answers}/>
+            <AnswersListComponent answers = {answers} handleAnswerSelect={handleAnswerSelect}/>
         </section>
     )
 }
