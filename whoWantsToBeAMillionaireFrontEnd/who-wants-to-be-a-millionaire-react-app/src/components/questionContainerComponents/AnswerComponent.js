@@ -1,9 +1,9 @@
 import React from 'react';
 
-function AnswerComponent(){
+function AnswerComponent({answer}){
     return (
         <div>
-            AnswerComponent content goes here
+            {answer}
         </div>
     )
 }

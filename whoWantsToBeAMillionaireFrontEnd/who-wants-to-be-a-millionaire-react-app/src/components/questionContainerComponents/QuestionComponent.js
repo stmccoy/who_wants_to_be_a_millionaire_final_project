@@ -1,9 +1,16 @@
 import React from 'react';
 
-function QuestionComponent(){
+function QuestionComponent({question}){
     return(
+        question ?
         <div>
-            Question Content Goes Here
+            {question}
+        </div>
+
+        :
+
+        <div>
+            loading
         </div>
     )
 }

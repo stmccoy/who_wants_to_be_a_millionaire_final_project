@@ -1,18 +1,18 @@
 import React from 'react';
 import AnswerComponent from './AnswerComponent';
 
-function AnswersListComponent(){
+function AnswersListComponent({answers}){
 
-    const answers = [];
-
-    for(let i = 0; i < 4; i++){
-        answers.push(<AnswerComponent/>)
-    }
+    const answerList = answers.map( (item) => {
+        return (<li key={item.correct}>{item.answer}</li>)
+    });
 
     return(
         <div>
             AnswersListComponent content Goes Here
-            {answers}
+            <ul>
+                {answerList}
+            </ul>
         </div>
     )
 }
