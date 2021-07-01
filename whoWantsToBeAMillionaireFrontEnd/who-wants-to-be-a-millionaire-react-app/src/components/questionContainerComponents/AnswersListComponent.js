@@ -2,7 +2,7 @@ import React from 'react';
 import AnswerComponent from './AnswerComponent';
 import './AnswerList.css';
 
-function AnswersListComponent({answers, handleAnswerSelect}){
+function AnswersListComponent({answers, handleAnswerSelect, canClick}){
 
     const answerList = answers.map( (item) => {
         return (<li onClick={handleAnswerSelect} key={item.correct}>{item.answer}</li>)
