@@ -4,14 +4,24 @@ import AnswersListComponent from '../components/questionContainerComponents/Answ
 import Request from '../helpers/request';
 
 
-function QuestionContainer(){
+function QuestionContainer({round, setRound}){
 
+    // fetch question bank at current difficulty rating
     const [questions, setQuestions] = useState(null);
+
+    // set question
     const [question, setQuestion] = useState(null);
+
+    // set answers to question
     const [answers, setAnswers] = useState([]);
+
+    // set difficulty rating 
     const [difficulty, setDifficulty] = useState(0);
+
+    // number to index into question group list
     const [questionNumber, setQuestionNumber] = useState(0);
-    const [round, setRound] = useState(0);
+
+    // set whether person can click or not
     const [canClick, setCanClick] = useState(true);
 
     // total number of questions in a specific difficulty which factors in that index numbers in arrays start from 0 (20 questions total)
@@ -44,9 +54,13 @@ function QuestionContainer(){
             setQuestion(questions[questionNumber].question)
             setAnswers(questions[questionNumber].answers)
             // below to be attached to CSS flickering at a later point
-            setTimeout(() => setCanClick(true), 2000)
         }
     }, [questions, questionNumber])
+
+    //sets can click to be true once the answers to the question have loaded
+    useEffect(() => {
+        setTimeout(() => setCanClick(true), 2000)
+    }, [answers])
 
     // increases difficulty of questions if the person is on a round that is a multiple of 2 that isn't 0
     useEffect(() => {
