@@ -3,8 +3,10 @@ package finalProject.whoWantsToBeAMillionaire.components;
 import finalProject.whoWantsToBeAMillionaire.models.Answer;
 import finalProject.whoWantsToBeAMillionaire.models.Difficulty;
 import finalProject.whoWantsToBeAMillionaire.models.Question;
+import finalProject.whoWantsToBeAMillionaire.models.Round;
 import finalProject.whoWantsToBeAMillionaire.repositories.AnswerRepository;
 import finalProject.whoWantsToBeAMillionaire.repositories.QuestionRepository;
+import finalProject.whoWantsToBeAMillionaire.repositories.RoundRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -18,6 +20,9 @@ public class DataLoader implements ApplicationRunner {
 
     @Autowired
     AnswerRepository answerRepository;
+
+    @Autowired
+    RoundRepository roundRepository;
 
     @Override
     public void run(ApplicationArguments args) throws Exception{
@@ -2420,6 +2425,52 @@ public class DataLoader implements ApplicationRunner {
 
         Answer q160AnswerFour = new Answer("RAID 5", questionOneHundredAndSixty, false);
         answerRepository.save(q160AnswerFour);
+
+        Round roundOne = new Round(100,"100" );
+        roundRepository.save(roundOne);
+
+        Round roundTwe = new Round(200, "200");
+        roundRepository.save(roundTwe);
+
+        Round roundThree = new Round(300, "300");
+        roundRepository.save(roundThree);
+
+        Round roundFour = new Round(500, "500");
+        roundRepository.save(roundFour);
+
+        Round roundFive = new Round(1000, "1000");
+        roundRepository.save(roundFive);
+
+        Round roundSix = new Round(2000, "2000");
+        roundRepository.save(roundSix);
+
+        Round roundSeven = new Round(4000, "4000");
+        roundRepository.save(roundSeven);
+
+        Round roundEight = new Round(8000, "8000");
+        roundRepository.save(roundEight);
+
+        Round roundNine = new Round(16000, "16,000");
+        roundRepository.save(roundNine);
+
+        Round roundTen = new Round(32000, "32,000");
+        roundRepository.save(roundTen);
+
+        Round roundEleven = new Round(64000, "64,000");
+        roundRepository.save(roundEleven);
+
+        Round roundTwelve = new Round(125000, "125,000");
+        roundRepository.save(roundTwelve);
+
+        Round roundThirteen = new Round(250000, "250,000");
+        roundRepository.save(roundThirteen);
+
+        Round roundFourteen = new Round(500000, "500,000");
+        roundRepository.save(roundFourteen);
+
+        Round roundFifteen = new Round(1000000, "1,000,000");
+        roundRepository.save(roundFifteen);
+
 
     }
 }
