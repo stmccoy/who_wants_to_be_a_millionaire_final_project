@@ -1,7 +1,7 @@
 import React from 'react';
-import AnswerComponent from '../components/AnswerComponent';
+import AnswerComponent from './AnswerComponent';
 
-function AnswerContainer(){
+function AnswersListComponent(){
 
     const answers = [];
 
@@ -11,10 +11,10 @@ function AnswerContainer(){
 
     return(
         <div>
-            AnswerContainer content Goes Here
+            AnswersListComponent content Goes Here
             {answers}
         </div>
     )
 }
 
-export default AnswerContainer;
+export default AnswersListComponent;

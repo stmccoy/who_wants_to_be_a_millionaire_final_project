@@ -1,13 +1,13 @@
 import React from 'react';
-import QuestionComponent from '../components/QuestionComponent';
-import AnswerContainer from './AnswerContainer';
+import QuestionComponent from '../components/questionContainerComponents/QuestionComponent';
+import AnswersListComponent from '../components/questionContainerComponents/AnswersListComponent';
 
 function QuestionContainer(){
     return (
         <section>
             QuestionContainer stuff 
             <QuestionComponent/>
-            <AnswerContainer/>
+            <AnswersListComponent/>
         </section>
     )
 }
