@@ -6,12 +6,18 @@ $hover-cursor: pointer;
 $border: solid black;
 
 
+body{
+    background-image: url('../images/who_wants_to_be_a_millionaire_background.jpeg');
+    color: white;
+}
+
 .answers { 
     padding: 0%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     
     li{
+        background-color: blue;
         list-style-type: none;
         text-align: center;
         padding: 1%;
@@ -43,6 +49,7 @@ $border: solid black;
 
 
 .rounds{
+    background-color: blue;
     margin-top: 0%;
     margin-left: 55%;
     border: $border;
@@ -71,6 +78,7 @@ $border: solid black;
 }
 
 .question{
+    background-color: blue;
     text-align: center;
     border: $border;
     padding: 0.5%;
