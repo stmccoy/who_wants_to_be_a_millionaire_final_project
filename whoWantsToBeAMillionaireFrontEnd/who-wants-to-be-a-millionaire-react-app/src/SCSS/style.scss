@@ -1,9 +1,11 @@
-$selecting-color :orange;
+$selecting-color :linear-gradient(orange, orange);
 $text-color: blue;
-$right-answer: green;
-$wrong-answer: red;
+$right-answer: linear-gradient(green, green);
+$wrong-answer: linear-gradient(red, red);
 $hover-cursor: pointer;
 $border: solid black;
+$background-colour-rounds: linear-gradient(#003399, #4b007c);
+$background-colour-questions: linear-gradient(#003399, #7e00d1);
 
 
 body{
@@ -17,7 +19,7 @@ body{
     grid-template-columns: 1fr 1fr;
     
     li{
-        background-color: blue;
+        background-image: $background-colour-questions;
         list-style-type: none;
         text-align: center;
         padding: 1%;
@@ -30,33 +32,33 @@ body{
     }
 
     li:hover{
-        background-color: $selecting-color;
+        background-image: $selecting-color;
         cursor: $hover-cursor;
     }
 
     .selected{
-        background-color: $selecting-color; 
+        background-image: $selecting-color; 
     }
 
     .right-answer{
-        background-color: $right-answer
+        background-image: $right-answer
     }
 
     .wrong-answer{
-        background-color: $wrong-answer;
+        background-image: $wrong-answer;
     }
 }
 
 
 .rounds{
-    background-color: blue;
+    background-image: $background-colour-rounds;
     margin-top: 0%;
     margin-left: 55%;
     border: $border;
     padding: 0%;
     font-size: 20px;
     .current {
-        background-color: $selecting-color;
+        background-image: $selecting-color;
     }
 
     li{
@@ -78,7 +80,7 @@ body{
 }
 
 .question{
-    background-color: blue;
+    background-image: $background-colour-questions;
     text-align: center;
     border: $border;
     padding: 0.5%;
