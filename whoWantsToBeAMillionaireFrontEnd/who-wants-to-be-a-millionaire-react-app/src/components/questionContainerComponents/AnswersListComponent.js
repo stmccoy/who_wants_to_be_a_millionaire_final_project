@@ -2,17 +2,33 @@ import React from 'react';
 import AnswerComponent from './AnswerComponent';
 import './AnswerList.css';
 
-function AnswersListComponent({answers, handleAnswerSelect, correctAnswer, answerSelected}){
+function AnswersListComponent({answers, handleAnswerSelect, correctAnswer, answerSelected, rightAnswer, wrongAnswer}){
 
-    const answerList = answers.map( (item) => {
-        return (<li className={answerSelected == item.answer ? "selected" : null}onClick={(() => handleAnswerSelect(item.answer))} key={item.id} value={item.answer}>{item.answer}</li>)
+    const answerListSelected = answers.map( (item) => {
+        return (<li className={answerSelected === item.answer ? "selected" : null}onClick={(() => handleAnswerSelect(item.answer))} key={item.id} value={item.answer}>{item.answer}</li>)
+    });
+
+    const answerListRightOrWrong = answers.map( (item) => {
+        return (<li className={`${rightAnswer && item.answer === answerSelected ? "right-answer" : null} ${wrongAnswer && item.answer === answerSelected ? "wrong-answer" : null}`} onClick={(() => handleAnswerSelect(item.answer))} key={item.id} value={item.answer}>{item.answer}</li>)
     });
 
     return(
+        rightAnswer || wrongAnswer 
+        
+        ?
         <div>
             AnswersListComponent content Goes Here
             <ul>
-                {answerList}
+                {answerListRightOrWrong}
+            </ul>
+        </div>
+
+        :
+
+        <div>
+            AnswersListComponent content Goes Here
+            <ul>
+                {answerListSelected}
             </ul>
         </div>
     )
