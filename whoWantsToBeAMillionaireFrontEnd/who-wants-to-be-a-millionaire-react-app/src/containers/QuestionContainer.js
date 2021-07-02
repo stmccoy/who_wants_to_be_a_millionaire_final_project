@@ -63,6 +63,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver}){
 
     //resets round paramenters for next turn
     const resetRoundParameters = function (){
+        //change below to length of rounds array
         if(round === 14){
             setGameOver(true)
         }else {

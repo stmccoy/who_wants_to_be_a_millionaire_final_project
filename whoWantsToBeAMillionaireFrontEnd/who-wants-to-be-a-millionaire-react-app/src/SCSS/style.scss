@@ -1,0 +1,33 @@
+$selecting-color :orange;
+$text-color: blue;
+$right-answer: green;
+$wrong-answer: red;
+$hover-cursor: pointer;
+
+
+ul { 
+    .current {
+        background-color: $selecting-color;
+    }
+
+    li:hover{
+        background-color: $selecting-color;
+        cursor: $hover-cursor;
+    }
+
+    .selected{
+        background-color: $selecting-color; 
+    }
+
+    .right-answer{
+        background-color: $right-answer
+    }
+
+    .wrong-answer{
+        background-color: $wrong-answer;
+    }
+}
+
+
+
+

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './CSS/style.css';
 import QuestionContainer from './containers/QuestionContainer'
 import MainPageContainer from './containers/MainPageContainer';
 

@@ -1,0 +1,1 @@
+ul .current{background-color:orange}ul li:hover{background-color:orange;cursor:pointer}ul .selected{background-color:orange}ul .right-answer{background-color:green}ul .wrong-answer{background-color:red}
