@@ -12,7 +12,7 @@ function MainPageContainer({round}){
     const findRounds = function(){
         const request = new Request();
         request.get('http://localhost:8080/rounds/')
-            .then(res => setRounds(res))
+            .then(res => setRounds(res.reverse()))
     }
 
     useEffect(() => {
