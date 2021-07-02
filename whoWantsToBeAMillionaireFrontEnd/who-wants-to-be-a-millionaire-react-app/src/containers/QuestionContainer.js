@@ -4,7 +4,7 @@ import AnswersListComponent from '../components/questionContainerComponents/Answ
 import Request from '../helpers/request';
 
 
-function QuestionContainer({round, setRound}){
+function QuestionContainer({round, setRound, setGameOver, gameOver}){
 
     //state for if player gets answer right
     const [rightAnswer, setRightAnswer] = useState(false);
@@ -45,6 +45,7 @@ function QuestionContainer({round, setRound}){
             setTimeout(() => {setRightAnswer(false)}, 5000)
         } else{
             setWrongAnswer(true)
+            setTimeout(() => {setGameOver(true)}, 5000)
         }
     }
 
@@ -60,12 +61,17 @@ function QuestionContainer({round, setRound}){
         return Math.floor((Math.random() * numberOfQuestions))
     }
 
+    //resets round paramenters for next turn
     const resetRoundParameters = function (){
+        if(round === 14){
+            setGameOver(true)
+        }else {
+            setRound(round + 1)
+        }
         setRightAnswer(false)
         setWrongAnswer(false)
         setCanClick(true)
         setQuestionNumber(randomNumberGenerator)
-        setRound(round + 1)
         setAnswerSelected(null)
     }
 
@@ -84,16 +90,18 @@ function QuestionContainer({round, setRound}){
 
     // sets question and associated answers in game whenever the questions are downloaded, when the question number changes and when the app first loads
     useEffect(()=>{
-        if(questions){
-            setQuestion(questions[questionNumber].question)
-            setAnswers(questions[questionNumber].answers)
-            //filters through answers and sets correct answer to the one that is correct
-            const correctAnswer = questions[questionNumber].answers.filter((item) => {
-                if(item.correct){
-                    return item.answer
-                }
-            })
-            setCorrectAnswer(correctAnswer[0].answer);
+        if(!gameOver){
+            if(questions){
+                setQuestion(questions[questionNumber].question)
+                setAnswers(questions[questionNumber].answers)
+                //filters through answers and sets correct answer to the one that is correct
+                const correctAnswer = questions[questionNumber].answers.filter((item) => {
+                    if(item.correct){
+                        return item.answer
+                    }
+                })
+                setCorrectAnswer(correctAnswer[0].answer);
+            }
         }
     }, [questions, questionNumber])
 

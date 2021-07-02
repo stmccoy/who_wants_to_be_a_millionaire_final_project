@@ -6,11 +6,23 @@ import MainPageContainer from './containers/MainPageContainer';
 
 function App() {
   const [round, setRound] = useState(0);
+  const [gameOver, setGameOver] = useState(false);
 
   return (
+    gameOver
+
+    ?
+
+    [
+      <MainPageContainer round={round}/>,
+      <h1>GAME OVER</h1>
+    ]
+
+    :
+
     [
     <MainPageContainer round={round}/>,
-    <QuestionContainer round={round} setRound={setRound}/>
+    <QuestionContainer round={round} setRound={setRound} setGameOver={setGameOver} gameOver ={gameOver}/>
     ]
   )
 }
