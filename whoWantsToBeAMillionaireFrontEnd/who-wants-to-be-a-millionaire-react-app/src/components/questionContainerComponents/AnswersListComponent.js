@@ -17,8 +17,7 @@ function AnswersListComponent({answers, handleAnswerSelect, correctAnswer, answe
         
         ?
         <div>
-            AnswersListComponent content Goes Here
-            <ul>
+            <ul className= "answers">
                 {answerListRightOrWrong}
             </ul>
         </div>
@@ -26,8 +25,7 @@ function AnswersListComponent({answers, handleAnswerSelect, correctAnswer, answe
         :
 
         <div>
-            AnswersListComponent content Goes Here
-            <ul>
+            <ul className= "answers">
                 {answerListSelected}
             </ul>
         </div>

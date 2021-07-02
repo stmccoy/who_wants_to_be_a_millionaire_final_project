@@ -9,7 +9,7 @@ function RoundTrackerComponent({rounds, round}){
 
     return(
         <aside>
-           <ul>
+           <ul className="rounds">
                {roundsList}
            </ul>
         </aside>

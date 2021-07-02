@@ -127,7 +127,6 @@ function QuestionContainer({round, setRound, setGameOver, gameOver}){
 
     return (
         <section>
-            QuestionContainer stuff 
             <QuestionComponent question = {question}/>
             <AnswersListComponent answers = {answers} handleAnswerSelect={handleAnswerSelect} canClick = {canClick} answerSelected= {answerSelected} correctAnswer={correctAnswer} rightAnswer={rightAnswer} wrongAnswer={wrongAnswer} answerSelected={answerSelected}/>
         </section>

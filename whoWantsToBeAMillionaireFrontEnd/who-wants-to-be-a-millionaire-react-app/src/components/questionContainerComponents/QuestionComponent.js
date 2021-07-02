@@ -3,13 +3,13 @@ import React from 'react';
 function QuestionComponent({question}){
     return(
         question ?
-        <div>
+        <div className="question">
             {question}
         </div>
 
         :
 
-        <div>
+        <div className="question">
             loading
         </div>
     )

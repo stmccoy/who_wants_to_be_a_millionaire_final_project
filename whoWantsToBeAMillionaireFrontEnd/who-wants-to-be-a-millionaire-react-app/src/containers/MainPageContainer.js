@@ -20,8 +20,7 @@ function MainPageContainer({round}){
     }, [])
 
     return(
-        <section>
-            Main Page ContainerContent
+        <section className="main-page">
             <LifeLinesComponent/>
             <CentralTitleComponent/>
             <RoundTrackerComponent rounds={rounds} round={round}/>
