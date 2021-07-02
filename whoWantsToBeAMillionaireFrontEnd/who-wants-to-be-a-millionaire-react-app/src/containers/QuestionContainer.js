@@ -6,6 +6,12 @@ import Request from '../helpers/request';
 
 function QuestionContainer({round, setRound}){
 
+    //Correct Answer state
+    const [correctAnswer, setCorrectAnswer] = useState(null);
+
+    //Selected Answer State
+    const [answerSelected, setAnswerSelected] = useState(null);
+
     // fetch question bank at current difficulty rating
     const [questions, setQuestions] = useState(null);
 
@@ -40,8 +46,9 @@ function QuestionContainer({round, setRound}){
     }
 
     // increases the round and sets a new question number whenever an answer is clicked
-    const handleAnswerSelect = function (){
+    const handleAnswerSelect = function (value){
         if(canClick){
+            setAnswerSelected(value)
             setCanClick(false);
             setRound(round + 1);
             setQuestionNumber(randomNumberGenerator);
@@ -53,7 +60,13 @@ function QuestionContainer({round, setRound}){
         if(questions){
             setQuestion(questions[questionNumber].question)
             setAnswers(questions[questionNumber].answers)
-            // below to be attached to CSS flickering at a later point
+            //filters through answers and sets correct answer to the one that is correct
+            const correctAnswer = questions[questionNumber].answers.filter((item) => {
+                if(item.correct){
+                    return item.answer
+                }
+            })
+            setCorrectAnswer(correctAnswer[0].answer);
         }
     }, [questions, questionNumber])
 

@@ -5,7 +5,7 @@ import './AnswerList.css';
 function AnswersListComponent({answers, handleAnswerSelect, canClick}){
 
     const answerList = answers.map( (item) => {
-        return (<li onClick={handleAnswerSelect} key={item.correct}>{item.answer}</li>)
+        return (<li onClick={(() => handleAnswerSelect(item.answer))} key={item.id} value={item.answer}>{item.answer}</li>)
     });
 
     return(
