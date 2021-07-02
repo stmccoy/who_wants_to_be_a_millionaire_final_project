@@ -3,7 +3,7 @@ import React from 'react';
 function CentralTitleComponent (){
     return (
         <section>
-            Who Wants To Be A Millionaire
+            <img src="./who-wants-to-be-a-millionaire-logo.png" alt="who wants to be a millionaire logo" id="millionaire-logo"/>
         </section>
     )
 }
