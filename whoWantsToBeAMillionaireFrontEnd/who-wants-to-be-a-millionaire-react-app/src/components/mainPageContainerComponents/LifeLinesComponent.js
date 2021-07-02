@@ -2,8 +2,8 @@ import React from 'react';
 
 function LifeLinesComponent(){
     return (
-        <aside>
-            LifeLinesComponent content goes here
+        <aside className="life-lines">
+            Life lines
         </aside>
     )
 }
