@@ -50,8 +50,9 @@ function QuestionContainer({round, setRound}){
         if(canClick){
             setAnswerSelected(value)
             setCanClick(false);
-            setRound(round + 1);
-            setQuestionNumber(randomNumberGenerator);
+            setTimeout(() => {setQuestionNumber(randomNumberGenerator)}, 5000);
+            setTimeout(() => {setRound(round + 1)}, 5000);
+            setTimeout(() => setCanClick(true), 6000)
         }
     }
 
@@ -71,9 +72,9 @@ function QuestionContainer({round, setRound}){
     }, [questions, questionNumber])
 
     //sets can click to be true once the answers to the question have loaded
-    useEffect(() => {
-        setTimeout(() => setCanClick(true), 2000)
-    }, [answers])
+    // useEffect(() => {
+    //     setTimeout(() => setCanClick(true), 2000)
+    // }, [answers])
 
     // increases difficulty of questions if the person is on a round that is a multiple of 2 that isn't 0
     useEffect(() => {
@@ -93,7 +94,7 @@ function QuestionContainer({round, setRound}){
         <section>
             QuestionContainer stuff 
             <QuestionComponent question = {question}/>
-            <AnswersListComponent answers = {answers} handleAnswerSelect={handleAnswerSelect} canClick = {canClick}/>
+            <AnswersListComponent answers = {answers} handleAnswerSelect={handleAnswerSelect} canClick = {canClick} answerSelected= {answerSelected} correctAnswer={correctAnswer}/>
         </section>
     )
 }
