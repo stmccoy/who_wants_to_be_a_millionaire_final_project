@@ -1,16 +1,16 @@
 import React from 'react';
 
-function LifeLinesComponent(){
+function LifeLinesComponent({handleLifeLineClick}){
     return (
         <aside className="life-lines">
             <div>
-                <img src="./images/Classic5050.png" className="life-lines-pictures" alt="50-50 logo" id="50-50-logo"/>
+                <img onClick={handleLifeLineClick} src="./images/Classic5050.png" className="life-lines-pictures" alt="50-50 logo" id="50-50-logo"/>
             </div>
             <div>
-                <img src="./images/ClassicATA.png" className="life-lines-pictures" alt="Ask The Audience logo" id="ask-the-audience-logo"/>
+                <img onClick={handleLifeLineClick} src="./images/ClassicATA.png" className="life-lines-pictures" alt="Ask The Audience logo" id="ask-the-audience-logo"/>
             </div>
             <div>
-                <img src="./images/ClassicPAF.png" className="life-lines-pictures" alt="Phone A Friend Logo" id="phone-a-friend-logo"/>
+                <img onClick={handleLifeLineClick} src="./images/ClassicPAF.png" className="life-lines-pictures" alt="Phone A Friend Logo" id="phone-a-friend-logo"/>
             </div>
         </aside>
     )
