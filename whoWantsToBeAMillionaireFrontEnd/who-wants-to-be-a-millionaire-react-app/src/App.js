@@ -8,6 +8,9 @@ function App() {
   const [round, setRound] = useState(0);
   const [gameOver, setGameOver] = useState(false);
 
+  //correct answer value
+  const [correctAnswer, setCorrectAnswer] = useState(null);
+
   return (
     gameOver
 
@@ -21,8 +24,8 @@ function App() {
     :
 
     [
-    <MainPageContainer round={round}/>,
-    <QuestionContainer round={round} setRound={setRound} setGameOver={setGameOver} gameOver ={gameOver}/>
+    <MainPageContainer round={round} correctAnswer={correctAnswer}/>,
+    <QuestionContainer round={round} setRound={setRound} setGameOver={setGameOver} gameOver ={gameOver} correctAnswer={correctAnswer} setCorrectAnswer={setCorrectAnswer}/>
     ]
   )
 }

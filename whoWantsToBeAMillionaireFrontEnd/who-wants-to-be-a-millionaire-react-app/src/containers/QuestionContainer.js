@@ -4,16 +4,13 @@ import AnswersListComponent from '../components/questionContainerComponents/Answ
 import Request from '../helpers/request';
 
 
-function QuestionContainer({round, setRound, setGameOver, gameOver}){
+function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswer, setCorrectAnswer}){
 
     //state for if player gets answer right
     const [rightAnswer, setRightAnswer] = useState(false);
 
     //state for if player gets answer wrong
     const [wrongAnswer, setWrongAnswer] = useState(false);
-
-    //Correct Answer state
-    const [correctAnswer, setCorrectAnswer] = useState(null);
 
     //Selected Answer State
     const [answerSelected, setAnswerSelected] = useState(null);

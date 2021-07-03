@@ -22,7 +22,7 @@ function LifeLinesComponent({handleLifeLineClick, usedFiftyFifty, usedPhoneAFrie
             <div>
                 {usedPhoneAFriend
                 ?
-                <img onClick={handleLifeLineClick} src="./images/ClassicPAFused.png" className="used-life-lines-pictures" alt="Used Phone A Friend Logo" id="used-phone-a-friend-logo"/>
+                <img src="./images/ClassicPAFused.png" className="used-life-lines-pictures" alt="Used Phone A Friend Logo" id="used-phone-a-friend-logo"/>
                 :
                 <img onClick={handleLifeLineClick} src="./images/ClassicPAF.png" className="life-lines-pictures" alt="Phone A Friend Logo" id="phone-a-friend-logo"/>
                 }

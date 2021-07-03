@@ -4,7 +4,7 @@ import LifeLinesComponent from '../components/mainPageContainerComponents/LifeLi
 import CentralTitleComponent from '../components/mainPageContainerComponents/CentralTitleComponent';
 import Request from '../helpers/request';
 
-function MainPageContainer({round}){
+function MainPageContainer({round, correctAnswer}){
 
     const [rounds, setRounds] = useState([])
 
@@ -54,7 +54,7 @@ function MainPageContainer({round}){
     return(
         <section className="main-page">
             <LifeLinesComponent handleLifeLineClick= {handleLifeLineClick} usedFiftyFifty={usedFiftyFifty} usedPhoneAFriend={usedPhoneAFriend} usedAskTheAudience={usedAskTheAudience}/>
-            <CentralTitleComponent askFiftyFifty={askFiftyFifty} askTheAudience={askTheAudience} askPhoneAFriend={askPhoneAFriend}/>
+            <CentralTitleComponent askFiftyFifty={askFiftyFifty} askTheAudience={askTheAudience} askPhoneAFriend={askPhoneAFriend} correctAnswer={correctAnswer}/>
             <RoundTrackerComponent rounds={rounds} round={round}/>
         </section>
     )

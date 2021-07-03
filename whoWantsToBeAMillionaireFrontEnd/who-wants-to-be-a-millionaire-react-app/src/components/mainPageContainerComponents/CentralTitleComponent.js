@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CentralTitleComponent ({askFiftyFifty, askPhoneAFriend, askTheAudience}){
+function CentralTitleComponent ({askFiftyFifty, askPhoneAFriend, askTheAudience, correctAnswer}){
     return (
         <section>
             <img src="./images/who-wants-to-be-a-millionaire-logo.png" alt="who wants to be a millionaire logo" id="millionaire-logo"/>
@@ -14,14 +14,14 @@ function CentralTitleComponent ({askFiftyFifty, askPhoneAFriend, askTheAudience}
             {askTheAudience 
             ?
             <p>
-                Audience thinking
+                Audience thinks it's {correctAnswer}
             </p>
             :
             null}
             {askPhoneAFriend 
             ?
             <p>
-                Friend thinking
+                Friend thinks it's {correctAnswer}
             </p>
             :
             null}
