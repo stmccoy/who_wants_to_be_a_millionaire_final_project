@@ -92,3 +92,12 @@ body{
 #millionaire-logo{
     width: 17.5%;
 }
+
+.life-lines-pictures{
+    @extend #millionaire-logo;
+    margin-top: 2%;
+
+    &:hover{
+        cursor: $hover-cursor;
+    }
+}
