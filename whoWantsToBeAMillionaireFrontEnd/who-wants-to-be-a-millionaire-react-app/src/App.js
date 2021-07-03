@@ -11,6 +11,10 @@ function App() {
   //correct answer value
   const [correctAnswer, setCorrectAnswer] = useState(null);
 
+  // set whether person can click on answers or not
+  const [canClick, setCanClick] = useState(true);
+
+
   return (
     gameOver
 
@@ -24,8 +28,8 @@ function App() {
     :
 
     [
-    <MainPageContainer round={round} correctAnswer={correctAnswer}/>,
-    <QuestionContainer round={round} setRound={setRound} setGameOver={setGameOver} gameOver ={gameOver} correctAnswer={correctAnswer} setCorrectAnswer={setCorrectAnswer}/>
+    <MainPageContainer round={round} correctAnswer={correctAnswer} setCanClick={setCanClick}/>,
+    <QuestionContainer round={round} setRound={setRound} setGameOver={setGameOver} gameOver ={gameOver} correctAnswer={correctAnswer} setCorrectAnswer={setCorrectAnswer} canClick={canClick} setCanClick={setCanClick}/>
     ]
   )
 }

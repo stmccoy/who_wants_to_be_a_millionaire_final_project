@@ -4,7 +4,7 @@ import LifeLinesComponent from '../components/mainPageContainerComponents/LifeLi
 import CentralTitleComponent from '../components/mainPageContainerComponents/CentralTitleComponent';
 import Request from '../helpers/request';
 
-function MainPageContainer({round, correctAnswer}){
+function MainPageContainer({round, correctAnswer, setCanClick}){
 
     const [rounds, setRounds] = useState([])
 
@@ -29,11 +29,13 @@ function MainPageContainer({round, correctAnswer}){
     }, [])
 
     const handleLifeLineClick = function(event){
+        setCanClick(false);
         if(event.target.id == "50-50-logo"){
             setAskFiftyFifty(true);
             setTimeout(() => {
                 setAskFiftyFifty(false); 
                 setUsedFiftyFifty(true);
+                setCanClick(true);
             }, 5000)
 
         }else if (event.target.id == "ask-the-audience-logo"){
@@ -41,12 +43,14 @@ function MainPageContainer({round, correctAnswer}){
             setTimeout(() => {
                 setAskTheAudience(false);
                 setUsedAskTheAudience(true);
+                setCanClick(true);
             }, 5000)
         } else{
             setAskPhoneAFriend(true);
             setTimeout(() => {
                 setAskPhoneAFriend(false);
                 setUsedPhoneAFriend(true);
+                setCanClick(true);
             }, 5000)
         }
     }

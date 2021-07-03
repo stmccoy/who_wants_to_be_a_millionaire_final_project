@@ -4,7 +4,7 @@ import AnswersListComponent from '../components/questionContainerComponents/Answ
 import Request from '../helpers/request';
 
 
-function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswer, setCorrectAnswer}){
+function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswer, setCorrectAnswer, canClick, setCanClick}){
 
     //state for if player gets answer right
     const [rightAnswer, setRightAnswer] = useState(false);
@@ -29,9 +29,6 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
 
     // number to index into question group list
     const [questionNumber, setQuestionNumber] = useState(0);
-
-    // set whether person can click or not
-    const [canClick, setCanClick] = useState(true);
 
     // total number of questions in a specific difficulty which factors in that index numbers in arrays start from 0 (20 questions total)
     const numberOfQuestions = 19;
