@@ -116,6 +116,10 @@ body{
 
 .used-life-lines-pictures{
     @extend .life-lines-pictures;
+
+    &:hover{
+        cursor: default;
+    }
 }
 
 #phone-a-friend-clock{
@@ -125,8 +129,8 @@ body{
 
 .life-line-response{
     color: $text-color;
-    font-size: 40px;
+    font-size: 35px;
     margin-top: 40%;
-    background-image: $background-colour-rounds;
+    background-image: $background-colour-questions;
     border-radius: 25px;
 }

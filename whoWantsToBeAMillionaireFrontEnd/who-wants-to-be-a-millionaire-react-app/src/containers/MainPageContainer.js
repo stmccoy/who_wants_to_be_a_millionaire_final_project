@@ -31,6 +31,8 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
     const handleLifeLineClick = function(event){
         setCanClick(false);
         if(event.target.id == "50-50-logo"){
+            setAskTheAudienceDecides(false);
+            setPhoneAFriendDecides(false)
             setAskFiftyFifty(true);
             setTimeout(() => {
                 setAskFiftyFifty(false); 
@@ -44,6 +46,7 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
             // }, 10000)
 
         }else if (event.target.id == "ask-the-audience-logo"){
+            setPhoneAFriendDecides(false)
             setAskTheAudience(true);
             setTimeout(() => {
                 setAskTheAudience(false);
@@ -56,6 +59,7 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
             //     setCanClick(true);
             // }, 10000)
         } else{
+            setAskTheAudienceDecides(false)
             setAskPhoneAFriend(true);
             setTimeout(() => {
                 setAskPhoneAFriend(false);
