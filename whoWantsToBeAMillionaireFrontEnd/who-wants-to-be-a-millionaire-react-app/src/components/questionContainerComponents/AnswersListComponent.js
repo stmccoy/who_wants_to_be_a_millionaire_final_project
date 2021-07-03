@@ -12,12 +12,6 @@ function AnswersListComponent({answers, handleAnswerSelect, correctAnswer, answe
         return (<li className={`${rightAnswer && item.answer === answerSelected ? "right-answer" : null} ${wrongAnswer && item.answer === answerSelected ? "wrong-answer" : null}`} onClick={(() => handleAnswerSelect(item.answer))} key={item.id} value={item.answer}>{item.answer}</li>)
     });
 
-    const FiftyFiftyArray = [correctAnswer, fiftyFiftyOtherOption]
-
-    const fiftyFiftyAnswerListSelected = answers.map( (item) => {
-        return (<li className={answerSelected === item.answer ? "selected" : null}onClick={(() => handleAnswerSelect(item.answer))} key={item.id} value={item.answer}>{FiftyFiftyArray.includes(item.answer) && correctAnswer ? item.answer : null}</li>)
-    });
-
     return(
         rightAnswer || wrongAnswer 
         

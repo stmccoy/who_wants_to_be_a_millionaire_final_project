@@ -39,7 +39,6 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
                 setFiftyFiftyDecides(true)
             }, 5000)
             setTimeout(() => {
-                setFiftyFiftyDecides(false); 
                 setUsedFiftyFifty(true);
                 setCanClick(true);
             }, 10000)

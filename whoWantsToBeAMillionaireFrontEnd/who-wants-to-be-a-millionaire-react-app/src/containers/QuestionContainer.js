@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import QuestionComponent from '../components/questionContainerComponents/QuestionComponent';
 import AnswersListComponent from '../components/questionContainerComponents/AnswersListComponent';
+import FiftyFiftyAnswersList from '../components/questionContainerComponents/FiftyFiftyAnswersListComponent';
 import Request from '../helpers/request';
 
 
-function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswer, setCorrectAnswer, canClick, setCanClick, fiftyFiftyDecides}){
+function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswer, setCorrectAnswer, canClick, setCanClick, fiftyFiftyDecides, setFiftyFiftyDecides}){
 
     //state for if player gets answer right
     const [rightAnswer, setRightAnswer] = useState(false);
@@ -75,6 +76,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
         setCanClick(true)
         setQuestionNumber(randomNumberGenerator)
         setAnswerSelected(null)
+        setFiftyFiftyDecides(false); 
     }
 
     // increases the round and sets a new question number whenever an answer is clicked
@@ -145,7 +147,15 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
         <section>
             <QuestionComponent question = {question}/>
 
-            <AnswersListComponent answers = {answers} handleAnswerSelect={handleAnswerSelect} canClick = {canClick} answerSelected= {answerSelected} correctAnswer={correctAnswer} rightAnswer={rightAnswer} wrongAnswer={wrongAnswer} answerSelected={answerSelected} fiftyFiftyOtherOption={fiftyFiftyOtherOption} fiftyFiftyDecides={fiftyFiftyDecides}/>
+            {fiftyFiftyDecides
+
+            ?
+
+            <FiftyFiftyAnswersList answers= {answers} handleAnswerSelect={handleAnswerSelect} canClick = {canClick} answerSelected= {answerSelected} correctAnswer={correctAnswer} rightAnswer={rightAnswer} wrongAnswer={wrongAnswer} answerSelected={answerSelected} fiftyFiftyOtherOption={fiftyFiftyOtherOption} fiftyFiftyDecides={fiftyFiftyDecides}/>
+
+            :
+
+            <AnswersListComponent answers= {answers} handleAnswerSelect={handleAnswerSelect} canClick = {canClick} answerSelected= {answerSelected} correctAnswer={correctAnswer} rightAnswer={rightAnswer} wrongAnswer={wrongAnswer} answerSelected={answerSelected} fiftyFiftyOtherOption={fiftyFiftyOtherOption} fiftyFiftyDecides={fiftyFiftyDecides}/>}
         </section>
     )
 }
