@@ -11,6 +11,13 @@ $background-colour-questions: linear-gradient(#003399, #7e00d1);
 body{
     background-image: url('../images/who_wants_to_be_a_millionaire_background.jpeg');
     color: white;
+
+    h1{
+        text-align: center;
+        font-size: 100px;
+        color: orange;
+        margin-top: -350px;
+    }
 }
 
 .answers { 

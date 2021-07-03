@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './CSS/style.css';
 import QuestionContainer from './containers/QuestionContainer'
 import MainPageContainer from './containers/MainPageContainer';
+import GameOverComponent from './components/gameOverComponents/gameOverComponents';
 
 function App() {
   const [round, setRound] = useState(0);
@@ -19,20 +20,20 @@ function App() {
 
 
   return (
+
+    [
+
+    <MainPageContainer round={round} correctAnswer={correctAnswer} setCanClick={setCanClick} fiftyFiftyDecides={fiftyFiftyDecides} setFiftyFiftyDecides={setFiftyFiftyDecides} phoneAFriendDecides={phoneAFriendDecides}setPhoneAFriendDecides={setPhoneAFriendDecides} askTheAudienceDecides={askTheAudienceDecides} setAskTheAudienceDecides={setAskTheAudienceDecides}/>
+    ,
+
     gameOver
 
     ?
 
-    [
-      <MainPageContainer round={round}/>,
-      <h1>GAME OVER</h1>
-    ]
+    <GameOverComponent/>
 
     :
 
-    [
-    <MainPageContainer round={round} correctAnswer={correctAnswer} setCanClick={setCanClick} fiftyFiftyDecides={fiftyFiftyDecides} setFiftyFiftyDecides={setFiftyFiftyDecides} phoneAFriendDecides={phoneAFriendDecides}setPhoneAFriendDecides={setPhoneAFriendDecides} askTheAudienceDecides={askTheAudienceDecides} setAskTheAudienceDecides={setAskTheAudienceDecides}/>
-    ,
     <QuestionContainer round={round} setRound={setRound} setGameOver={setGameOver} gameOver ={gameOver} correctAnswer={correctAnswer} setCorrectAnswer={setCorrectAnswer} canClick={canClick} setCanClick={setCanClick} fiftyFiftyDecides={fiftyFiftyDecides} setFiftyFiftyDecides={setFiftyFiftyDecides} phoneAFriendDecides={phoneAFriendDecides} setPhoneAFriendDecides={setPhoneAFriendDecides} askTheAudienceDecides={askTheAudienceDecides} setAskTheAudienceDecides={setAskTheAudienceDecides}/>
     ]
   )

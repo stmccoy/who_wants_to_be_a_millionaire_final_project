@@ -40,7 +40,9 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
     const decideIfAnswerCorrect = function (answer){
         if(answer == correctAnswer){
             setRightAnswer(true)
-            setTimeout(() => {setRightAnswer(false)}, 5000)
+            if(round !== 14){
+                setTimeout(() => {setRound(round + 1)}, 5000)
+            }
         } else{
             setWrongAnswer(true)
             setTimeout(() => {setGameOver(true)}, 5000)
@@ -68,14 +70,14 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
         //change below to length of rounds array
         if(round === 14){
             setGameOver(true)
-        }else {
-            setRound(round + 1)
         }
         setRightAnswer(false)
         setWrongAnswer(false)
         setCanClick(true)
         setQuestionNumber(randomNumberGenerator)
         setAnswerSelected(null)
+        
+        //resets lifelines
         setFiftyFiftyDecides(false); 
         setAskTheAudienceDecides(false);
         setPhoneAFriendDecides(false);
