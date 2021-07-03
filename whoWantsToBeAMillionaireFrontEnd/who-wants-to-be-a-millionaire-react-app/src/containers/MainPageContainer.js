@@ -10,12 +10,15 @@ function MainPageContainer({round, correctAnswer, setCanClick}){
 
     const [askFiftyFifty, setAskFiftyFifty] = useState(false)
     const [usedFiftyFifty, setUsedFiftyFifty] = useState(false)
+    const [fiftyFiftyDecides, setFiftyFiftyDecides] = useState(false)
 
     const [askPhoneAFriend, setAskPhoneAFriend] = useState(false)
     const [usedPhoneAFriend, setUsedPhoneAFriend] = useState(false)
+    const [phoneAFriendDecides, setPhoneAFriendDecides] = useState(false)
 
     const [askTheAudience, setAskTheAudience] = useState(false)
     const [usedAskTheAudience, setUsedAskTheAudience] = useState(false)
+    const [askTheAudienceDecides, setAskTheAudienceDecides] = useState(false)
 
     // fetch request for questions based upon difficulty rating that the player is currently on
     const findRounds = function(){
@@ -34,31 +37,43 @@ function MainPageContainer({round, correctAnswer, setCanClick}){
             setAskFiftyFifty(true);
             setTimeout(() => {
                 setAskFiftyFifty(false); 
+                setFiftyFiftyDecides(true)
+            }, 5000)
+            setTimeout(() => {
+                setFiftyFiftyDecides(false); 
                 setUsedFiftyFifty(true);
                 setCanClick(true);
-            }, 5000)
+            }, 10000)
 
         }else if (event.target.id == "ask-the-audience-logo"){
             setAskTheAudience(true);
             setTimeout(() => {
                 setAskTheAudience(false);
+                setAskTheAudienceDecides(true)
+            }, 5000)
+            setTimeout(() => {
+                setAskTheAudienceDecides(false);
                 setUsedAskTheAudience(true);
                 setCanClick(true);
-            }, 5000)
+            }, 10000)
         } else{
             setAskPhoneAFriend(true);
             setTimeout(() => {
                 setAskPhoneAFriend(false);
+                setPhoneAFriendDecides(true)
+            }, 5000)
+            setTimeout(() => {
+                setPhoneAFriendDecides(false);
                 setUsedPhoneAFriend(true);
                 setCanClick(true);
-            }, 5000)
+            }, 10000)
         }
     }
 
     return(
         <section className="main-page">
             <LifeLinesComponent handleLifeLineClick= {handleLifeLineClick} usedFiftyFifty={usedFiftyFifty} usedPhoneAFriend={usedPhoneAFriend} usedAskTheAudience={usedAskTheAudience}/>
-            <CentralTitleComponent askFiftyFifty={askFiftyFifty} askTheAudience={askTheAudience} askPhoneAFriend={askPhoneAFriend} correctAnswer={correctAnswer}/>
+            <CentralTitleComponent askFiftyFifty={askFiftyFifty} askTheAudience={askTheAudience} askPhoneAFriend={askPhoneAFriend} correctAnswer={correctAnswer} fiftyFiftyDecides={fiftyFiftyDecides} phoneAFriendDecides={phoneAFriendDecides} askTheAudienceDecides={askTheAudienceDecides}/>
             <RoundTrackerComponent rounds={rounds} round={round}/>
         </section>
     )
