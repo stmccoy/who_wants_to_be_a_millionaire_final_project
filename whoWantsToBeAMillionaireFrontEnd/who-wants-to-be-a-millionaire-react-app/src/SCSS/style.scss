@@ -101,3 +101,7 @@ body{
         cursor: $hover-cursor;
     }
 }
+
+.used-life-lines-pictures{
+    @extend .life-lines-pictures;
+}

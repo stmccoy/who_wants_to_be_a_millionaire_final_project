@@ -7,9 +7,15 @@ import Request from '../helpers/request';
 function MainPageContainer({round}){
 
     const [rounds, setRounds] = useState([])
-    const [fiftyFifty, setfiftyFifty] = useState(false)
-    const [phoneAFriend, setPhoneAFriend] = useState(false)
+
+    const [askFiftyFifty, setAskFiftyFifty] = useState(false)
+    const [usedFiftyFifty, setUsedFiftyFifty] = useState(false)
+
+    const [askPhoneAFriend, setAskPhoneAFriend] = useState(false)
+    const [usedPhoneAFriend, setUsedPhoneAFriend] = useState(false)
+
     const [askTheAudience, setAskTheAudience] = useState(false)
+    const [usedAskTheAudience, setUsedAskTheAudience] = useState(false)
 
     // fetch request for questions based upon difficulty rating that the player is currently on
     const findRounds = function(){
@@ -24,21 +30,31 @@ function MainPageContainer({round}){
 
     const handleLifeLineClick = function(event){
         if(event.target.id == "50-50-logo"){
-            setfiftyFifty(true);
-            setTimeout(() => {setfiftyFifty(false)}, 5000)
+            setAskFiftyFifty(true);
+            setTimeout(() => {
+                setAskFiftyFifty(false); 
+                setUsedFiftyFifty(true);
+            }, 5000)
+
         }else if (event.target.id == "ask-the-audience-logo"){
             setAskTheAudience(true);
-            setTimeout(() => {setAskTheAudience(false)}, 5000)
+            setTimeout(() => {
+                setAskTheAudience(false);
+                setUsedAskTheAudience(true);
+            }, 5000)
         } else{
-            setPhoneAFriend(true);
-            setTimeout(() => {setPhoneAFriend(false)}, 5000)
+            setAskPhoneAFriend(true);
+            setTimeout(() => {
+                setAskPhoneAFriend(false);
+                setUsedPhoneAFriend(true);
+            }, 5000)
         }
     }
 
     return(
         <section className="main-page">
-            <LifeLinesComponent handleLifeLineClick= {handleLifeLineClick}/>
-            <CentralTitleComponent fiftyFifty={fiftyFifty} askTheAudience={askTheAudience} phoneAFriend={phoneAFriend}/>
+            <LifeLinesComponent handleLifeLineClick= {handleLifeLineClick} usedFiftyFifty={usedFiftyFifty} usedPhoneAFriend={usedPhoneAFriend} usedAskTheAudience={usedAskTheAudience}/>
+            <CentralTitleComponent askFiftyFifty={askFiftyFifty} askTheAudience={askTheAudience} askPhoneAFriend={askPhoneAFriend}/>
             <RoundTrackerComponent rounds={rounds} round={round}/>
         </section>
     )

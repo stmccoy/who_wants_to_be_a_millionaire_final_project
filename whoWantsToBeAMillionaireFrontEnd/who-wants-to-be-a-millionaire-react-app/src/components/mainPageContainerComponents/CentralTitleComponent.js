@@ -1,10 +1,10 @@
 import React from 'react';
 
-function CentralTitleComponent ({fiftyFifty, phoneAFriend, askTheAudience}){
+function CentralTitleComponent ({askFiftyFifty, askPhoneAFriend, askTheAudience}){
     return (
         <section>
             <img src="./images/who-wants-to-be-a-millionaire-logo.png" alt="who wants to be a millionaire logo" id="millionaire-logo"/>
-            {fiftyFifty 
+            {askFiftyFifty 
             ?
             <p>
                 fiftyFifty loading
@@ -18,7 +18,7 @@ function CentralTitleComponent ({fiftyFifty, phoneAFriend, askTheAudience}){
             </p>
             :
             null}
-            {phoneAFriend 
+            {askPhoneAFriend 
             ?
             <p>
                 Friend thinking
