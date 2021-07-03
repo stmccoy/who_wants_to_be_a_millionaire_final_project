@@ -4,7 +4,7 @@ import LifeLinesComponent from '../components/mainPageContainerComponents/LifeLi
 import CentralTitleComponent from '../components/mainPageContainerComponents/CentralTitleComponent';
 import Request from '../helpers/request';
 
-function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides, setFiftyFiftyDecides}){
+function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides, setFiftyFiftyDecides, phoneAFriendDecides, setPhoneAFriendDecides, askTheAudienceDecides, setAskTheAudienceDecides}){
 
     const [rounds, setRounds] = useState([])
 
@@ -13,11 +13,9 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
 
     const [askPhoneAFriend, setAskPhoneAFriend] = useState(false)
     const [usedPhoneAFriend, setUsedPhoneAFriend] = useState(false)
-    const [phoneAFriendDecides, setPhoneAFriendDecides] = useState(false)
 
     const [askTheAudience, setAskTheAudience] = useState(false)
     const [usedAskTheAudience, setUsedAskTheAudience] = useState(false)
-    const [askTheAudienceDecides, setAskTheAudienceDecides] = useState(false)
 
     // fetch request for questions based upon difficulty rating that the player is currently on
     const findRounds = function(){
@@ -50,7 +48,6 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
                 setAskTheAudienceDecides(true)
             }, 5000)
             setTimeout(() => {
-                setAskTheAudienceDecides(false);
                 setUsedAskTheAudience(true);
                 setCanClick(true);
             }, 10000)
@@ -61,7 +58,6 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
                 setPhoneAFriendDecides(true)
             }, 5000)
             setTimeout(() => {
-                setPhoneAFriendDecides(false);
                 setUsedPhoneAFriend(true);
                 setCanClick(true);
             }, 10000)

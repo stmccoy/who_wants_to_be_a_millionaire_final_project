@@ -5,7 +5,7 @@ import FiftyFiftyAnswersList from '../components/questionContainerComponents/Fif
 import Request from '../helpers/request';
 
 
-function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswer, setCorrectAnswer, canClick, setCanClick, fiftyFiftyDecides, setFiftyFiftyDecides}){
+function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswer, setCorrectAnswer, canClick, setCanClick, fiftyFiftyDecides, setFiftyFiftyDecides, setAskTheAudienceDecides, setPhoneAFriendDecides}){
 
     //state for if player gets answer right
     const [rightAnswer, setRightAnswer] = useState(false);
@@ -77,6 +77,8 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
         setQuestionNumber(randomNumberGenerator)
         setAnswerSelected(null)
         setFiftyFiftyDecides(false); 
+        setAskTheAudienceDecides(false);
+        setPhoneAFriendDecides(false);
     }
 
     // increases the round and sets a new question number whenever an answer is clicked
