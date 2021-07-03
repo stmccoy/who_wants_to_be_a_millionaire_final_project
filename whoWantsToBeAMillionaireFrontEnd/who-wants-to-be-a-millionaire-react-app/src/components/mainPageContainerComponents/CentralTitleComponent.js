@@ -15,7 +15,7 @@ function CentralTitleComponent ({askFiftyFifty, askPhoneAFriend, askTheAudience,
             {fiftyFiftyDecides 
             ?
             <p>
-                fiftyFifty chooses {correctAnswer}
+                fiftyFifty decides
             </p>
             :
             null

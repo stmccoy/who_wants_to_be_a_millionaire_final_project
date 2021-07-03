@@ -4,7 +4,7 @@ import AnswersListComponent from '../components/questionContainerComponents/Answ
 import Request from '../helpers/request';
 
 
-function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswer, setCorrectAnswer, canClick, setCanClick}){
+function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswer, setCorrectAnswer, canClick, setCanClick, fiftyFiftyDecides}){
 
     //state for if player gets answer right
     const [rightAnswer, setRightAnswer] = useState(false);
@@ -30,6 +30,9 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
     // number to index into question group list
     const [questionNumber, setQuestionNumber] = useState(0);
 
+    //sets 5050 other answer
+    const [fiftyFiftyOtherOption, setFiftyFiftyOtherOption] = useState(null);
+
     // total number of questions in a specific difficulty which factors in that index numbers in arrays start from 0 (20 questions total)
     const numberOfQuestions = 19;
 
@@ -53,6 +56,10 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
     // generates a random number between 0-19 which is then used as the ordinal number to pick a question from the database out of a pool of 20
     const randomNumberGenerator = function(){
         return Math.floor((Math.random() * numberOfQuestions))
+    }
+
+    const randomFiftyFiftyAnswerNumberGenerator = function (){
+        return Math.floor((Math.random() * 3))
     }
 
     //resets round paramenters for next turn
@@ -119,10 +126,26 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
         findQuestionByDifficultyRating()
     }, [difficulty])
 
+    useEffect(() => {
+        if(answers.length != 0){
+            let tempAnswers = answers;
+            tempAnswers = tempAnswers.filter((item) => {
+                if(!item.correct){
+                    return item.answer
+                }
+            })
+            console.log("temp Answers");
+            console.log(tempAnswers);
+            setFiftyFiftyOtherOption(tempAnswers[randomFiftyFiftyAnswerNumberGenerator()].answer)
+        }
+
+    }, [answers])
+
     return (
         <section>
             <QuestionComponent question = {question}/>
-            <AnswersListComponent answers = {answers} handleAnswerSelect={handleAnswerSelect} canClick = {canClick} answerSelected= {answerSelected} correctAnswer={correctAnswer} rightAnswer={rightAnswer} wrongAnswer={wrongAnswer} answerSelected={answerSelected}/>
+
+            <AnswersListComponent answers = {answers} handleAnswerSelect={handleAnswerSelect} canClick = {canClick} answerSelected= {answerSelected} correctAnswer={correctAnswer} rightAnswer={rightAnswer} wrongAnswer={wrongAnswer} answerSelected={answerSelected} fiftyFiftyOtherOption={fiftyFiftyOtherOption} fiftyFiftyDecides={fiftyFiftyDecides}/>
         </section>
     )
 }

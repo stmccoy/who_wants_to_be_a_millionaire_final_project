@@ -4,13 +4,12 @@ import LifeLinesComponent from '../components/mainPageContainerComponents/LifeLi
 import CentralTitleComponent from '../components/mainPageContainerComponents/CentralTitleComponent';
 import Request from '../helpers/request';
 
-function MainPageContainer({round, correctAnswer, setCanClick}){
+function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides, setFiftyFiftyDecides}){
 
     const [rounds, setRounds] = useState([])
 
     const [askFiftyFifty, setAskFiftyFifty] = useState(false)
     const [usedFiftyFifty, setUsedFiftyFifty] = useState(false)
-    const [fiftyFiftyDecides, setFiftyFiftyDecides] = useState(false)
 
     const [askPhoneAFriend, setAskPhoneAFriend] = useState(false)
     const [usedPhoneAFriend, setUsedPhoneAFriend] = useState(false)
