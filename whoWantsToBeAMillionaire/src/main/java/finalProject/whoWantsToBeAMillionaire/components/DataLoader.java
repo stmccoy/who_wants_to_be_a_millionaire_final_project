@@ -2438,16 +2438,16 @@ public class DataLoader implements ApplicationRunner {
         Round roundFour = new Round(500, "500");
         roundRepository.save(roundFour);
 
-        Round roundFive = new Round(1000, "1000");
+        Round roundFive = new Round(1000, "1,000");
         roundRepository.save(roundFive);
 
-        Round roundSix = new Round(2000, "2000");
+        Round roundSix = new Round(2000, "2,000");
         roundRepository.save(roundSix);
 
-        Round roundSeven = new Round(4000, "4000");
+        Round roundSeven = new Round(4000, "4,000");
         roundRepository.save(roundSeven);
 
-        Round roundEight = new Round(8000, "8000");
+        Round roundEight = new Round(8000, "8,000");
         roundRepository.save(roundEight);
 
         Round roundNine = new Round(16000, "16,000");

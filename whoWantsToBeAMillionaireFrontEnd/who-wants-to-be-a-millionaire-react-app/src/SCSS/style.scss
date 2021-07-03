@@ -3,9 +3,10 @@ $text-color: blue;
 $right-answer: linear-gradient(green, green);
 $wrong-answer: linear-gradient(red, red);
 $hover-cursor: pointer;
-$border: solid black;
+$border: solid #a58a8a;
 $background-colour-rounds: linear-gradient(#003399, #4b007c);
-$background-colour-questions: linear-gradient(#003399, #7e00d1);
+$background-colour-questions: linear-gradient(#1c1cce, #000022);
+$text-color: orange;
 
 
 body{
@@ -15,7 +16,7 @@ body{
     h1{
         text-align: center;
         font-size: 100px;
-        color: orange;
+        color: $text-color;
         margin-top: -350px;
     }
 }
@@ -58,10 +59,11 @@ body{
 
 
 .rounds{
-    background-image: $background-colour-rounds;
+    background-image: url('../images/rounds-background.jpeg');
     margin-top: 0%;
     margin-left: 55%;
-    border: $border;
+    border-left: $border;
+    border-bottom: $border;
     padding: 0%;
     font-size: 20px;
     .current {
@@ -70,6 +72,9 @@ body{
 
     li{
         list-style-type: none; 
+        width: 85%;
+        margin:auto;
+        font-size: 27px;
     }
 }
 
@@ -111,4 +116,17 @@ body{
 
 .used-life-lines-pictures{
     @extend .life-lines-pictures;
+}
+
+#phone-a-friend-clock{
+    margin-top: 50%;
+    width: 30%;
+}
+
+.life-line-response{
+    color: $text-color;
+    font-size: 40px;
+    margin-top: 40%;
+    background-image: $background-colour-rounds;
+    border-radius: 25px;
 }

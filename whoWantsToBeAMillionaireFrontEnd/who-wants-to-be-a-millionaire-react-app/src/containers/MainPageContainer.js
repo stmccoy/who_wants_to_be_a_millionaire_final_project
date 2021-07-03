@@ -34,33 +34,39 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
             setAskFiftyFifty(true);
             setTimeout(() => {
                 setAskFiftyFifty(false); 
-                setFiftyFiftyDecides(true)
-            }, 5000)
-            setTimeout(() => {
+                setFiftyFiftyDecides(true);
                 setUsedFiftyFifty(true);
                 setCanClick(true);
-            }, 10000)
+            }, 9500)
+            // setTimeout(() => {
+            //     setUsedFiftyFifty(true);
+            //     setCanClick(true);
+            // }, 10000)
 
         }else if (event.target.id == "ask-the-audience-logo"){
             setAskTheAudience(true);
             setTimeout(() => {
                 setAskTheAudience(false);
                 setAskTheAudienceDecides(true)
-            }, 5000)
-            setTimeout(() => {
                 setUsedAskTheAudience(true);
                 setCanClick(true);
-            }, 10000)
+            }, 9500)
+            // setTimeout(() => {
+            //     setUsedAskTheAudience(true);
+            //     setCanClick(true);
+            // }, 10000)
         } else{
             setAskPhoneAFriend(true);
             setTimeout(() => {
                 setAskPhoneAFriend(false);
                 setPhoneAFriendDecides(true)
-            }, 5000)
-            setTimeout(() => {
                 setUsedPhoneAFriend(true);
                 setCanClick(true);
-            }, 10000)
+            }, 9500)
+            // setTimeout(() => {
+            //     setUsedPhoneAFriend(true);
+            //     setCanClick(true);
+            // }, 10000)
         }
     }
 
