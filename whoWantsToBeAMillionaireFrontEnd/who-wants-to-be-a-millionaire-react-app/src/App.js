@@ -6,7 +6,7 @@ import MainPageContainer from './containers/MainPageContainer';
 import GameOverComponent from './components/gameOverComponents/gameOverComponents';
 
 function App() {
-  const [round, setRound] = useState(14);
+  const [round, setRound] = useState(0);
   const [gameStart, setGameStart] = useState(false);
   const [gameOver, setGameOver] = useState(false);
   const [fiftyFiftyDecides, setFiftyFiftyDecides] = useState(false)

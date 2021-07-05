@@ -104,19 +104,29 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
             setWrongAnswer(true)
             if(round< 4){
                 wrongAnswerAudioOnehundredToOneThousandAudio.play()
+                setTimeout(()=> {
+                    HarderQuestionAnswerSelected.pause();
+                    HarderQuestionsMusic.pause();
+                    firstFiveQuestionsAudio.pause();
+                }, 500)
+                setTimeout(() => {
+                    setGameOver(true);
+                    wrongAnswerAudioOnehundredToOneThousandAudio.pause()
+                    restartAllSoundEffects()
+                }, 2000)
             }else{
                 wrongAnswerHarderQuestions.play()
+                setTimeout(()=> {
+                    HarderQuestionAnswerSelected.pause();
+                    HarderQuestionsMusic.pause();
+                    firstFiveQuestionsAudio.pause();
+                }, 500)
+                setTimeout(() => {
+                    setGameOver(true);
+                    wrongAnswerAudioOnehundredToOneThousandAudio.pause()
+                    restartAllSoundEffects()
+                }, 5000)
             }
-            setTimeout(()=> {
-                HarderQuestionAnswerSelected.pause();
-                HarderQuestionsMusic.pause();
-                firstFiveQuestionsAudio.pause();
-            }, 500)
-            setTimeout(() => {
-                setGameOver(true);
-                wrongAnswerAudioOnehundredToOneThousandAudio.pause()
-                restartAllSoundEffects()
-            }, 5000)
         }
     }
 
