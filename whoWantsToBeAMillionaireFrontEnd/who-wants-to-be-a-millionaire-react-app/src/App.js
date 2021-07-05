@@ -37,6 +37,8 @@ function App() {
 
   const [PhoneAFriendMusic, setPhoneAFriendMusic] = useState(new Audio('/audio/PhoneAFriend.mp3'))
 
+  const [StartGameAudio, setStartGameAudio] = useState(new Audio('/audio/StartGame.mp3'))
+
   const restartAllSoundEffects = function() {
     setStartGameSound(new Audio('/audio/StartGameSound.mp3'))
     setCorrectAnswerAudio(new Audio('/audio/CorrectAnswer.mp3'))
@@ -56,15 +58,15 @@ function App() {
 
 
   const handleStartClick = function(){
-    startGameSound.play();
+    StartGameAudio.play();
     setTimeout(() => {
       setGameStart(true);
       firstFiveQuestionsAudio.play();
-    }, 5000)
+    }, 14000)
     setTimeout(() => {
-      startGameSound.pause();
+      StartGameAudio.pause();
       restartAllSoundEffects();
-    }, 5500)
+    }, 14500)
     
   }
 
