@@ -8,7 +8,7 @@ function AnswersListComponent({answers, handleAnswerSelect, correctAnswer, answe
     const FiftyFiftyArray = [correctAnswer, fiftyFiftyOtherOption]
 
     const fiftyFiftyAnswerListSelected = answers.map( (item) => {
-        return (<li className={answerSelected === item.answer ? "selected" : null}onClick={(() => handleAnswerSelect(item.answer))} key={item.id} value={item.answer}>{FiftyFiftyArray.includes(item.answer) && correctAnswer ? item.answer : null}</li>)
+        return (<li className={answerSelected === item.answer ? "selected" : null}onClick={(() => handleAnswerSelect(item.answer))} key={item.id} value={item.answer} id={FiftyFiftyArray.includes(item.answer) && correctAnswer ? item.answer : "empty"}>{FiftyFiftyArray.includes(item.answer) && correctAnswer ? item.answer : null}</li>)
     });
 
     const fiftyFiftyAnswerListRightOrWrong = answers.map( (item) => {

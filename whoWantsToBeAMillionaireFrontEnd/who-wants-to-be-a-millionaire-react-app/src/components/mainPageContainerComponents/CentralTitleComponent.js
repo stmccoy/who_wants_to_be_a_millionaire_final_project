@@ -4,7 +4,7 @@ function CentralTitleComponent ({askFiftyFifty, askPhoneAFriend, askTheAudience,
     return (
         <section>
             <div>
-                <img src="./images/who-wants-to-be-a-millionaire-logo.png" alt="who wants to be a millionaire logo" id="millionaire-logo"/>
+                <img src="./images/who-wants-to-be-a-millionaire-logo-2.png" alt="who wants to be a millionaire logo" id="millionaire-logo"/>
             </div>
             {askPhoneAFriend 
             ?
