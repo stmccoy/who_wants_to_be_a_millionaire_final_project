@@ -251,19 +251,19 @@ public class DataLoader implements ApplicationRunner {
         Answer q15AnswerFour = new Answer("Skyler White", questionFifteen, false);
         answerRepository.save(q15AnswerFour);
 
-        Question questionSixteen = new Question("Which song on Daft Punk's album 'Random Access Memories' features Pharrell Williams?", Difficulty.ZERO);
+        Question questionSixteen = new Question("On which of these Daft Punk's tracks does Pharrell Williams feature?", Difficulty.ZERO);
         questionRepository.save(questionSixteen);
 
-        Answer q16AnswerOne = new Answer("Sandstorm", questionSixteen, true);
+        Answer q16AnswerOne = new Answer("Get Lucky", questionSixteen, true);
         answerRepository.save(q16AnswerOne);
 
-        Answer q16AnswerTwo = new Answer("Dust Devil", questionSixteen, false);
+        Answer q16AnswerTwo = new Answer("Touch", questionSixteen, false);
         answerRepository.save(q16AnswerTwo);
 
-        Answer q16AnswerThree = new Answer("Sirocco", questionSixteen, false);
+        Answer q16AnswerThree = new Answer("Beyond", questionSixteen, false);
         answerRepository.save(q16AnswerThree);
 
-        Answer q16AnswerFour = new Answer("Khamsin", questionSixteen, false);
+        Answer q16AnswerFour = new Answer("Within", questionSixteen, false);
         answerRepository.save(q16AnswerFour);
 
         Question questionSeventeen = new Question("Which famous cartoon features a mouse and a cat as the two main characters?", Difficulty.ZERO);
@@ -386,7 +386,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q24AnswerFour = new Answer("Tithi", questionTwentyFour, false);
         answerRepository.save(q24AnswerFour);
 
-        Question questionTwentyFive = new Question("Which actor portrays 'Walter White' in the series 'Breaking Bad&quot'?", Difficulty.ONE);
+        Question questionTwentyFive = new Question("Which actor portrays 'Walter White' in the series 'Breaking Bad'?", Difficulty.ONE);
         questionRepository.save(questionTwentyFive);
 
         Answer q25AnswerOne = new Answer("Bryan Cranston", questionTwentyFive, true);
@@ -1046,7 +1046,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q68AnswerFour = new Answer("Cry Engine", questionSixtyEight, false);
         answerRepository.save(q68AnswerFour);
 
-        Question questionSixtyNine = new Question("Finish these lyrics from the 2016 song &quot;Panda&quot; by Desiigner: 'I got broads in....'", Difficulty.THREE);
+        Question questionSixtyNine = new Question("Finish these lyrics from the 2016 song 'Panda' by Desiigner: 'I got broads in....'", Difficulty.THREE);
         questionRepository.save(questionSixtyNine);
 
         Answer q69AnswerOne = new Answer("Atlanta", questionSixtyNine, true);
@@ -1466,7 +1466,7 @@ public class DataLoader implements ApplicationRunner {
         Answer q96AnswerFour = new Answer("Young Thug", questionNinetySix, false);
         answerRepository.save(q96AnswerFour);
 
-        Question questionNinetySeven = new Question("Which greek mathematician ran through the streets of Syracuse naked while shouting &quot;Eureka&quot; after discovering the principle of displacement?", Difficulty.FOUR);
+        Question questionNinetySeven = new Question("Which greek mathematician ran through the streets of Syracuse naked while shouting 'Eureka' after discovering the principle of displacement?", Difficulty.FOUR);
         questionRepository.save(questionNinetySeven);
 
         Answer q97AnswerOne = new Answer("Archimedes", questionNinetySeven, true);
@@ -2426,49 +2426,49 @@ public class DataLoader implements ApplicationRunner {
         Answer q160AnswerFour = new Answer("RAID 5", questionOneHundredAndSixty, false);
         answerRepository.save(q160AnswerFour);
 
-        Round roundOne = new Round(100,"100" );
+        Round roundOne = new Round(100,"£100" );
         roundRepository.save(roundOne);
 
-        Round roundTwe = new Round(200, "200");
+        Round roundTwe = new Round(200, "£200");
         roundRepository.save(roundTwe);
 
-        Round roundThree = new Round(300, "300");
+        Round roundThree = new Round(300, "£300");
         roundRepository.save(roundThree);
 
-        Round roundFour = new Round(500, "500");
+        Round roundFour = new Round(500, "£500");
         roundRepository.save(roundFour);
 
-        Round roundFive = new Round(1000, "1,000");
+        Round roundFive = new Round(1000, "£1,000");
         roundRepository.save(roundFive);
 
-        Round roundSix = new Round(2000, "2,000");
+        Round roundSix = new Round(2000, "£2,000");
         roundRepository.save(roundSix);
 
-        Round roundSeven = new Round(4000, "4,000");
+        Round roundSeven = new Round(4000, "£4,000");
         roundRepository.save(roundSeven);
 
-        Round roundEight = new Round(8000, "8,000");
+        Round roundEight = new Round(8000, "£8,000");
         roundRepository.save(roundEight);
 
-        Round roundNine = new Round(16000, "16,000");
+        Round roundNine = new Round(16000, "£16,000");
         roundRepository.save(roundNine);
 
-        Round roundTen = new Round(32000, "32,000");
+        Round roundTen = new Round(32000, "£32,000");
         roundRepository.save(roundTen);
 
-        Round roundEleven = new Round(64000, "64,000");
+        Round roundEleven = new Round(64000, "£64,000");
         roundRepository.save(roundEleven);
 
-        Round roundTwelve = new Round(125000, "125,000");
+        Round roundTwelve = new Round(125000, "£125,000");
         roundRepository.save(roundTwelve);
 
-        Round roundThirteen = new Round(250000, "250,000");
+        Round roundThirteen = new Round(250000, "£250,000");
         roundRepository.save(roundThirteen);
 
-        Round roundFourteen = new Round(500000, "500,000");
+        Round roundFourteen = new Round(500000, "£500,000");
         roundRepository.save(roundFourteen);
 
-        Round roundFifteen = new Round(1000000, "1,000,000");
+        Round roundFifteen = new Round(1000000, "£1,000,000");
         roundRepository.save(roundFifteen);
 
 

@@ -4,7 +4,7 @@ import LifeLinesComponent from '../components/mainPageContainerComponents/LifeLi
 import CentralTitleComponent from '../components/mainPageContainerComponents/CentralTitleComponent';
 import Request from '../helpers/request';
 
-function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides, setFiftyFiftyDecides, phoneAFriendDecides, setPhoneAFriendDecides, askTheAudienceDecides, setAskTheAudienceDecides}){
+function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides, setFiftyFiftyDecides, phoneAFriendDecides, setPhoneAFriendDecides, askTheAudienceDecides, setAskTheAudienceDecides, HarderQuestionsMusic, firstFiveQuestionsAudio, AskTheAudienceMusic, PhoneAFriendMusic, correctAnswerOneHundredToOneThousand}){
 
     const [rounds, setRounds] = useState([])
 
@@ -35,11 +35,19 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
             setPhoneAFriendDecides(false)
             setAskFiftyFifty(true);
             setTimeout(() => {
+                correctAnswerOneHundredToOneThousand.play();
+            }, 2750)
+            setTimeout(() => {
+                // if(round<= 3){
+                //     firstFiveQuestionsAudio.play()
+                // }else{
+                //     HarderQuestionsMusic.play()
+                // }
                 setAskFiftyFifty(false); 
                 setFiftyFiftyDecides(true);
                 setUsedFiftyFifty(true);
                 setCanClick(true);
-            }, 9500)
+            }, 3000)
             // setTimeout(() => {
             //     setUsedFiftyFifty(true);
             //     setCanClick(true);
@@ -47,13 +55,27 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
 
         }else if (event.target.id == "ask-the-audience-logo"){
             setPhoneAFriendDecides(false)
+            AskTheAudienceMusic.play();
             setAskTheAudience(true);
             setTimeout(() => {
+                firstFiveQuestionsAudio.pause();
+                HarderQuestionsMusic.pause();
+            }, 250)
+            setTimeout(() => {
                 setAskTheAudience(false);
-                setAskTheAudienceDecides(true)
+                setAskTheAudienceDecides(true);
+            }, 8500)
+            setTimeout(() => {
+                if(round<= 3){
+                    firstFiveQuestionsAudio.play()
+                }else{
+                    HarderQuestionsMusic.play()
+                }
+                // setAskTheAudience(false);
+                // setAskTheAudienceDecides(true)
                 setUsedAskTheAudience(true);
                 setCanClick(true);
-            }, 9500)
+            }, 10000)
             // setTimeout(() => {
             //     setUsedAskTheAudience(true);
             //     setCanClick(true);
@@ -61,12 +83,24 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
         } else{
             setAskTheAudienceDecides(false)
             setAskPhoneAFriend(true);
+            PhoneAFriendMusic.play();
+            setTimeout(() => {
+                firstFiveQuestionsAudio.pause();
+                HarderQuestionsMusic.pause();
+            }, 250)
             setTimeout(() => {
                 setAskPhoneAFriend(false);
                 setPhoneAFriendDecides(true)
+            }, 9500)
+            setTimeout(() => {
+                if(round<= 3){
+                    firstFiveQuestionsAudio.play()
+                }else{
+                    HarderQuestionsMusic.play()
+                }
                 setUsedPhoneAFriend(true);
                 setCanClick(true);
-            }, 9500)
+            }, 11000)
             // setTimeout(() => {
             //     setUsedPhoneAFriend(true);
             //     setCanClick(true);

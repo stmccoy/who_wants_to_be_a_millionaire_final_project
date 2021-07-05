@@ -1,9 +1,21 @@
 import React from 'react';
 
-function GameOverComponent(){
+function GameOverComponent({gameWon}){
 
     return(
-        <h1>Game Over</h1>
+        gameWon
+        ?
+        <div className="game-won">
+            <h1>Thanks For Playing</h1>
+            <h1>You Won</h1>
+            <img src="./images/dancing-duckdancing.gif" alt="dancing duck" id="dancing-duck"/>
+        </div>
+
+        :
+        <div>
+            <h1>You Lost</h1>
+            <h1>Game Over</h1>
+        </div>
     )
 
 }
