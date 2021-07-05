@@ -4,6 +4,7 @@ import './CSS/style.css';
 import QuestionContainer from './containers/QuestionContainer'
 import MainPageContainer from './containers/MainPageContainer';
 import GameOverComponent from './components/gameOverComponents/gameOverComponents';
+import StartGameComponent from './components/gameOverComponents/StartGameComponent';
 
 function App() {
   const [round, setRound] = useState(0);
@@ -91,7 +92,8 @@ function App() {
     
     :
 
-    <button onClick={handleStartClick}>Start</button>
+    <StartGameComponent handleStartClick={handleStartClick}/>
+
   )
 }
 

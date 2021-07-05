@@ -1,5 +1,4 @@
 $selecting-color :linear-gradient(orange, orange);
-$text-color: blue;
 $right-answer: linear-gradient(green, green);
 $wrong-answer: linear-gradient(red, red);
 $hover-cursor: pointer;
@@ -133,5 +132,31 @@ body{
     margin-top: 40%;
     background-image: $background-colour-questions;
     border-radius: 25px;
+}
+
+#start-button-div{
+    text-align: center;
+
+    button{
+        color: $text-color;
+        background-image: $background-colour-questions;
+        border-radius: 25px;
+        margin-top: 3%;
+        width: 10%;
+        font-size: 35px;
+
+        &:hover{
+            cursor: $hover-cursor;
+            color: white;
+            background-image: $selecting-color;
+        }
+        
+    }
+
+    #start-image{
+        margin-top: 20%;
+    }
+
+    
 }
 
