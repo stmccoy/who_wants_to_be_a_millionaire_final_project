@@ -14,6 +14,7 @@ function App() {
   const [phoneAFriendDecides, setPhoneAFriendDecides] = useState(false)
   const [askTheAudienceDecides, setAskTheAudienceDecides] = useState(false)
   const [gameWon, setGameWon] = useState(false);
+  const [startClick, setStartClick] = useState(false)
 
 
   //audio states
@@ -58,6 +59,7 @@ function App() {
 
 
   const handleStartClick = function(){
+    setStartClick(true);
     StartGameAudio.play();
     setTimeout(() => {
       setGameStart(true);
@@ -66,6 +68,7 @@ function App() {
     setTimeout(() => {
       StartGameAudio.pause();
       restartAllSoundEffects();
+      setStartClick(false)
     }, 14500)
     
   }
@@ -94,7 +97,7 @@ function App() {
     
     :
 
-    <StartGameComponent handleStartClick={handleStartClick}/>
+    <StartGameComponent handleStartClick={handleStartClick} startClick={startClick}/>
 
   )
 }

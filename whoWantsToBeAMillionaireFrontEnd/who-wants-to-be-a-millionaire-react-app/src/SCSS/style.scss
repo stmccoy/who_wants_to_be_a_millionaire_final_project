@@ -153,10 +153,24 @@ body{
         
     }
 
-    #start-image{
+    .start-image{
         margin-top: 20%;
+    }
+
+    .start-image-spin{
+        @extend .start-image;
+        animation: start-image-animation 14000ms ease-in, spin 1s linear infinite,
+        shrink 2s linear infinite 12s,
+        // animation: name duration timing-function delay iteration-count direction fill-mode;
     }
 
     
 }
 
+@keyframes start-image-animation {100% {margin-top: -3%;}}
+
+@keyframes spin { 100% {transform:rotate(360deg); } }
+
+@keyframes shrink { 
+    100% {transform:scale(0.5)} 
+}
