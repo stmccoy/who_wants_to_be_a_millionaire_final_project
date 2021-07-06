@@ -46,12 +46,15 @@ function App() {
 
   const [StartGameAudio, setStartGameAudio] = useState(new Audio('/audio/StartGame.mp3'))
 
+  const [fiftyFiftySelectSound, setFifFiftySelectSound] = useState(new Audio('/audio/FiftyFiftySelect.mp3'))
+
   const restartAllSoundEffects = function() {
     setStartGameSound(new Audio('/audio/StartGameSound.mp3'))
     setCorrectAnswerAudio(new Audio('/audio/CorrectAnswer.mp3'))
     setWrongAnswerAudioOnehundredToOneThousandAudio(new Audio('/audio/LoseOneHundredToOneThousand.mp3'))
     setOneThousandPoundsWinAudio(new Audio('/audio/OneThousandPoundWin.mp3'))
     setHarderQuestionAnswerSelected(new Audio('/audio/HarderQuestionsFinalAnswer.mp3'))
+    setFifFiftySelectSound(new Audio('/audio/FiftyFiftySelect.mp3'))
     setAskTheAudienceMusic(new Audio('/audio/AskTheAudience.mp3'))
     setPhoneAFriendMusic(new Audio('/audio/PhoneAFriend.mp3'))
     setCanClick(true)
@@ -80,7 +83,7 @@ function App() {
 
       [
 
-      <MainPageContainer round={round} correctAnswer={correctAnswer} setCanClick={setCanClick} fiftyFiftyDecides={fiftyFiftyDecides} setFiftyFiftyDecides={setFiftyFiftyDecides} phoneAFriendDecides={phoneAFriendDecides}setPhoneAFriendDecides={setPhoneAFriendDecides} askTheAudienceDecides={askTheAudienceDecides} setAskTheAudienceDecides={setAskTheAudienceDecides} firstFiveQuestionsAudio={firstFiveQuestionsAudio} HarderQuestionsMusic={HarderQuestionsMusic} AskTheAudienceMusic={AskTheAudienceMusic} PhoneAFriendMusic={PhoneAFriendMusic} correctAnswerOneHundredToOneThousand={correctAnswerOneHundredToOneThousand} restartAllSoundEffects={restartAllSoundEffects} canClick={canClick}/>
+      <MainPageContainer round={round} correctAnswer={correctAnswer} setCanClick={setCanClick} fiftyFiftyDecides={fiftyFiftyDecides} setFiftyFiftyDecides={setFiftyFiftyDecides} phoneAFriendDecides={phoneAFriendDecides}setPhoneAFriendDecides={setPhoneAFriendDecides} askTheAudienceDecides={askTheAudienceDecides} setAskTheAudienceDecides={setAskTheAudienceDecides} firstFiveQuestionsAudio={firstFiveQuestionsAudio} HarderQuestionsMusic={HarderQuestionsMusic} AskTheAudienceMusic={AskTheAudienceMusic} PhoneAFriendMusic={PhoneAFriendMusic} correctAnswerOneHundredToOneThousand={correctAnswerOneHundredToOneThousand} restartAllSoundEffects={restartAllSoundEffects} canClick={canClick} fiftyFiftySelectSound={fiftyFiftySelectSound}/>
       ,
 
       gameOver

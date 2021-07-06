@@ -170,6 +170,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
     //resets round paramenters for next turn
     const resetRoundParameters = function (){
         //change below to length of rounds array
+        setFiftyFiftyDecides(false); 
         if(round === 14){
             setGameOver(true)
         }
@@ -198,7 +199,6 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
         // }
         
         //resets lifelines
-        setFiftyFiftyDecides(false); 
         setAskTheAudienceDecides(false);
         setPhoneAFriendDecides(false);
     }
@@ -232,7 +232,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
         if(!gameOver){
             if(questions){
                 setQuestion(questions[questionNumber].question)
-                setShuffledAnswers(shuffleAnswers(questions[questionNumber].answers))
+                setShuffledAnswers(shuffleAnswers(questions[questionNumber].answers.sort()))
                 //filters through answers and sets correct answer to the one that is correct
                 const correctAnswer = questions[questionNumber].answers.filter((item) => {
                     if(item.correct){

@@ -4,7 +4,7 @@ import LifeLinesComponent from '../components/mainPageContainerComponents/LifeLi
 import CentralTitleComponent from '../components/mainPageContainerComponents/CentralTitleComponent';
 import Request from '../helpers/request';
 
-function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides, setFiftyFiftyDecides, phoneAFriendDecides, setPhoneAFriendDecides, askTheAudienceDecides, setAskTheAudienceDecides, HarderQuestionsMusic, firstFiveQuestionsAudio, AskTheAudienceMusic, PhoneAFriendMusic, correctAnswerOneHundredToOneThousand, restartAllSoundEffects, canClick}){
+function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides, setFiftyFiftyDecides, phoneAFriendDecides, setPhoneAFriendDecides, askTheAudienceDecides, setAskTheAudienceDecides, HarderQuestionsMusic, firstFiveQuestionsAudio, AskTheAudienceMusic, PhoneAFriendMusic, correctAnswerOneHundredToOneThousand, restartAllSoundEffects, canClick, fiftyFiftySelectSound}){
 
     const [rounds, setRounds] = useState([])
 
@@ -32,6 +32,7 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
         if(canClick){
             setCanClick(false);
             if(event.target.id == "50-50-logo"){
+                fiftyFiftySelectSound.play();
                 setAskTheAudienceDecides(false);
                 setPhoneAFriendDecides(false)
                 setAskFiftyFifty(true);
