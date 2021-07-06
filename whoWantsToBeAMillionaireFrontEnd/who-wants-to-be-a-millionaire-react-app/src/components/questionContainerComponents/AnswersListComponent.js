@@ -10,6 +10,12 @@ function AnswersListComponent({answers, handleAnswerSelect, correctAnswer, answe
         return (<li className={`${rightAnswer && item.answer === answerSelected ? "right-answer" : null} ${wrongAnswer && item.answer === answerSelected ? "wrong-answer" : null}`} onClick={(() => handleAnswerSelect(item.answer))} key={item.id} value={item.answer} id="not-5050">{item.answer}</li>)
     });
 
+
+    // const answerListRightOrWrong = answers.map( (item) => {
+    //     return (<li className={`${rightAnswer && item.answer === answerSelected ? "right-answer" : null} ${wrongAnswer && item.answer === answerSelected ? "wrong-answer" : null}`} onClick={(() => handleAnswerSelect(item.answer))} key={item.id} value={item.answer} id="not-5050">{item.answer}</li>)
+    // });
+
+
     return(
         rightAnswer || wrongAnswer 
         

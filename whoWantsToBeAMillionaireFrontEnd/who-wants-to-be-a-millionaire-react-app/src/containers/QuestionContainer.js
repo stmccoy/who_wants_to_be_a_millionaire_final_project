@@ -36,6 +36,8 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
 
     const[usedQuestionNumber, setUsedQuestionNumber] = useState(null);
 
+    const[shuffledAnswers, setShuffledAnswers] = useState([]);
+
     // total number of questions in a specific difficulty which factors in that index numbers in arrays start from 0 (20 questions total)
     const numberOfQuestions = 19;
 
@@ -136,6 +138,26 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
             .then(res => setQuestions(res))
     }
 
+    //shuffles answers from database so they're
+    function shuffleAnswers(answerArray){
+        if(answerArray.length !== 0){
+            let currentIndex = answerArray.length;
+            let temporaryValue;
+            let randomIndex;
+
+            while (0 !== currentIndex) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex = currentIndex - 1;
+                temporaryValue = { ...answerArray[currentIndex] };
+                answerArray[currentIndex] = answerArray[randomIndex];
+                answerArray[randomIndex] = temporaryValue;
+            }
+            return answerArray;
+        } else{
+            return
+        }
+    };
+
     // generates a random number between 0-19 which is then used as the ordinal number to pick a question from the database out of a pool of 20
     const randomNumberGenerator = function(){
         return Math.floor((Math.random() * numberOfQuestions))
@@ -210,7 +232,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
         if(!gameOver){
             if(questions){
                 setQuestion(questions[questionNumber].question)
-                setAnswers(questions[questionNumber].answers)
+                setAnswers(shuffleAnswers(questions[questionNumber].answers))
                 //filters through answers and sets correct answer to the one that is correct
                 const correctAnswer = questions[questionNumber].answers.filter((item) => {
                     if(item.correct){
@@ -275,7 +297,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
 
             :
 
-            <AnswersListComponent answers= {answers} handleAnswerSelect={handleAnswerSelect} canClick = {canClick} answerSelected= {answerSelected} correctAnswer={correctAnswer} rightAnswer={rightAnswer} wrongAnswer={wrongAnswer} answerSelected={answerSelected} fiftyFiftyOtherOption={fiftyFiftyOtherOption} fiftyFiftyDecides={fiftyFiftyDecides}/>}
+            <AnswersListComponent answers= {answers} handleAnswerSelect={handleAnswerSelect} canClick = {canClick} answerSelected= {answerSelected} correctAnswer={correctAnswer} rightAnswer={rightAnswer} wrongAnswer={wrongAnswer} answerSelected={answerSelected} fiftyFiftyOtherOption={fiftyFiftyOtherOption} fiftyFiftyDecides={fiftyFiftyDecides} shuffledAnswers={shuffledAnswers} setShuffledAnswers={setShuffledAnswers}/>}
         </section>
     )
 }
