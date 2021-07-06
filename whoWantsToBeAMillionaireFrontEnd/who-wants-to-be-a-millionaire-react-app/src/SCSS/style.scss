@@ -10,6 +10,10 @@ $text-color: orange;
 
 body{
     background-image: url('../images/who_wants_to_be_a_millionaire_background.jpeg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    min-width: 900px;
+    background-color: black;
     color: white;
 
     h1{
