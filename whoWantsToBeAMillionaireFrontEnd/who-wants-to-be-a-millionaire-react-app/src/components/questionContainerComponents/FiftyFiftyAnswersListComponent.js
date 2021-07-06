@@ -1,6 +1,5 @@
 import React from 'react';
-import AnswerComponent from './AnswerComponent';
-// import './AnswerList.css';
+
 
 function AnswersListComponent({answers, handleAnswerSelect, correctAnswer, answerSelected, rightAnswer, wrongAnswer, fiftyFiftyDecides, fiftyFiftyOtherOption}){
 

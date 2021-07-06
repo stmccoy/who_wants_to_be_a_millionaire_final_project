@@ -4,7 +4,7 @@ function QuestionComponent({question}){
     return(
         question ?
         <div className="question">
-            {question}
+            <p>{question}</p>
         </div>
 
         :
