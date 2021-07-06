@@ -4,7 +4,7 @@ import LifeLinesComponent from '../components/mainPageContainerComponents/LifeLi
 import CentralTitleComponent from '../components/mainPageContainerComponents/CentralTitleComponent';
 import Request from '../helpers/request';
 
-function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides, setFiftyFiftyDecides, phoneAFriendDecides, setPhoneAFriendDecides, askTheAudienceDecides, setAskTheAudienceDecides, HarderQuestionsMusic, firstFiveQuestionsAudio, AskTheAudienceMusic, PhoneAFriendMusic, correctAnswerOneHundredToOneThousand}){
+function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides, setFiftyFiftyDecides, phoneAFriendDecides, setPhoneAFriendDecides, askTheAudienceDecides, setAskTheAudienceDecides, HarderQuestionsMusic, firstFiveQuestionsAudio, AskTheAudienceMusic, PhoneAFriendMusic, correctAnswerOneHundredToOneThousand, restartAllSoundEffects, canClick}){
 
     const [rounds, setRounds] = useState([])
 
@@ -29,82 +29,87 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
     }, [])
 
     const handleLifeLineClick = function(event){
-        setCanClick(false);
-        if(event.target.id == "50-50-logo"){
-            setAskTheAudienceDecides(false);
-            setPhoneAFriendDecides(false)
-            setAskFiftyFifty(true);
-            setTimeout(() => {
-                correctAnswerOneHundredToOneThousand.play();
-            }, 2750)
-            setTimeout(() => {
-                // if(round<= 3){
-                //     firstFiveQuestionsAudio.play()
-                // }else{
-                //     HarderQuestionsMusic.play()
-                // }
-                setAskFiftyFifty(false); 
-                setFiftyFiftyDecides(true);
-                setUsedFiftyFifty(true);
-                setCanClick(true);
-            }, 3000)
-            // setTimeout(() => {
-            //     setUsedFiftyFifty(true);
-            //     setCanClick(true);
-            // }, 10000)
+        if(canClick){
+            setCanClick(false);
+            if(event.target.id == "50-50-logo"){
+                setAskTheAudienceDecides(false);
+                setPhoneAFriendDecides(false)
+                setAskFiftyFifty(true);
+                setTimeout(() => {
+                    correctAnswerOneHundredToOneThousand.play();
+                }, 2750)
+                setTimeout(() => {
+                    // if(round<= 3){
+                    //     firstFiveQuestionsAudio.play()
+                    // }else{
+                    //     HarderQuestionsMusic.play()
+                    // }
+                    setAskFiftyFifty(false); 
+                    setFiftyFiftyDecides(true);
+                    setUsedFiftyFifty(true);
+                    restartAllSoundEffects()
+                    // setCanClick(true);
+                }, 3000)
+                // setTimeout(() => {
+                //     setUsedFiftyFifty(true);
+                //     setCanClick(true);
+                // }, 10000)
 
-        }else if (event.target.id == "ask-the-audience-logo"){
-            setPhoneAFriendDecides(false)
-            AskTheAudienceMusic.play();
-            setAskTheAudience(true);
-            setTimeout(() => {
-                firstFiveQuestionsAudio.pause();
-                HarderQuestionsMusic.pause();
-            }, 250)
-            setTimeout(() => {
-                setAskTheAudience(false);
-                setAskTheAudienceDecides(true);
-            }, 8500)
-            setTimeout(() => {
-                if(round<= 3){
-                    firstFiveQuestionsAudio.play()
-                }else{
-                    HarderQuestionsMusic.play()
-                }
-                // setAskTheAudience(false);
-                // setAskTheAudienceDecides(true)
-                setUsedAskTheAudience(true);
-                setCanClick(true);
-            }, 10000)
-            // setTimeout(() => {
-            //     setUsedAskTheAudience(true);
-            //     setCanClick(true);
-            // }, 10000)
-        } else{
-            setAskTheAudienceDecides(false)
-            setAskPhoneAFriend(true);
-            PhoneAFriendMusic.play();
-            setTimeout(() => {
-                firstFiveQuestionsAudio.pause();
-                HarderQuestionsMusic.pause();
-            }, 250)
-            setTimeout(() => {
-                setAskPhoneAFriend(false);
-                setPhoneAFriendDecides(true)
-            }, 9500)
-            setTimeout(() => {
-                if(round<= 3){
-                    firstFiveQuestionsAudio.play()
-                }else{
-                    HarderQuestionsMusic.play()
-                }
-                setUsedPhoneAFriend(true);
-                setCanClick(true);
-            }, 11000)
-            // setTimeout(() => {
-            //     setUsedPhoneAFriend(true);
-            //     setCanClick(true);
-            // }, 10000)
+            }else if (event.target.id == "ask-the-audience-logo"){
+                setPhoneAFriendDecides(false)
+                AskTheAudienceMusic.play();
+                setAskTheAudience(true);
+                setTimeout(() => {
+                    firstFiveQuestionsAudio.pause();
+                    HarderQuestionsMusic.pause();
+                }, 250)
+                setTimeout(() => {
+                    setAskTheAudience(false);
+                    setAskTheAudienceDecides(true);
+                }, 8500)
+                setTimeout(() => {
+                    if(round<= 3){
+                        firstFiveQuestionsAudio.play()
+                    }else{
+                        HarderQuestionsMusic.play()
+                    }
+                    // setAskTheAudience(false);
+                    // setAskTheAudienceDecides(true)
+                    setUsedAskTheAudience(true);
+                    restartAllSoundEffects()
+                    // setCanClick(true);
+                }, 10000)
+                // setTimeout(() => {
+                //     setUsedAskTheAudience(true);
+                //     setCanClick(true);
+                // }, 10000)
+            } else{
+                setAskTheAudienceDecides(false)
+                setAskPhoneAFriend(true);
+                PhoneAFriendMusic.play();
+                setTimeout(() => {
+                    firstFiveQuestionsAudio.pause();
+                    HarderQuestionsMusic.pause();
+                }, 250)
+                setTimeout(() => {
+                    setAskPhoneAFriend(false);
+                    setPhoneAFriendDecides(true)
+                }, 9500)
+                setTimeout(() => {
+                    if(round<= 3){
+                        firstFiveQuestionsAudio.play()
+                    }else{
+                        HarderQuestionsMusic.play()
+                    }
+                    setUsedPhoneAFriend(true);
+                    restartAllSoundEffects()
+                    // setCanClick(true);
+                }, 11000)
+                // setTimeout(() => {
+                //     setUsedPhoneAFriend(true);
+                //     setCanClick(true);
+                // }, 10000)
+            }
         }
     }
 

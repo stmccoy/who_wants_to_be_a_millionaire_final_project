@@ -16,6 +16,12 @@ function App() {
   const [gameWon, setGameWon] = useState(false);
   const [startClick, setStartClick] = useState(false)
 
+  //correct answer value
+  const [correctAnswer, setCorrectAnswer] = useState(null);
+
+  // set whether person can click on answers or not
+  const [canClick, setCanClick] = useState(true);
+
 
   //audio states
   const [startGameSound, setStartGameSound] = useState(new Audio('/audio/StartGameSound.mp3'))
@@ -48,15 +54,8 @@ function App() {
     setHarderQuestionAnswerSelected(new Audio('/audio/HarderQuestionsFinalAnswer.mp3'))
     setAskTheAudienceMusic(new Audio('/audio/AskTheAudience.mp3'))
     setPhoneAFriendMusic(new Audio('/audio/PhoneAFriend.mp3'))
+    setCanClick(true)
   }
-
-  //correct answer value
-  const [correctAnswer, setCorrectAnswer] = useState(null);
-
-  // set whether person can click on answers or not
-  const [canClick, setCanClick] = useState(true);
-
-
 
   const handleStartClick = function(){
     setStartClick(true);
@@ -81,7 +80,7 @@ function App() {
 
       [
 
-      <MainPageContainer round={round} correctAnswer={correctAnswer} setCanClick={setCanClick} fiftyFiftyDecides={fiftyFiftyDecides} setFiftyFiftyDecides={setFiftyFiftyDecides} phoneAFriendDecides={phoneAFriendDecides}setPhoneAFriendDecides={setPhoneAFriendDecides} askTheAudienceDecides={askTheAudienceDecides} setAskTheAudienceDecides={setAskTheAudienceDecides} firstFiveQuestionsAudio={firstFiveQuestionsAudio} HarderQuestionsMusic={HarderQuestionsMusic} AskTheAudienceMusic={AskTheAudienceMusic} PhoneAFriendMusic={PhoneAFriendMusic} correctAnswerOneHundredToOneThousand={correctAnswerOneHundredToOneThousand}/>
+      <MainPageContainer round={round} correctAnswer={correctAnswer} setCanClick={setCanClick} fiftyFiftyDecides={fiftyFiftyDecides} setFiftyFiftyDecides={setFiftyFiftyDecides} phoneAFriendDecides={phoneAFriendDecides}setPhoneAFriendDecides={setPhoneAFriendDecides} askTheAudienceDecides={askTheAudienceDecides} setAskTheAudienceDecides={setAskTheAudienceDecides} firstFiveQuestionsAudio={firstFiveQuestionsAudio} HarderQuestionsMusic={HarderQuestionsMusic} AskTheAudienceMusic={AskTheAudienceMusic} PhoneAFriendMusic={PhoneAFriendMusic} correctAnswerOneHundredToOneThousand={correctAnswerOneHundredToOneThousand} restartAllSoundEffects={restartAllSoundEffects} canClick={canClick}/>
       ,
 
       gameOver
