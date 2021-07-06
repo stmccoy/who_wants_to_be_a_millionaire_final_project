@@ -58,7 +58,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
                     }, 12000)
                     setTimeout(() => {
                         // OneThousandPoundsWinAudio.pause();
-                        restartAllSoundEffects()
+                        // restartAllSoundEffects()
                     }, 12500)
                 }
             }else if (round < 3){
@@ -66,11 +66,8 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
                 if(round !== 14){
                     setTimeout(() => {
                         setRound(round + 1);
-                        restartAllSoundEffects();
+                        // restartAllSoundEffects();
                     }, 3000)
-                    // setTimeout(() => {
-                    //     restartAllSoundEffects()
-                    // }, 5500)
                 }
             }else{
                 if(round !== 14){
@@ -89,7 +86,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
                         }, 12000)
                         setTimeout(() => {
                             // OneThousandPoundsWinAudio.pause();
-                            restartAllSoundEffects()
+                            // restartAllSoundEffects()
                         }, 12500)
                     }else {
                         OneMillionDollarWin.play()
@@ -211,6 +208,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
                     }
                 })
                 setCorrectAnswer(correctAnswer[0].answer);
+                restartAllSoundEffects()
             }
         }
     }, [questions, questionNumber])
@@ -233,7 +231,9 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
         if(round === 0){
             setQuestionNumber(randomNumberGenerator)  
         }
-            findQuestionByDifficultyRating()
+        findQuestionByDifficultyRating()
+        restartAllSoundEffects()
+            
     }, [difficulty])
 
     useEffect(() => {
