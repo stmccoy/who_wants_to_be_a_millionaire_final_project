@@ -12,7 +12,7 @@ function AnswersListComponent({answers, handleAnswerSelect, correctAnswer, answe
     });
 
     const fiftyFiftyAnswerListRightOrWrong = answers.map( (item) => {
-        return (<li className={`${rightAnswer && item.answer === answerSelected ? "right-answer" : null} ${wrongAnswer && item.answer === answerSelected ? "wrong-answer" : null}`} onClick={(() => handleAnswerSelect(item.answer))} key={item.id} value={item.answer}>{FiftyFiftyArray.includes(item.answer) && correctAnswer ? item.answer : null}</li>)
+        return (<li className={`${rightAnswer && item.answer === answerSelected ? "right-answer" : null} ${wrongAnswer && item.answer === answerSelected ? "wrong-answer" : null}`} onClick={(() => handleAnswerSelect(item.answer))} key={item.id} value={item.answer} id={FiftyFiftyArray.includes(item.answer) && correctAnswer ? item.answer : "empty"}>{FiftyFiftyArray.includes(item.answer) && correctAnswer ? item.answer : null}</li>)
     });
 
     return(
