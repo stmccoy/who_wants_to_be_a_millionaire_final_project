@@ -141,6 +141,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
     //shuffles answers from database so they're
     function shuffleAnswers(answerArray){
         if(answerArray.length !== 0){
+            answerArray.sort();
             let currentIndex = 4;
             let temporaryValue;
             let randomIndex;
@@ -169,8 +170,12 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
 
     //resets round paramenters for next turn
     const resetRoundParameters = function (){
-        //change below to length of rounds array
+        //resets lifelines
         setFiftyFiftyDecides(false); 
+        setAskTheAudienceDecides(false);
+        setPhoneAFriendDecides(false);
+
+        //change below to length of rounds array
         if(round === 14){
             setGameOver(true)
         }
@@ -197,10 +202,6 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
         //     setDifficulty(difficulty + 1);
         //     findQuestionByDifficultyRating();
         // }
-        
-        //resets lifelines
-        setAskTheAudienceDecides(false);
-        setPhoneAFriendDecides(false);
     }
 
     // increases the round and sets a new question number whenever an answer is clicked
@@ -232,7 +233,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
         if(!gameOver){
             if(questions){
                 setQuestion(questions[questionNumber].question)
-                setShuffledAnswers(shuffleAnswers(questions[questionNumber].answers.sort()))
+                setShuffledAnswers(shuffleAnswers(questions[questionNumber].answers))
                 //filters through answers and sets correct answer to the one that is correct
                 const correctAnswer = questions[questionNumber].answers.filter((item) => {
                     if(item.correct){
@@ -246,7 +247,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
     }, [questions, questionNumber])
 
     useEffect(() => {
-        setAnswers(shuffleAnswers(shuffledAnswers))
+        setAnswers(shuffledAnswers.reverse())
     }, [shuffledAnswers])
 
     //sets can click to be true once the answers to the question have loaded

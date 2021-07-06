@@ -1004,16 +1004,16 @@ public class DataLoader implements ApplicationRunner {
         Question questionSixtySix = new Question("During WWII, in 1945, the United States dropped atomic bombs on the two Japanese cities of Hiroshima and what other city?", Difficulty.THREE);
         questionRepository.save(questionSixtySix);
 
-        Answer q66AnswerOne = new Answer("Jakarta", questionSixtySix, true);
+        Answer q66AnswerOne = new Answer("Nagasaki", questionSixtySix, true);
         answerRepository.save(q66AnswerOne);
 
-        Answer q66AnswerTwo = new Answer("Bandung", questionSixtySix, false);
+        Answer q66AnswerTwo = new Answer("Tokyo", questionSixtySix, false);
         answerRepository.save(q66AnswerTwo);
 
-        Answer q66AnswerThree = new Answer("Palembang", questionSixtySix, false);
+        Answer q66AnswerThree = new Answer("Fukuoka", questionSixtySix, false);
         answerRepository.save(q66AnswerThree);
 
-        Answer q66AnswerFour = new Answer("Medan", questionSixtySix, false);
+        Answer q66AnswerFour = new Answer("Nagoya", questionSixtySix, false);
         answerRepository.save(q66AnswerFour);
 
         Question questionSixtySeven = new Question("Who wrote the novel 'Fear And Loathing In Las Vegas'?", Difficulty.THREE);

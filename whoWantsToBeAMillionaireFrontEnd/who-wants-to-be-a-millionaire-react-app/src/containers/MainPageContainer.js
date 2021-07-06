@@ -32,13 +32,13 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
         if(canClick){
             setCanClick(false);
             if(event.target.id == "50-50-logo"){
-                fiftyFiftySelectSound.play();
+                // fiftyFiftySelectSound.play();
                 setAskTheAudienceDecides(false);
                 setPhoneAFriendDecides(false)
                 setAskFiftyFifty(true);
                 setTimeout(() => {
                     correctAnswerOneHundredToOneThousand.play();
-                }, 2750)
+                }, 750)
                 setTimeout(() => {
                     // if(round<= 3){
                     //     firstFiveQuestionsAudio.play()
@@ -50,7 +50,7 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
                     setUsedFiftyFifty(true);
                     restartAllSoundEffects()
                     // setCanClick(true);
-                }, 3000)
+                }, 1000)
                 // setTimeout(() => {
                 //     setUsedFiftyFifty(true);
                 //     setCanClick(true);
