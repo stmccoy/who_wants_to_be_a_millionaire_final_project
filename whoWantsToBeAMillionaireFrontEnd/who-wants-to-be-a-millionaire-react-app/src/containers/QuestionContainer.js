@@ -34,6 +34,8 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
     //sets 5050 other answer
     const [fiftyFiftyOtherOption, setFiftyFiftyOtherOption] = useState(null);
 
+    const[usedQuestionNumber, setUsedQuestionNumber] = useState(null);
+
     // total number of questions in a specific difficulty which factors in that index numbers in arrays start from 0 (20 questions total)
     const numberOfQuestions = 19;
 
@@ -152,9 +154,17 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
         setRightAnswer(false)
         setWrongAnswer(false)
         // setCanClick(true)
-        if(round % 2 == 0 || round == 0)
+        if(round % 2 == 0)
         {
-            setQuestionNumber(randomNumberGenerator)
+            while(true){
+                let questionNumber = randomNumberGenerator()
+                if(questionNumber !== usedQuestionNumber){
+                    setQuestionNumber(questionNumber);
+                    setUsedQuestionNumber(questionNumber);
+                    break;
+                }
+            }
+            // setQuestionNumber(randomNumberGenerator)
         }
         setAnswerSelected(null)
         // if(!wrongAnswer){
@@ -222,6 +232,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
     useEffect(() => {
         if(round % 2 == 0 && round != 0){
             setDifficulty(difficulty + 1);
+            setUsedQuestionNumber(null);
             // setQuestionNumber(randomNumberGenerator)
         }
     },[round])
@@ -229,7 +240,8 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
     // sets a new question number then finds the questions from the database with that difficulty whenever the difficulty changes
     useEffect(() => {
         if(round === 0){
-            setQuestionNumber(randomNumberGenerator)  
+            setQuestionNumber(randomNumberGenerator);  
+            setUsedQuestionNumber(questionNumber);
         }
         findQuestionByDifficultyRating()
         restartAllSoundEffects()
