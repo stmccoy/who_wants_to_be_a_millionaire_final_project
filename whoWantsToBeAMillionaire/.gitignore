@@ -53,4 +53,4 @@ build/
 out/
 target/
 .idea_modules/
-.db
+*.db
