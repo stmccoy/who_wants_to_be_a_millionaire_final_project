@@ -112,7 +112,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
                 setTimeout(() => {
                     setGameOver(true);
                     wrongAnswerAudioOnehundredToOneThousandAudio.pause()
-                    restartAllSoundEffects()
+                    // restartAllSoundEffects()
                 }, 2000)
             }else{
                 wrongAnswerHarderQuestions.play()
@@ -124,7 +124,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
                 setTimeout(() => {
                     setGameOver(true);
                     wrongAnswerAudioOnehundredToOneThousandAudio.pause()
-                    restartAllSoundEffects()
+                    // restartAllSoundEffects()
                 }, 5000)
             }
         }
@@ -154,7 +154,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
         }
         setRightAnswer(false)
         setWrongAnswer(false)
-        setCanClick(true)
+        // setCanClick(true)
         if(round % 2 == 0 || round == 0)
         {
             setQuestionNumber(randomNumberGenerator)
