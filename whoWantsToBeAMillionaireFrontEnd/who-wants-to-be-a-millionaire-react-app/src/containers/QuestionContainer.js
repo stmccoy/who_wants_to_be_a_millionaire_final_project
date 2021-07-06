@@ -60,10 +60,10 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
                         startGameSound.pause()
                         HarderQuestionsMusic.play()
                     }, 12000)
-                    setTimeout(() => {
-                        // OneThousandPoundsWinAudio.pause();
-                        // restartAllSoundEffects()
-                    }, 12500)
+                    // setTimeout(() => {
+                    //     OneThousandPoundsWinAudio.pause();
+                    //     restartAllSoundEffects()
+                    // }, 12500)
                 }
             }else if (round < 3){
                 correctAnswerOneHundredToOneThousand.play();
@@ -88,10 +88,10 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
                             startGameSound.pause()
                             HarderQuestionsMusic.play()
                         }, 12000)
-                        setTimeout(() => {
-                            // OneThousandPoundsWinAudio.pause();
-                            // restartAllSoundEffects()
-                        }, 12500)
+                        // setTimeout(() => {
+                        //     OneThousandPoundsWinAudio.pause();
+                        //     restartAllSoundEffects()
+                        // }, 12500)
                     }else {
                         OneMillionDollarWin.play()
                         setGameWon(true)
@@ -141,7 +141,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
     //shuffles answers from database so they're
     function shuffleAnswers(answerArray){
         if(answerArray.length !== 0){
-            let currentIndex = answerArray.length;
+            let currentIndex = 4;
             let temporaryValue;
             let randomIndex;
 
@@ -154,7 +154,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
             }
             return answerArray;
         } else{
-            return
+            return []
         }
     };
 
@@ -232,7 +232,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
         if(!gameOver){
             if(questions){
                 setQuestion(questions[questionNumber].question)
-                setAnswers(shuffleAnswers(questions[questionNumber].answers))
+                setShuffledAnswers(shuffleAnswers(questions[questionNumber].answers))
                 //filters through answers and sets correct answer to the one that is correct
                 const correctAnswer = questions[questionNumber].answers.filter((item) => {
                     if(item.correct){
@@ -244,6 +244,10 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
             }
         }
     }, [questions, questionNumber])
+
+    useEffect(() => {
+        setAnswers(shuffleAnswers(shuffledAnswers))
+    }, [shuffledAnswers])
 
     //sets can click to be true once the answers to the question have loaded
     // useEffect(() => {

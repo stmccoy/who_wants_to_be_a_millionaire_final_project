@@ -187,6 +187,18 @@ body{
     
 }
 
+.end-game{
+    @extend #start-button-div; 
+    button{
+        margin-top: 6%;
+    }
+}
+
+.game-won {
+    @extend .end-game
+}
+
+
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
