@@ -239,10 +239,10 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
         if(round % 2 == 0)
         {
             while(true){
-                let questionNumber = randomNumberGenerator()
-                if(questionNumber !== usedQuestionNumber){
-                    setQuestionNumber(questionNumber);
-                    setUsedQuestionNumber(questionNumber);
+                let tempQuestionNumber = randomNumberGenerator()
+                if(tempQuestionNumber !== usedQuestionNumber){
+                    setQuestionNumber(tempQuestionNumber);
+                    setUsedQuestionNumber(tempQuestionNumber);
                     break;
                 }
             }
