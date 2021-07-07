@@ -971,19 +971,19 @@ public class DataLoader implements ApplicationRunner {
         Answer q63AnswerFour = new Answer("ABS", questionSixtyThree, false);
         answerRepository.save(q63AnswerFour);
 
-        Question questionSixtyFour = new Question("What are the cylinder-like parts that pump up and down within the engine?", Difficulty.THREE);
+        Question questionSixtyFour = new Question("Which track by 'Massive Attack' is used for the theme of 'House'? ", Difficulty.THREE);
         questionRepository.save(questionSixtyFour);
 
-        Answer q64AnswerOne = new Answer("Pistons", questionSixtyFour, true);
+        Answer q64AnswerOne = new Answer("Teardrop", questionSixtyFour, true);
         answerRepository.save(q64AnswerOne);
 
-        Answer q64AnswerTwo = new Answer("Leaf Springs", questionSixtyFour, false);
+        Answer q64AnswerTwo = new Answer("Protection", questionSixtyFour, false);
         answerRepository.save(q64AnswerTwo);
 
-        Answer q64AnswerThree = new Answer("Radiators", questionSixtyFour, false);
+        Answer q64AnswerThree = new Answer("Angel", questionSixtyFour, false);
         answerRepository.save(q64AnswerThree);
 
-        Answer q64AnswerFour = new Answer("ABS", questionSixtyFour, false);
+        Answer q64AnswerFour = new Answer("Black Milk", questionSixtyFour, false);
         answerRepository.save(q64AnswerFour);
 
         Question questionSixtyFive = new Question("What is the capital of Indonesia?", Difficulty.THREE);
@@ -1931,19 +1931,19 @@ public class DataLoader implements ApplicationRunner {
         Answer q127AnswerFour = new Answer("1988", questionOneHundredAndTwentySeven, false);
         answerRepository.save(q127AnswerFour);
 
-        Question questionOneHundredAndTwentyEight = new Question("What is Canada's largest island?", Difficulty.SIX);
+        Question questionOneHundredAndTwentyEight = new Question("According to Algonquian folklore, how does one transform into a Wendigo?", Difficulty.SIX);
         questionRepository.save(questionOneHundredAndTwentyEight);
 
-        Answer q128AnswerOne = new Answer("Baffin Island", questionOneHundredAndTwentyEight, true);
+        Answer q128AnswerOne = new Answer("Participating in cannibalism", questionOneHundredAndTwentyEight, true);
         answerRepository.save(q128AnswerOne);
 
-        Answer q128AnswerTwo = new Answer("Prince Edward Island", questionOneHundredAndTwentyEight, false);
+        Answer q128AnswerTwo = new Answer("Excessive mutilation of animal corpses", questionOneHundredAndTwentyEight, false);
         answerRepository.save(q128AnswerTwo);
 
-        Answer q128AnswerThree = new Answer("Vancouver Island", questionOneHundredAndTwentyEight, false);
+        Answer q128AnswerThree = new Answer("Performing a ritual involving murder", questionOneHundredAndTwentyEight, false);
         answerRepository.save(q128AnswerThree);
 
-        Answer q128AnswerFour = new Answer("Newfoundland", questionOneHundredAndTwentyEight, false);
+        Answer q128AnswerFour = new Answer("Drinking the blood of many slain animals", questionOneHundredAndTwentyEight, false);
         answerRepository.save(q128AnswerFour);
 
         Question questionOneHundredAndTwentyNine = new Question("What is Canada's largest island?", Difficulty.SIX);
@@ -2231,19 +2231,19 @@ public class DataLoader implements ApplicationRunner {
         Answer q147AnswerFour = new Answer("Australopithecus Antaris", questionOneHundredAndFortySeven, false);
         answerRepository.save(q147AnswerFour);
 
-        Question questionOneHundredAndFortyEight = new Question("The Western Lowland Gorilla is scientifically know as?", Difficulty.SEVEN);
+        Question questionOneHundredAndFortyEight = new Question("In the 'Harry Potter' series, what is Headmaster Dumbledore's full name?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFortyEight);
 
-        Answer q148AnswerOne = new Answer("Gorilla Gorilla Gorilla", questionOneHundredAndFortyEight, true);
+        Answer q148AnswerOne = new Answer("Albus Percival Wulfric Brian Dumbledore", questionOneHundredAndFortyEight, true);
         answerRepository.save(q148AnswerOne);
 
-        Answer q148AnswerTwo = new Answer("Gorilla Gorilla Diehli", questionOneHundredAndFortyEight, false);
+        Answer q148AnswerTwo = new Answer("Albus Valum Jetta Mobius Dumbledore", questionOneHundredAndFortyEight, false);
         answerRepository.save(q148AnswerTwo);
 
-        Answer q148AnswerThree = new Answer("Gorilla Beringei Graueri", questionOneHundredAndFortyEight, false);
+        Answer q148AnswerThree = new Answer("Albus James Lunae Otto Dumbledore", questionOneHundredAndFortyEight, false);
         answerRepository.save(q148AnswerThree);
 
-        Answer q148AnswerFour = new Answer("Gorilla Beringei Beringei", questionOneHundredAndFortyEight, false);
+        Answer q148AnswerFour = new Answer("Albus Valencium Horatio Kul Dumbledore", questionOneHundredAndFortyEight, false);
         answerRepository.save(q148AnswerFour);
 
         Question questionOneHundredAndFortyNine = new Question("The Western Lowland Gorilla is scientifically know as?", Difficulty.SEVEN);
@@ -2291,19 +2291,19 @@ public class DataLoader implements ApplicationRunner {
         Answer q151AnswerFour = new Answer("Biot-Savart Law", questionOneHundredAndFiftyOne, false);
         answerRepository.save(q151AnswerFour);
 
-        Question questionOneHundredAndFiftyTwo = new Question("What type of sound chip does the Super Nintendo Entertainment System (SNES) have?", Difficulty.SEVEN);
+        Question questionOneHundredAndFiftyTwo = new Question("Which horizon in a soil profile consists of bedrock?", Difficulty.SEVEN);
         questionRepository.save(questionOneHundredAndFiftyTwo);
 
-        Answer q152AnswerOne = new Answer("ADPCM Sampler", questionOneHundredAndFiftyTwo, true);
+        Answer q152AnswerOne = new Answer("R", questionOneHundredAndFiftyTwo, true);
         answerRepository.save(q152AnswerOne);
 
-        Answer q152AnswerTwo = new Answer("FM Synthesizer", questionOneHundredAndFiftyTwo, false);
+        Answer q152AnswerTwo = new Answer("O", questionOneHundredAndFiftyTwo, false);
         answerRepository.save(q152AnswerTwo);
 
-        Answer q152AnswerThree = new Answer("Programmable Sound Generator (PSG)", questionOneHundredAndFiftyTwo, false);
+        Answer q152AnswerThree = new Answer("B", questionOneHundredAndFiftyTwo, false);
         answerRepository.save(q152AnswerThree);
 
-        Answer q152AnswerFour = new Answer("PCM Sampler", questionOneHundredAndFiftyTwo, false);
+        Answer q152AnswerFour = new Answer("D", questionOneHundredAndFiftyTwo, false);
         answerRepository.save(q152AnswerFour);
 
         Question questionOneHundredAndFiftyThree = new Question("What type of sound chip does the Super Nintendo Entertainment System (SNES) have?", Difficulty.SEVEN);
