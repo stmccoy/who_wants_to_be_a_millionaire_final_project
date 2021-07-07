@@ -50,25 +50,21 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
                 setTimeout(()=> {
                     firstFiveQuestionsAudio.pause();
                 }, 500)
-                if(round !== 14){
-                    setTimeout(() => {
-                        OneThousandPoundsWinAudio.pause()
-                        startGameSound.play()
-                        setRound(round + 1);
-                    }, 7000)
-                    setTimeout(() => {
-                        startGameSound.pause()
-                        HarderQuestionsMusic.play()
-                    }, 12000)
-                    // setTimeout(() => {
-                    //     OneThousandPoundsWinAudio.pause();
-                    //     restartAllSoundEffects()
-                    // }, 12500)
-                }
+                setTimeout(() => {
+                    OneThousandPoundsWinAudio.pause()
+                    startGameSound.play()
+                    setRound(round + 1);
+                    setFiftyFiftyDecides(false);
+                }, 7000)
+                setTimeout(() => {
+                    startGameSound.pause()
+                    HarderQuestionsMusic.play()
+                }, 12000)
             }else if (round < 3){
                 correctAnswerOneHundredToOneThousand.play();
                 if(round !== 14){
                     setTimeout(() => {
+                        setFiftyFiftyDecides(false);
                         setRound(round + 1);
                         // restartAllSoundEffects();
                     }, 3000)
@@ -82,8 +78,10 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
                         setTimeout(() => {
                             correctAnswerAudio.pause()
                             startGameSound.play()
-                            setRound(round + 1);
                         }, 7000)
+                        setTimeout(() => {
+                            setRound(round + 1);  
+                        }, 7500)
                         setTimeout(() => {
                             startGameSound.pause()
                             HarderQuestionsMusic.play()
@@ -208,6 +206,8 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
     const handleAnswerSelect = function (value){
         if(canClick){
             setAnswerSelected(value)
+            setAskTheAudienceDecides(false);
+            setPhoneAFriendDecides(false);
             if(round > 3){
                 HarderQuestionAnswerSelected.play()
                 setTimeout(() => {
@@ -218,7 +218,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
             setCanClick(false);
             setTimeout(() => {decideIfAnswerCorrect(value)}, 4000)
             if(round >= 3){
-                setTimeout(() => {resetRoundParameters()}, 12000)
+                setTimeout(() => {resetRoundParameters()}, 12500)
             }else{
                 setTimeout(() => {resetRoundParameters()}, 7500)
             }
@@ -266,6 +266,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
 
     // sets a new question number then finds the questions from the database with that difficulty whenever the difficulty changes
     useEffect(() => {
+        setFiftyFiftyDecides(false); 
         if(round === 0){
             setQuestionNumber(randomNumberGenerator);  
             setUsedQuestionNumber(questionNumber);
