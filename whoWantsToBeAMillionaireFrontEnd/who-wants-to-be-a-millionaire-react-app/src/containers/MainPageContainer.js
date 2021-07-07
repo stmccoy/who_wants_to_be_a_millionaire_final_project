@@ -4,10 +4,12 @@ import LifeLinesComponent from '../components/mainPageContainerComponents/LifeLi
 import CentralTitleComponent from '../components/mainPageContainerComponents/CentralTitleComponent';
 import Request from '../helpers/request';
 
-function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides, setFiftyFiftyDecides, phoneAFriendDecides, setPhoneAFriendDecides, askTheAudienceDecides, setAskTheAudienceDecides, HarderQuestionsMusic, firstFiveQuestionsAudio, AskTheAudienceMusic, PhoneAFriendMusic, correctAnswerOneHundredToOneThousand, restartAllSoundEffects, canClick, fiftyFiftySelectSound}){
+function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides, setFiftyFiftyDecides, phoneAFriendDecides, setPhoneAFriendDecides, askTheAudienceDecides, setAskTheAudienceDecides, HarderQuestionsMusic, firstFiveQuestionsAudio, AskTheAudienceMusic, PhoneAFriendMusic, correctAnswerOneHundredToOneThousand, restartAllSoundEffects, canClick}){
 
+    //rounds tracker table state
     const [rounds, setRounds] = useState([])
 
+    //lifeline states
     const [askFiftyFifty, setAskFiftyFifty] = useState(false)
     const [usedFiftyFifty, setUsedFiftyFifty] = useState(false)
 
@@ -17,6 +19,11 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
     const [askTheAudience, setAskTheAudience] = useState(false)
     const [usedAskTheAudience, setUsedAskTheAudience] = useState(false)
 
+    //find rounds from database
+    useEffect(() => {
+        findRounds();
+    }, [])
+
     // fetch request for questions based upon difficulty rating that the player is currently on
     const findRounds = function(){
         const request = new Request();
@@ -24,15 +31,11 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
             .then(res => setRounds(res.reverse()))
     }
 
-    useEffect(() => {
-        findRounds();
-    }, [])
-
+    //handles clicking on a lifeline
     const handleLifeLineClick = function(event){
         if(canClick){
             setCanClick(false);
             if(event.target.id == "50-50-logo"){
-                // fiftyFiftySelectSound.play();
                 setAskTheAudienceDecides(false);
                 setPhoneAFriendDecides(false)
                 setAskFiftyFifty(true);

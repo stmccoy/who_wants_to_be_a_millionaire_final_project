@@ -2,6 +2,7 @@ import React from 'react';
 
 function GameOverComponent({gameWon}){
 
+    //restarts game if play again button clicked
     const handlePlayAgainClick = function (){
         window.location.reload()
     }

@@ -34,13 +34,74 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
     //sets 5050 other answer
     const [fiftyFiftyOtherOption, setFiftyFiftyOtherOption] = useState(null);
 
+    //used question number designed to prevent repeating questions by random number generator
     const[usedQuestionNumber, setUsedQuestionNumber] = useState(null);
 
+    //answers after first shuffle to be shuffled again to create more randomness
     const[shuffledAnswers, setShuffledAnswers] = useState([]);
 
     // total number of questions in a specific difficulty which factors in that index numbers in arrays start from 0 (20 questions total)
     const numberOfQuestions = 19;
 
+    // sets question and associated answers in game whenever the questions are downloaded, when the question number changes and when the app first loads
+    useEffect(()=>{
+        if(!gameOver){
+            if(questions){
+                setQuestion(questions[questionNumber].question)
+                setShuffledAnswers(shuffleAnswers(questions[questionNumber].answers))
+                //filters through answers and sets correct answer to the one that is correct
+                const correctAnswer = questions[questionNumber].answers.filter((item) => {
+                    if(item.correct){
+                        return item.answer
+                    }
+                })
+                setCorrectAnswer(correctAnswer[0].answer);
+                restartAllSoundEffects()
+            }
+        }
+    }, [questions, questionNumber])
+
+    //sets answers to the shuffled answers reversed for more randomness 
+    useEffect(() => {
+        setAnswers(shuffledAnswers.reverse())
+    }, [shuffledAnswers])
+
+    // increases difficulty of questions if the person is on a round that is a multiple of 2 that isn't 0
+    useEffect(() => {
+        if(round % 2 == 0 && round != 0){
+            setDifficulty(difficulty + 1);
+            setUsedQuestionNumber(null);
+            // setQuestionNumber(randomNumberGenerator)
+        }
+    },[round])
+
+    // sets a new question number then finds the questions from the database with that difficulty whenever the difficulty changes
+    useEffect(() => {
+        setFiftyFiftyDecides(false); 
+        if(round === 0){
+            setQuestionNumber(randomNumberGenerator);  
+            setUsedQuestionNumber(questionNumber);
+        }
+        findQuestionByDifficultyRating()
+        restartAllSoundEffects()
+            
+    }, [difficulty])
+
+    // when answers created this sets up fifty fifty other option
+    useEffect(() => {
+        if(answers.length != 0){
+            let tempAnswers = answers;
+            tempAnswers = tempAnswers.filter((item) => {
+                if(!item.correct){
+                    return item.answer
+                }
+            })
+            setFiftyFiftyOtherOption(tempAnswers[randomFiftyFiftyAnswerNumberGenerator()].answer)
+        }
+
+    }, [answers])
+
+    //decides if selected answer is correct or not
     const decideIfAnswerCorrect = function (answer){
         if(answer == correctAnswer){
             setRightAnswer(true)
@@ -156,6 +217,7 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
         return Math.floor((Math.random() * numberOfQuestions))
     }
 
+    //generates a random number which selects the wrong fifty fifty answer left remaining with correct answer
     const randomFiftyFiftyAnswerNumberGenerator = function (){
         return Math.floor((Math.random() * 3))
     }
@@ -210,64 +272,6 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
             }
         }
     }
-
-    // sets question and associated answers in game whenever the questions are downloaded, when the question number changes and when the app first loads
-    useEffect(()=>{
-        if(!gameOver){
-            if(questions){
-                setQuestion(questions[questionNumber].question)
-                setShuffledAnswers(shuffleAnswers(questions[questionNumber].answers))
-                //filters through answers and sets correct answer to the one that is correct
-                const correctAnswer = questions[questionNumber].answers.filter((item) => {
-                    if(item.correct){
-                        return item.answer
-                    }
-                })
-                setCorrectAnswer(correctAnswer[0].answer);
-                restartAllSoundEffects()
-            }
-        }
-    }, [questions, questionNumber])
-
-    useEffect(() => {
-        setAnswers(shuffledAnswers.reverse())
-    }, [shuffledAnswers])
-
-    // increases difficulty of questions if the person is on a round that is a multiple of 2 that isn't 0
-    useEffect(() => {
-        if(round % 2 == 0 && round != 0){
-            setDifficulty(difficulty + 1);
-            setUsedQuestionNumber(null);
-            // setQuestionNumber(randomNumberGenerator)
-        }
-    },[round])
-
-    // sets a new question number then finds the questions from the database with that difficulty whenever the difficulty changes
-    useEffect(() => {
-        setFiftyFiftyDecides(false); 
-        if(round === 0){
-            setQuestionNumber(randomNumberGenerator);  
-            setUsedQuestionNumber(questionNumber);
-        }
-        findQuestionByDifficultyRating()
-        restartAllSoundEffects()
-            
-    }, [difficulty])
-
-    useEffect(() => {
-        if(answers.length != 0){
-            let tempAnswers = answers;
-            tempAnswers = tempAnswers.filter((item) => {
-                if(!item.correct){
-                    return item.answer
-                }
-            })
-            console.log("temp Answers");
-            console.log(tempAnswers);
-            setFiftyFiftyOtherOption(tempAnswers[randomFiftyFiftyAnswerNumberGenerator()].answer)
-        }
-
-    }, [answers])
 
     return (
         <section>
