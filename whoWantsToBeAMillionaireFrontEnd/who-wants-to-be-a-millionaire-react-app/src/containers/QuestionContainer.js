@@ -86,10 +86,6 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
                             startGameSound.pause()
                             HarderQuestionsMusic.play()
                         }, 12000)
-                        // setTimeout(() => {
-                        //     OneThousandPoundsWinAudio.pause();
-                        //     restartAllSoundEffects()
-                        // }, 12500)
                     }else {
                         OneMillionDollarWin.play()
                         setGameWon(true)
@@ -111,7 +107,6 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
                 setTimeout(() => {
                     setGameOver(true);
                     wrongAnswerAudioOnehundredToOneThousandAudio.pause()
-                    // restartAllSoundEffects()
                 }, 2000)
             }else{
                 wrongAnswerHarderQuestions.play()
@@ -123,7 +118,6 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
                 setTimeout(() => {
                     setGameOver(true);
                     wrongAnswerAudioOnehundredToOneThousandAudio.pause()
-                    // restartAllSoundEffects()
                 }, 5000)
             }
         }
@@ -190,16 +184,8 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
                     break;
                 }
             }
-            // setQuestionNumber(randomNumberGenerator)
         }
         setAnswerSelected(null)
-        // if(!wrongAnswer){
-        //     setRound(round + 1);
-        // }
-        // if(round % 2 == 0){
-        //     setDifficulty(difficulty + 1);
-        //     findQuestionByDifficultyRating();
-        // }
     }
 
     // increases the round and sets a new question number whenever an answer is clicked
@@ -222,9 +208,6 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
             }else{
                 setTimeout(() => {resetRoundParameters()}, 7500)
             }
-            // setTimeout(() => {setQuestionNumber(randomNumberGenerator)}, 10000);
-            // setTimeout(() => {setRound(round + 1)}, 10000);
-            // setTimeout(() => setCanClick(true), 10000)
         }
     }
 
@@ -249,11 +232,6 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
     useEffect(() => {
         setAnswers(shuffledAnswers.reverse())
     }, [shuffledAnswers])
-
-    //sets can click to be true once the answers to the question have loaded
-    // useEffect(() => {
-    //     setTimeout(() => setCanClick(true), 2000)
-    // }, [answers])
 
     // increases difficulty of questions if the person is on a round that is a multiple of 2 that isn't 0
     useEffect(() => {

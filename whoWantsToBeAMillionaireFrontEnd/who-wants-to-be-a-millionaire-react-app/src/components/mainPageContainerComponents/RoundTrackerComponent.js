@@ -1,5 +1,4 @@
 import React from 'react';
-// import './RoundTracker.css'
 
 function RoundTrackerComponent({rounds, round}){
 

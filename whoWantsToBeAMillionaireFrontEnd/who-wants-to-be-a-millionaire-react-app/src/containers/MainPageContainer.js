@@ -40,21 +40,11 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
                     correctAnswerOneHundredToOneThousand.play();
                 }, 750)
                 setTimeout(() => {
-                    // if(round<= 3){
-                    //     firstFiveQuestionsAudio.play()
-                    // }else{
-                    //     HarderQuestionsMusic.play()
-                    // }
                     setAskFiftyFifty(false); 
                     setFiftyFiftyDecides(true);
                     setUsedFiftyFifty(true);
                     restartAllSoundEffects()
-                    // setCanClick(true);
                 }, 1000)
-                // setTimeout(() => {
-                //     setUsedFiftyFifty(true);
-                //     setCanClick(true);
-                // }, 10000)
 
             }else if (event.target.id == "ask-the-audience-logo"){
                 setPhoneAFriendDecides(false)
@@ -74,16 +64,9 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
                     }else{
                         HarderQuestionsMusic.play()
                     }
-                    // setAskTheAudience(false);
-                    // setAskTheAudienceDecides(true)
                     setUsedAskTheAudience(true);
                     restartAllSoundEffects()
-                    // setCanClick(true);
                 }, 10000)
-                // setTimeout(() => {
-                //     setUsedAskTheAudience(true);
-                //     setCanClick(true);
-                // }, 10000)
             } else{
                 setAskTheAudienceDecides(false)
                 setAskPhoneAFriend(true);
@@ -104,12 +87,7 @@ function MainPageContainer({round, correctAnswer, setCanClick, fiftyFiftyDecides
                     }
                     setUsedPhoneAFriend(true);
                     restartAllSoundEffects()
-                    // setCanClick(true);
                 }, 11000)
-                // setTimeout(() => {
-                //     setUsedPhoneAFriend(true);
-                //     setCanClick(true);
-                // }, 10000)
             }
         }
     }
