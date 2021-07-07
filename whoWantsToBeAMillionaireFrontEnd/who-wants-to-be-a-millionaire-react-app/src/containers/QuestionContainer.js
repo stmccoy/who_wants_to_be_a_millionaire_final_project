@@ -62,13 +62,13 @@ function QuestionContainer({round, setRound, setGameOver, gameOver, correctAnswe
                 }, 12000)
             }else if (round < 3){
                 correctAnswerOneHundredToOneThousand.play();
-                if(round !== 14){
-                    setTimeout(() => {
-                        setFiftyFiftyDecides(false);
-                        setRound(round + 1);
-                        // restartAllSoundEffects();
-                    }, 3000)
-                }
+                setTimeout(() => {
+                    setRound(round + 1);
+                }, 3000)
+                setTimeout(() => {
+                    setFiftyFiftyDecides(false);
+                }, 3350)
+
             }else{
                 if(round !== 14){
                     correctAnswerAudio.play()
