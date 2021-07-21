@@ -2,7 +2,6 @@ To run,
 
 You will need the mp3 files in the react app and for java intellij will need the below properties in your application.properties file
 
-# Datasource and H2 stuff
 spring.h2.console.enabled=true
 spring.h2.console.path=/h2
 hibernate.dialect=org.hibernate.dialect.H2Dialect
